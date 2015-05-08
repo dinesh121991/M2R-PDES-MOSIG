@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  <title>M2 Mosig -- Advanced Operating Systems</title>
+</head>
+<body>
+<h1>M2 Mosig - PDES 2014-2015: Advanced Operating Systems (GINF536Q)</h1>
+Olivier Gruber (first.last @ imag.fr) and Renaud Lachaize (first.last @ imag.fr)
+<hr>
+Latest update: 2014-12-10
+<hr>
+<h2>News</h2>
+<ul>
+<!--
+	<li>2013-12-13: The <a href="./cloudvisor_exercise.pdf">solution of the CloudVisor exercise</a> is available.</li><br>
+	<li>2013-12-13: The homework research papers have been assigned.</li><br>
+	<li>2013-12-10: <b>Read carefully the <a href="#homework">instructions regarding the homework assignment given below</a></b>.</li><br>
+	<li>2013-12-05: Additional details regarding the short written exam:
+		<ul>
+			<li>The exam will take place during the next lecture slot. The exam duration will be 45 minutes.</li><br>
+			<li>Here are a few sample questions:
+				<ul><br>
+					<li>In their paper, the authors of Xen explain that the VMM must validate the page table updates requested by a guest kernel.
+Precisely explain what this means and why this is necessary. Give examples of three different validation checks that must be performed by the VMM (in each case, describe a problem that may happen if the check was not performed). Expected answer length: about 1 page.</li><br>
+					<li>In section 5 of their paper, the authors of the Turtles system say that para-virtualizing the guest
+hypervisor may reduce L0 intervention when running the L1 code that virtualizes the L2 environment.
+Give an example to explain and illustrate this idea. Expected answer length: 10-15 lines.</li><br>
+				</ul>
+			</li>
+		</ul>
+	</li><br>
+	<li>2013-11-27: Updated FAQ section.</li><br>
+	<li>2013-11-27: There will be a short written exam (with printed documents allowed) during the next lecture slot (Dec 10). More details will be posted later.</li><br>
+	<li>2013-11-27: <b>For the next lecture (Dec 10), read and bring a printed copy of the following paper</b> (in addition to the Xen and Turtles papers):
+		<ul>
+			<br>
+			<li>Fengzhe Zhang, Jin Chen, Haibo Chen and Binyu Zang. <a href="http://sigops.org/sosp/sosp11/current/2011-Cascais/printable/15-zhang.pdf">CloudVisor: Retrofitting Protection of Virtual Machines in Multi-tenant Cloud with Nested Virtualization</a>. In Proceedings of the ACM Symposium on Operating Systems Principles (SOSP'11), 2011. 
+</li>
+		</ul>
+	<br>
+	</li>
+	<li>2013-11-19: <b>For the next lecture (Nov 26), read and bring a printed copy of the following papers</b>:
+		<ul>
+			<br>
+			<li>Paul Barham, Boris Dragovic, Keir Fraser, Steven Hand, Tim Harris, Alex Ho, Rolf Neugebauer, Ian Pratt and Andrew Warfield.<br> <a href="http://www.cl.cam.ac.uk/research/srg/netos/papers/2003-xensosp.pdf">Xen and the Art of Virtualization</a>.<br> In Proceedings of the ACM Symposium on Operating Systems Principles (SOSP'03), 2003. 
+</li>
+			<br>
+			<li>Muli Ben-Yehuda, Michael D. Day, Zvi Dubitzky, Michael Factor, Nadav Har'El, Abel Gordon, Anthony Liguori, Orit Wasserman, Ben-Ami Yassour.<br> <a href="https://www.usenix.org/legacy/events/osdi10/tech/full_papers/Ben-Yehuda.pdf">The Turtles Project: Design and Implementation of Nested Virtualization</a>.<br> In Proceedings of the 9th USENIX Symposium on Operating Systems Design and Implementation (OSDI'10), 2010.</li>
+		</ul>
+		<br>
+	</li>
+-->
+	<li>2014-12-10: Schedule update. There will be no lecture slot on the 
+week of Dec. 15th. The two remaining lectures will take place in January
+ with Olivier Gruber.</li><br>
+	<li>2014-12-10: The homework research papers have been assigned.</li><br>
+	<li>2014-12-10: Updated FAQ.</li><br>
+	<li>2014-12-09: <b>Read carefully the <a href="#homework">instructions regarding the homework assignment given below</a></b>.</li><br>
+	<li>2014-12-03: Updated FAQ.</li><br>
+	<li>2014-12-03: The next lecture slot will take place on Tuesday December 9 (confirmed).<br><br> 
+	<b>Homework for Dec. 9</b>:<br><br>
+	Read and bring a printed copy of the following papers:<br><br>
+		<ul>
+				<li>Adam Belay, Andrea Bittau, Ali Mashtizadeh, David Terei, David Mazières, Christos Kozyrakis.<br><a href="https://www.usenix.org/system/files/conference/osdi12/osdi12-final-117.pdf">Dune: Safe User-level Access to Privileged CPU Features</a>.<br>In Proceedings of the USENIX Symposium on Operating System Design and Implementation (OSDI), 2012.<br></li><br>
+				<li>Avi Kivity, Dor Laor, Glauber Costa, Pekka Enberg, Nadav Har'El, Don Marti, Vlad Zolotarov.<br><a href="https://www.usenix.org/system/files/conference/atc14/atc14-paper-kivity.pdf">OSv: Optimizing the Operating System for Virtual Machines.</a><br>In Proceedings of the USENIX Annual Technical Conference, 2014</li><br>
+
+		</ul>
+	</li>
+
+	<li>2014-11-26: <b>Homework for Nov. 25</b>:<br><br>
+		<ul>
+			<li>Read and bring a printed copy of the following paper:<br><br>
+				<ul>
+					<li>U. Steinberg, B. Kauer.<br><a href="http://hypervisor.org/eurosys2010.pdf">NOVA: A Microhypervisor-Based Secure Virtualization Architecture</a>.<br>In Proceeding of the ACM EuroSys Conference, 2010.</li><br>
+				</ul>
+			</li>
+			<li>Prepare (and write) answers for the <a href="http://ginf536q.forge.imag.fr/questions_homework_20141202.html">following questions</a></li><br><br>
+		</ul>
+	</li>
+	<li>2014-11-24: Updated FAQ.</li><br>
+	<li>2014-11-18: <b>Homework for Nov. 25</b>:
+		<ul>
+			<br>
+			<li>Read the remaining parts of the last lecture (memory virtualization, hardware support)</li><br>
+			<li>Read and bring a printed copy of the following papers:<br>
+				<ul>
+					<br>
+					<li>Paul Barham, Boris Dragovic, Keir Fraser, Steven Hand, Tim Harris, Alex Ho, Rolf Neugebauer, Ian Pratt and Andrew Warfield.<br> <a href="http://www.cl.cam.ac.uk/research/srg/netos/papers/2003-xensosp.pdf">Xen and the Art of Virtualization</a>.<br> In Proceedings of the ACM Symposium on Operating Systems Principles (SOSP'03), 2003. <b>Read at least sections 1, 2, 3.</b></li><br>
+					<li>Hermann Härtig, Michael Hohmuth, Jochen Liedtke, Sebastian Schönberg, Jean Wolter.<br><a href="http://os.inf.tu-dresden.de/papers_ps/sosp97.pdf">The Performance of µ-Kernel-Based Systems</a>.<br>In Proceedings of the ACM Symposium on Operating Systems Principles (SOSP'97), 1997. <b>Read at least section 4.</b></li>
+				</ul>
+				<br>
+			</li>
+		</ul>
+	</li>
+	<li>2014-11-18: Added slides for 2nd lecture on System VMs.</li><br>
+	<li>2014-11-17: Website is up.</li>
+</ul>	
+<hr>
+<h2>Lectures</h2>
+
+<!--
+<ul>
+
+	<li>Sept 24 and Oct 1&nbsp&nbsp(OG):&nbspIntroduction: <a href="./lectures/Intro-RealMachines.pdf">real machines</a> & <a href="./lectures/Intro-2.pdf">virtual machines</a></li>
+	<li>Oct 8&nbsp&nbsp(OG):&nbsp<a href="./lectures/MicroKernels.pdf">Microkernels</a></li>
+	<li>Oct 15 and Oct 22&nbsp&nbsp(OG):&nbsp<a href="./lectures/SystemVMs.pdf">System VMs</a></li>
+	<li>Nov 5 and Nov 12&nbsp(OG)&nbsp:&nbspHigh-level language VMs</li>	
+	<li>Nov 19&nbsp(RL):&nbsp<a href="./lectures/SystemVMs_2.pdf">System VMs (2nd part)</a></li>
+</ul>
+-->
+
+<ul>
+	<li>Lectures by Olivier Gruber:
+		<ul>
+			<li>Introduction</li>
+			<li>System VMs</li>
+			<li>Microkernels</li>
+		</ul>
+	</li>
+	<br>
+	<li>Lectures by Renaud Lachaize:
+		<ul>
+			<li>Nov. 18, 2014: More things about System VMs [<a href="http://ginf536q.forge.imag.fr/lectures/SystemVMs_2.pdf">pdf</a>]</li>
+		</ul>
+	</li>	
+</ul>
+
+<!--<br>-->
+<hr>
+<a name="homework">
+<h2>Homework</h2>
+</a>
+
+Note: If you have any question, contact R. Lachaize as soon as possible.
+
+<h3>General instructions:</h3>
+
+<ul>
+	<li>Students must work individually.</li>
+	<li>Each student will be assigned a distinct research paper for homework (see list below).</li>
+	<li>Each student must send an email to Renaud Lachaize <u>before Wednesday, December 10, 2014 at 1:00pm</u>. The message must include:
+		<ul>
+			<li>The full name of the student.</li>
+			<li>(Optional) A list of preferred papers. We will try to take your preferences into account but we cannot guarantee it.</li>
+		</ul>
+	</li><li>The list of students and the assigned research articles will be confirmed on this webpage by Thursday December 11, 2014.</li>
+	<li>Each student must send a report by email (to R. Lachaize) before 
+Monday, January 5, 2015 at 6:00pm. See detailed instructions for the 
+report below.</li>
+	<li>A few days after the submission of your report, the teaching staff 
+may contact you via email to ask you a few questions on your report 
+and/or on the research article.</li>
+	
+</ul>
+
+<h3>Instructions for the report:</h3>
+<ul>
+	<li>Expected size: between 2 and 4 pages.</li>
+	<li>Expected format: PDF file.</li>
+	<li>Expected contents:
+		<ul>
+			<li>Names of the student.</li>
+			<li>Title of the research paper.</li>
+			<li>A summary of the paper (1 page maximum). Pay a special attention 
+to describe the specific problem that is addressed by the paper and the 
+key ideas of the proposed approach (including the important assumptions 
+made by the authors).</li>
+			<li>Pros: a brief description of the strengths of the paper.</li>
+			<li>Cons: a brief description of the weaknesses of the paper.</li>
+			<li>Detailed discussion: Point out things that are wrong or missing, 
+but also things that make the paper interesting (e.g., are the 
+argumentation and the design choices convincing? Is the experimental 
+methodology sound? How good/deep is the evaluation?). Try to make your 
+claims as precise as possible and to justify them. Finally, summarize 
+your opinion on the contribution of this paper (e.g., how general are 
+the results/conclusions?).</li>
+			<li>Questions: things that you find unclear and that you would like to ask to the authors of the paper.</li>
+		</ul>
+	</li><li>Important notice: Avoid copying/paraphrasing whole 
+sentences/paragraphs from the paper. You are expected to structure and 
+express the contents of the report in your own way.</li>
+	
+</ul>
+
+<h3>Assignment of research articles:</h3>
+
+    <table width="100%" border="0.5">
+      <tbody>
+        <tr>
+          <td><b>Research article</b><br>
+          </td>
+          <td><b>Student</b><br>
+          </td>
+        </tr>
+        <tr style="background: rgb(204, 238, 204)">
+           <td>N. Har'El et al. <a href="http://www.mulix.org/pubs/eli/elvis-atc13.pdf">Efficient and Scalable Paravirtual I/O System</a>. USENIX ATC 2013.<br>
+          </td>
+          <td>-<br>
+          </td>
+        </tr>
+        <tr style="background: rgb(204, 204, 238)">
+          <td>A. Gordon et al. <a href="http://www.mulix.org/pubs/eli/eli.pdf">ELI: Bare-metal Performance for I/O Virtualization</a>. ASPLOS 2012.<br>
+          </td>
+          <td>Ye XIA<br>
+          </td>
+        </tr>
+        <tr style="background: rgb(204, 238, 204)">
+          <td>F. Zhang et al. <a href="http://sigops.org/sosp/sosp11/current/2011-Cascais/printable/15-zhang.pdf">CloudVisor: Retrofitting Protection of Virtual Machines in Multi-tenant Cloud with Nested Virtualization</a>. SOSP 2011.<br>
+          </td>
+          <td>Lucas FELIX<br>
+          </td>
+        </tr>
+        <tr style="background: rgb(204, 204, 238)">
+          <td>S. Peter et al. <a href="https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-peter_simon.pdf">Arrakis: The Operating System is the Control Plane</a>. OSDI 2014.<br>
+          </td>
+          <td>Yoann BLEIN<br>
+          </td>
+        </tr>
+        <tr style="background: rgb(204, 238, 204)">
+          <td>O. Agesen et al. <a href="https://www.usenix.org/system/files/conference/atc12/atc12-final158.pdf">Software Techniques for Avoiding Hardware Virtualization Exits</a>. USENIX ATC 2012.<br>
+          </td>
+          <td>-<br>
+          </td>          
+        </tr>       
+        <tr style="background: rgb(204, 204, 238)">       
+          <td>A. Belay et al. <a href="https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-belay.pdf">IX: A Protected Dataplane Operating System for High Throughput and Low Latency</a>. OSDI 2014.<br>
+          </td>
+          <td>Hugo GUIROUX<br>
+          </td>
+        </tr>
+        <tr style="background: rgb(204, 238, 204)">
+          <td>P. Colp et al. <a href="http://www.cs.ubc.ca/%7Eandy/papers/xoar-sosp-final.pdf">Breaking Up is Hard to Do: Security and Functionality in a Commodity Hypervisor</a>. SOSP 2011.<br>
+          </td>
+          <td>Xinxiu TAO<br>
+          </td>
+        </tr> 
+        <tr style="background: rgb(204, 204, 238)">
+          <td>C. Dall and J. Nieh. <a href="http://www.cs.columbia.edu/%7Enieh/pubs/asplos2014_kvmarm.pdf">KVM/ARM: The Design and Implementation of the Linux ARM Hypervisor</a>. ASPLOS 2014.<br>
+          </td>
+          <td>Dineshkumar RAJAGOPAL<br>
+          </td>       
+        </tr>       
+        <tr style="background: rgb(204, 238, 204)">
+          <td>B. Blackham et al. <a href="http://www.nicta.com.au/pub?doc=5391">Improving Interrupt Response Time in a Verifiable Protected Microkernel</a>. EuroSys 2012.<br>
+          </td>
+          <td>Antoine FARAVELON<br>
+          </td>
+        </tr>
+        <tr style="background: rgb(204, 204, 238)">
+          <td>N. Amit et al. <a href="http://assaf.net.technion.ac.il/files/2014/01/vswapper.pdf">VSwapper: A Memory Swapper for Virtualized Environments</a>. ASPLOS 2014.<br>
+          </td>
+          <td>Amaury GRAILLAT<br>
+          </td>
+        </tr>
+<!--        
+        <tr style="background: rgb(204, 238, 204)">
+          <td>Y. Fu et al. <a href="https://www.usenix.org/system/files/conference/atc14/atc14-paper-fu.pdf">HYPERSHELL: A Practical Hypervisor Layer Guest OS Shell for Automated In-VM Management</a>. USENIX ATC 2014.<br />
+          </td>
+          <td>TBD<br />
+          </td>
+        </tr>
+-->                                
+      </tbody>
+    </table>
+
+<br>
+
+<hr>
+<h2><a name="FAQ">Frequently Asked Questions</a></h2>
+
+
+<p><b>Q: Can you provide details on the reasons why the IA-32 ISA is not virtualizable?</b><br>
+A: In addition to the details given in the lectures, you can refer to the following documents for more information:
+</p><ul>
+	<li>John Scott Robin and Cynthia E. Irvine. <a href="http://www.usenix.org/events/sec2000/full_papers/robin/robin.pdf">Analysis of the Intel Pentium's Ability to Support a Secure Virtual Machine Monitor</a>. In Proceedings of the 9th USENIX Security Symposium, 2000.</li>
+	<li>J. Smith, R. Nair. Virtual Machines: Versatile Platforms for Systems and Processes. Morgan Kaufmann, 2005. <u>See chapter 8 ("System Virtual Machines"), especially section 8.2 ("Resource Virtualization --- Processors")</u>.</li>
+</ul>
+
+
+<p><b>Q: Can you provide more details about OS-level virtualization?</b><br>
+A: You can refer to the following paper: 
+Stephen Soltesz, Herbert Potzl, Marc Fiuczynski, Andy Bavier, and Larry Peterson.
+Container-based Operating System Virtualization: A Scalable, High-performance Alternative to Hypervisors.
+Proceedings of EuroSys 2007, Lisbon, Portugal, March 2007.
+
+<!--
+<p><b>Q: Can you provide more details about hardware support for virtualization on ARM processors?</b><br>
+A: You can refer to the following document:
+<ul>
+	<li>Prashant Varanasi and Gernot Heiser. Hardware-supported virtualization on ARM. Proceedings of the 2nd Asia-Pacific Workshop on Systems (APSys), 2011.</li>
+</ul>
+-->
+
+
+</p><p><b>Q: Can you provide more details about "page coloring"?</b><br>
+A: Page coloring (also known as "cache coloring") is a technique that 
+consists in carefully selecting the physical page frame allocated for a 
+given virtual page.<br>This technique can be useful because (many) 
+processor caches are indexed with physical addresses (i.e., the lookup 
+in the cache is performed using the physical address of the data item) 
+and are not fully associative (i.e., a given data item cannot be stored 
+in any slot of the cache). For instance, page coloring can be used to 
+make sure that the contents of adjacent virtual pages do not get mapped 
+to the same cache slot (which could result in suboptimal performance, 
+because some data could be thrown away prematurely from the cache).
+
+</p><p><b>Q: Today, most hypervisors support live migration (i.e., a 
+guest virtual machine can be moved from one host to another without 
+disruption). Can you provide more details about the implementation of 
+such a feature?</b><br>
+A: The following paper is a good starting point: <a href="https://www.usenix.org/legacy/events/nsdi05/tech/full_papers/clark/clark.pdf">Live migration of virtual machines (NSDI'05)</a>. There are also more recent papers that describe additional optimizations, such as: <a href="https://labs.vmware.com/vee2013/docs/p85.pdf">1</a>, <a href="https://www.usenix.org/system/files/conference/atc14/atc14-paper-mashtizadeh.pdf">2</a>.
+
+</p><p><b>Q: Can you provide more details about the concept of "library OS" that was brielfy discussed in the lectures?</b><br>
+A: The main historical reference on the topic is the Exokernel project from MIT. You can read the following references: <a href="http://web.stanford.edu/class/cs240/readings/engler_exo.pdf">1</a>, <a href="http://web.stanford.edu/class/cs240/readings/kaashoek97.pdf">2</a>.
+ More recently, the Drawbridge project from Microsoft Research has taken
+ a new look at this approach, with different goals and design principles
+ (<a href="http://research.microsoft.com/pubs/141071/asplos2011-drawbridge.pdf">paper</a>).
+.
+
+
+
+<!--
+<p><b>Q: Can you provide some sample questions from the exams of the past years?</b><br>
+A: Here are some of the questions from past exams about the "Turtles" paper. Note that, in the context of these past exams, the Turtles paper had not been discussed in class and/or the volume of the lectures/presentations dedicated to hypervisors was substantially lower than this semester. Therefore, this year's exam may potentially be more difficult. 
+	<ul>
+		<li>In the Turtles system, we consider the case of an external interrupt (e.g., from a peripheral device like a hard disk drive or a NIC) received by the processor while executing instructions from a L2 guest virtual machine.
+		<ul>
+			<li>a) Describe what happens (i.e., the main processing steps and the involved software layers for handling the interrupt) in the following two cases:
+				<ul>
+					<li>I) The physical device is managed by the L0 hypervisor and emulated for the L1 layer (which in turn emulates its device for L2). (about 10-15 lines)</li>
+					<li>II) The physical device is directly managed by the L2 guest VM using multi-level device assignment. (about 10-15 lines)</li>
+				</ul></li>
+			<li>b) In the case of multi-level device assignment, describe one promising (hardware or software) optimization that could be introduced in future systems to minimize the performance overheads. (about 5-10 lines)</li>
+		</ul>
+		<li>In section 5 of their paper, the authors of the Turtles system say that para-virtualizing the guest
+hypervisor may reduce L0 intervention when running the L1 code that virtualizes the L2 environment.
+Give an example to explain and illustrate this idea. You can, for instance, consider the case of instructions like vmread and vmwrite. (about 10-15 lines)</li>
+	  <li> In environments with nested virtualization, L0 and L1 hypervisors can use the same or a different MMU virtualization mechanism. The paper about the "Turtles" system discusses only some of the possible combinations. In this question, we study the "EPT-on-shadow" approach (i.e., EPT for L1 and shadow page table for L0) Are there situations in which this approach could be interesting to use? Also, discuss the performance of this technique. (about 10-15 lines)
+	  </li>
+	</ul>
+	
+<p><b>Q: Can you provide more details on the internals of SSDs (solid state drive)?</b><br>
+A: The following article provides a good and quick summary of the (hardware) NAND flash storage technology used inside SSDs and its implications on the corresponding software (firmware and OS storage stack):<br>
+M. Cornwell. Anatomy of a Solid-state Drive. ACQ Queue, October 2012. [<a href="http://queue.acm.org/detail.cfm?id=2385276">html</a>][<a href="http://portal.acm.org/ft_gateway.cfm?id=2367378&type=pdf">pdf</a>]
+-->
+	
+<!--
+<p><b>Q: Can you provide more details on the principles of the memory management optimizations (such as "ballooning") in type-I hypervisors like VMware ESX?</b><br>
+A: You can refer to the following document for more information: Carl A. Waldspurger. <a href="http://www.usenix.org/events/osdi02/tech/waldspurger/waldspurger.pdf">Memory resource management in VMware ESX server</a>. In Proceedings of the 5th Symposium on Operating Systems Design and Implementation (OSDI 2002), Boston, MA, USA, 2002.
+
+<p><b>Q: Can you provide some sample questions from last year's exam?</b><br>
+A: Here are some of the questions from the January 2011 exam about the "Turtles" paper. Note that, last year, there were only 12 hours of class sessions (compared to 33 hours this year) and that the paper was not discussed in class. Therefore, this year's exam will be more difficult.
+	<ul>
+		<li>In the Turtles system, we consider the case of an external interrupt (e.g., from a peripheral device like a hard disk drive or a NIC) received by the processor while executing instructions from an L2 guest virtual machine.
+		<ul>
+			<li>a) Describe what happens (i.e., the main processing steps and the involved software layers for handling the interrupt) in the following two cases:
+				<ul>
+					<li>I) The physical device is managed by the L0 hypervisor and emulated for the L1 layer (which in turn emulates its device for L2). (about 10-15 lines)</li>
+					<li>II) The physical device is directly managed by the L2 guest VM using multi-level device assignment. (about 10-15 lines)</li>
+				</ul></li>
+			<li>b) In the case of multi-level device assignment, describe one promising (hardware or software) optimization that could be introduced in future systems to minimize the performance overheads. (about 5-10 lines)</li>
+		</ul>
+		<li>In section 5 of their paper, the authors of the Turtles system say that para-virtualizing the guest
+hypervisor may reduce L0 intervention when running the L1 code that virtualizes the L2 environment.
+Give an example to explain and illustrate this idea. You can, for instance, consider the case of instructions like vmread and vmwrite. (about 10-15 lines)</li>
+	</ul>
+-->
+
+
+
+</p></body></html>

@@ -1,0 +1,246 @@
+                Floating-point Assist Fault on Intel Itanium 2
+
+                Aurélien Dumez - aurelien.dumez@inrialpes.fr
+	
+                                INRIA Rhône-Alpes
+                 - Apache, Remap, Sardes research projects -
+
+           ADVICE : You should open this document in an editor using
+	            fixed-width font for the display.
+
+This short document gives an explanation of the "floating-point assist
+fault" message that sometimes appears in the /var/log/messages file, on the
+Intel Itanium platform.
+
+Some theory
+-----------
+
+Floating-point numbers can't be put in CPU registers as easily as integers.
+They have to be normalized as defined in the IEEE754 standard. Each number is
+cut into three elements: sign, exponent and fraction. The standard offers
+two level of precision: single and double, depending on the number of bits
+used to code each element:
+
+Type    Sign(S) Exponent(E)     Fraction(F)     Total length    C type
+----------------------------------------------------------------------
+Single  1       8               23              32 bits         float
+Double  1       11              52              64 bits         double
+----------------------------------------------------------------------
+
+When normalized, a floating-point number looks like:
+
+                (-1)^S * (1 + F) * 10^(E-bias)
+
+To get this form, the number must be converted in binary format,
+something like (101.01101)b. Then, this number can be written in normalized
+form: (101.01101)b -> (1.0101101E10)b. The final step is to extract the
+three elements:
+
+-The sign: 0 for positive numbers, 1 for negative ones.
+
+-The exponent (unsigned): its format is said to be biased. That is:
+ a constant value has been added to the real exponent. This value is +127
+ for singles and +1023 for doubles. The non-biased exponent range is:
+ [-127,127] for singles
+ [-1023,1023] for doubles
+ (theoritically, the exponent should be 128 or 1024, but some values have
+ special meanings)
+ 
+-The fraction: it's a bit tricky. The first digit (before the comma) is
+ always "one" in normalized format. So it does not appear in the coded
+ fraction. In our example, we use "0101101" as the fraction, instead of
+ "10101101". Warning : in this case, the first zero is mandatory.
+
+ Need an example? We want to code 9.75 (simple precision).
+ 
+ Step 1 : convert this number into binary format:
+ 9 -> (1001)b (1*2^8 + 1*2^0)
+ 0.75 -> (0.11)b (1*2^-1 + 1*2^-2)
+ So 9.75 -> (1001.11)b
+ 
+ Step 2: normalize the number: (1001.11)b -> (1.00111E11)b
+ 
+ Step 3: get each component. The sign. 9.75 is a positive number, so the
+ sign bit is zero. The exponent is 127+(11)b and the fraction is 00111
+ (remember that the first digit is discarded because it is always one).
+ 
+ You manually computed your first IEEE754 single precision floating-point
+number. Hopefully, the computer does it well on our behalf. As said above, the
+standard defines reserved values to represent special numbers like infinite
+ones. For further informations, you should have a look to the IEE754 standard.
+
+What does happen in real life?
+------------------------------
+
+Many programs deal with floating numbers. Many programmers don't know how
+these numbers are coded and so could they do big mistakes. An example.
+Do you think the number 0.0009765625 is hard to code? Many people say, let's
+round it to 0.00098, it's enough. You should notice that the first number
+is 1/2^10 (1E-1010)b in normalized representation: 0 for the sign, 0 for the
+fraction and 127+(-10) = 117 for the exponent. I suggest you try to compute the
+normalized representation of the second number. Many "zero" digits, some "one"
+and an endless conversion, the precision is not so good. A small C program
+could illustrate this:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (int argc, char **argv) {
+        float f;
+
+        f = 0.0009765625;
+
+        printf ("Really precise !\n");
+        printf ("I assigned 0.0009765625 to f\n");
+        printf ("f = %f\n", f);
+        printf ("f = %.40f\n", f);
+
+        f = 0.00098;
+
+        printf ("Really precise ?\n");
+        printf ("I assigned 0.00098 to f\n");
+        printf ("f = %f\n", f);
+        printf ("f = %.40f\n", f);
+
+        exit (0);
+}
+
+Compile it and run it. Surprise! The number 0.00098 can't be exactly stored,
+even when using double precision (try it). Always keep in mind what does
+precision imply for floating-point numbers.
+
+What about this floating-point assist fault?
+--------------------------------------------
+
+When one does computation involving floats, the result may not always be turned
+into normalized representation, these numbers are called "denormals". They can
+be thought of as really tiny numbers (almost zero). The IEEE754 standard handles
+these cases, but not always does the Floating-Point Unit. There are two ways to
+deal with this problem:
+-Silently ignore it (maybe by turning the number into zero)
+-Inform the user that the result is a denormal and let him do what he
+ wants with it (=we ask the user and his software to assist the FPU).
+ 
+The Intel Itanium does not fully support IEEE denormals and requires software
+assistance to handle them. Without further informations, the ia64 GNU/Linux
+kernel triggers a fault when denormals are computed. This is the "floating-point
+software assist" fault (FPSWA) in the kernel messages. It is the user's task to
+clearly design his program to prevent such cases.
+The following C program's goal is to trigger a FPSWA fault.
+
+#include <syslog.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#define ITERATIONS 1024
+
+typedef struct {
+        char sign;
+        long frac;
+        int exp;
+} sdouble;
+
+/* Warning : double's size is hardcoded here, very bad habit. This program
+   is initially designed to only run on Itanium. */
+sdouble cut_double (double d) {
+        sdouble ret;
+        long *db;
+
+        db = (long *)&d;
+
+        ret.sign = (*db >> 63) & 0x0000000000000001;
+        ret.exp  = ((*db >> 52) & 0x00000000000007FF) - 1023;
+        ret.frac = (*db )      & 0x000FFFFFFFFFFFFF;
+
+        return ret;
+}
+
+int main (int argc, char **argv) {
+        sdouble sa;
+        double a;
+        int i;
+
+        a = 1;
+        i = 1;
+
+        openlog ("double_test", LOG_CONS, LOG_USER);
+
+        syslog (LOG_USER | LOG_NOTICE, "starting");
+
+        while (i <= ITERATIONS) {
+                syslog (LOG_USER | LOG_NOTICE, "iteration #%d", i);
+                a /= 2;
+                sa = cut_double (a);
+                printf ("iteration %d : a=(%d, %lx, %d) : ", i, sa.sign,
+                        sa.frac, sa.exp);
+                printf ("\n");
+                i++;
+        }
+
+        exit (0);
+}
+
+Its principle is very simple: during each iteration, a number is divided by
+2. The initial value of this number is 1 (easy to normalize). Remember the
+normalized representation. Each division will only change the exponent:
+(1E0)b / 2 = (1E-1)b , (1E-1)b / 2 = (1E-10)b ... So we just have to keep an
+eye on the exponent value. Let's guess the result: in double precision,
+the exponent value goes from -1023 to 1023 (and 0 to 2046 when biased). So
+what happens when the next iteration is 1E-1111111111 / 2 ? The value
+1E-10000000000 is reserved and so it can't be used to code the result. Our
+number is so tiny that it can't be represented in normalized form: it's a
+denormal and the kernel should trigger a FPSWA fault.
+Let's check it.
+Compile the program with the following command line and run it.
+                        gcc -o test test.c
+Read the file /var/log/messages. The iteration 1024 will trigger a FPSWA fault.
+The theory was good.
+
+This fault is not an issue as long as you know what you do. If you don't
+care about denormals, you could ignore them (and avoid kernel messages)
+by using compilers flags. They are:
+
+-GNU CC (tested on 3.3.2): -ffast-math. Rebuild the program with the command
+ gcc --fast-math test.c -o test and run it. No FPSWA and the number is kept as
+ 1E-1023 (increase the number of iterations to see it).
+ 
+-Intel CC (tested with 8.0): -ftz. Rebuild the program with the command
+ icc -ftz test.c -o test and run it. Same behaviour as above.
+
+You should notice that the FPSWA fault message is written only four times in the
+/var/log/messages file. This code was tested on GNU/Linux Redhat Advanced Server
+2.1 with a 2.4.18 kernel. By default, if the FPSWA fault occurs more than four
+times per second, only the first four messages are logged and the next are silently
+discarded (see the file /usr/src/linux/arch/ia64/kernel/traps.c).
+
+FPSWA support is provided by Intel. It is an EFI application loaded during the boot
+sequence. The GNU/Linux kernel calls the assist function when needed. This function
+should be replaced, but the goal of this document is not to explain how.
+
+This document is about tiny numbers, almost zero, but you may wonder what happens
+for big ones (positive and negative). When an operation produces an overflow (a
+number that can't fit in the defined range), the number is turned into a special
+value (remember the reserved values): infinite (+inf or -inf).
+
+To conclude, I'd like to stress the fact that the programmer has to be careful
+when dealing with floating-point numbers. Even with high precision, it is easy
+to produce denormals and get strange behaviour.
+
+Some links
+----------
+
+-Mosberger (D) - Eranian (S)
+ ia-64 linux kernel - design and implementation
+ Prentice Hall
+
+-Itanium Processor Floating-Point Software Assistance and Floating-point Exception
+ Handling (Intel)
+ http://www.intel.com/design/itanium/downloads/24541501.pdf (last seen: 2004-04-06)
+
+-hp online technical resources - what's up with those "floating-point assist fault"
+ messages? - Linux on Itanium
+ http://h21007.www2.hp.com/dspp/tech/tech_TechSingleTipDetailPage_IDX/1,2366,165,00.hml (last seen: 2004-04-06)
+
+-Microsoft Web site - IEEE Standard 754 Floating Point Numbers
+ http://research.microsoft.com/~hollasch/cgindex/coding/ieeefloat.html
+ (last seen: 2004-04-06)

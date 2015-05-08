@@ -1,0 +1,465 @@
+/**
+ * PRINT
+ * print stylesheet
+ */
+
+
+/* Hide unimportant parts
+------------------------------------------------------------------------------*/
+.browse form,
+.btn,
+.content-item-list .actions,
+.content-item-list .cover,
+.document-main .col-main > .authors,
+.document-main .col-main > .editors,
+.document-main .author-list,
+.document-main .editor-list,
+.expander-empty,
+.featured .cover,
+.flyout,
+.functions-bar,
+.help .tooltip,
+.look-inside-badge,
+.look-inside-page,
+.material-list .icon,
+.other-actions,
+.panel-search,
+.panel-menu,
+.pillow-btn,
+.ranked .cover,
+.subjects-nav,
+.summary .authors img,
+.toc .actions,
+#abstract-actions,
+#auth,
+#bar-dock,
+#date-facet,
+#diagnostic-info,
+#fdbk_tab,
+#footer a,
+#footer-nav,
+#global-nav,
+#global-search,
+#jsnotice,
+#lang,
+#newest img,
+#only-searching-within .cover,
+#only-searching-within .stop,
+#footer-branding,
+#footer-privacy,
+#reader-overlay,
+#results .col-aside,
+#results-list .actions,
+#results-teaser-all,
+#toolbar  {
+	display: none;
+}
+
+/* Base
+------------------------------------------------------------------------------*/
+body {
+	background: #FFF;
+	color: #000;
+	font: 11pt $font-sans;
+}
+#header {
+	border-bottom: 1px solid #000;
+	margin-bottom: 4mm;
+	padding: 0 1mm 1mm;
+	position: relative;
+}
+#header #logo img {
+	border: 0;
+	width: 20%;
+}
+#header #site-qualifier {
+	position: absolute; right: 1mm; top: 3mm;
+}
+#footer {
+	font-size: 9pt;
+	margin-top: 4mm;
+	padding: 1mm 1mm 0;
+}
+/* links */
+a {
+	color: #000;
+	text-decoration: none;
+}
+/* headlines */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	page-break-after: avoid;
+}
+h1, h2 {
+	font-family: $font-serif;
+}
+h1 {
+	font-size: 20pt;
+	margin: 2mm 0 4mm;
+}
+h2 {
+	font-size: 15pt;
+	margin: 2mm 0;
+}
+h3 {
+	font-size: 13pt;
+	margin: 2mm 0 1mm;
+}
+/* paragraphs */
+p {
+	line-height: 1.5;
+	margin: 3mm 0;
+}
+h3 + p,
+p:first-child {
+	margin-top: 0;
+}
+li p {
+	margin: 0;
+}
+/* lists */
+ol, ul {
+	margin-top: 3mm;
+}
+li {
+	line-height: 1.5;
+	margin-top: 3mm;
+}
+li:first-child {
+	margin-top: 0;
+}
+/* superscripts & subscripts */
+sub, sup {
+	font-size: 70%;
+	line-height: 1;
+}
+sub {
+	vertical-align: text-bottom;
+}
+sup {
+	vertical-align: text-top;
+}
+/* layouts */
+.layout-3 {
+	overflow: hidden;
+	.col-main {
+		float: left;
+		width: 70%;
+	}
+	.col-aside {
+		float: right;
+		width: 25%;
+	}
+}
+
+/* Modules
+------------------------------------------------------------------------------*/
+/* grey box */
+.box-secondary {
+	border: 1px solid #000;
+	margin: 1mm 0;
+	padding: 1mm;
+	p {
+		margin: 0;
+	}
+}
+/* look inside */
+.look-inside-cover {
+	border: 1px solid #999;
+	display: block;
+}
+/* document */
+.document-main #enumeration {
+	font: 10pt $font-sans;
+	margin: 0;
+}
+.document-aside {
+	page-break-before: always;
+}
+/* section links */
+.section-links {
+	font-size: 10pt;
+	margin-top: 4mm;
+	h2 {
+		font: 12pt $font-sans;
+	}
+	ol,
+	li {
+		list-style-type: disc;
+		margin: 0 0 0 3mm;
+		padding-left: 0;
+	}
+}
+/* expander */
+.expander-title {
+	border-bottom: 1px solid #000;
+}
+.expander-title h2 {
+	font: 13pt $font-sans;
+}
+.expander-content {
+	padding: 0 6mm;
+}
+/* related list */
+#related-list .date {
+	border-left: 1px solid #000;
+	margin-left: 1mm;
+	padding-left: 2mm;
+}
+/* summary */
+.summary {
+	dt {
+		page-break-after: avoid;
+	}
+	dd {
+		margin-bottom: 4mm;
+
+		ul,
+		li {
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			margin-left: 4mm;
+		}
+	}
+}
+/* content item list */
+.content-item-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	li {
+		border-top: 1px solid #000;
+		margin: 2mm 0;
+		padding: 2mm 0;
+		page-break-inside: avoid;
+		position: relative;
+	}
+	li:first-child {
+		border-top: 0;
+	}
+	p {
+		margin: 0;
+	}
+	.no-access-message {
+		font-size: 9pt;
+		font-weight: bold;
+		position: absolute; right: 1mm; top: 2mm;
+	}
+}
+.content-type {
+	font-size: 9pt;
+}
+/* featured & ranked */
+.featured {
+	ul {
+		margin: 0;
+	}
+	li {
+		margin: 2mm 0;
+		padding: 0;
+
+		p {
+			margin: 0;
+		}
+		h3 {
+			margin: 0;
+		}
+	}
+}
+/* chapter list (table of contents) */
+.toc {
+	margin-top: 4mm;
+}
+.toc ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.toc ol ol ol {
+	margin-bottom: 1mm;
+}
+.toc ol ol h3,
+.toc ol ol ol {
+	margin-left: 5mm;
+}
+.toc li,
+.toc li li:first-child {
+	border-top: 1px solid #000;
+}
+.toc li:first-child,
+.toc ul li,
+.toc ul li:first-child {
+	border-top: 0; /* removes the double border at the top of the list (h2 has already one) */
+}
+.toc h3 {
+	font: 14pt/1.1 $font-serif;
+	margin: 0;
+}
+.toc-item + h3 {
+	border-top: 1px solid #000;
+	margin-top: 1mm;
+}
+.toc-item {
+	padding: 2mm;
+	position: relative;
+}
+.toc p {
+	margin: 0;
+}
+.toc .page-range {
+	font-size: 9pt;
+	position: absolute; right: 1mm; bottom: 1mm;
+}
+.toc h3.title {
+	font-family: $font-sans;
+}
+.toc .title,
+.toc h4.content-type { /* bg, bb, ff & padding are reset, Karl: review; h4.content-type for book front/back matter */
+	border-bottom: 0;
+	font-size: 13pt;
+	line-height: 1.375;
+	margin: 1mm 0;
+}
+.toc .meta,
+.toc ul.authors {
+	margin: 0 5mm 0 0;
+	padding: 0;
+}
+.toc ul.authors li {
+	display: inline;
+}
+.toc .no-access-message {
+	font-size: 9pt;
+	position: absolute; right: 1mm; top: 2mm;
+}
+/* bars */
+.bars li {
+	margin: 0;
+}
+
+/* Pages
+------------------------------------------------------------------------------*/
+/* results page */
+#results .header h1 {
+	font: 16pt $font-sans;
+	margin: 2mm 0 0;
+}
+#results .header p {
+	margin: 0;
+}
+#results .header .facet-link:before {
+	content: "\02022\0020"; /* bull + space */
+}
+#results .header .facet-link:first-child:before {
+	content: '';
+}
+#results-teaser {
+	border: 1px solid #000;
+	margin: 1mm 0;
+	padding: 1mm;
+}
+/* home page */
+#newest .textbox {
+	display: block;
+	margin: 2mm 0;
+}
+#newest .heading {
+	font-weight: bold;
+}
+#company-infoboard,
+#personal-infoboard {
+	border: 1px solid #000;
+	margin: 3mm 0;
+	padding: 2mm;
+}
+
+/* Full Text
+------------------------------------------------------------------------------*/
+
+.ContactIcon {
+  display: none !important;
+}
+.ContactAuthorLine,
+.ContactAdditionalLine {
+  padding-left: 0 !important;
+}
+/* Full Text Tables
+------------------------------------------------------------------------------*/
+table:first-child {
+    border: none;
+    font-size: 11px;
+}
+table:first-child td {
+    border: none;
+}
+.Abstract .Capt,
+.AbstractPara .Capt,
+.Para .Capt {
+    margin:20px 0 4px 0;
+}
+.CaptNr {
+    font-weight: bold;
+}
+.CaptNr:after {
+    content: "-";
+}
+table .normal {
+    margin: 0;
+}
+.Abstract table,
+.AbstractPara table,
+.Para table {
+    border: 1px solid #dadbdb;
+    border-collapse: collapse;
+    border: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 0 4px 0;
+    overflow-x: auto;
+    text-align: left;
+    width: 100%;
+}
+.Abstract table th,
+.AbstractPara table th,
+.Para table th {
+    border: 1px solid #DADBDB;
+    box-shadow: none !important;
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 12px 17px;
+}
+.Abstract table td,
+.AbstractPara table td,
+.Para table td {
+    border: 1px solid #dadbdb;
+    color: #666;
+    padding: 7px 17px;
+}
+.Abstract table.equation,
+.Para table.equation,
+.AbstractPara table.equation,
+.Abstract table.equation th,
+.Para table.equation th,
+.AbstractPara table.equation th,
+.Abstract table.equation td,
+.Para table.equation td,
+.AbstractPara table.equation td {
+    border: none;
+}
+table .Citation,
+table .CaptCont td.normal{
+    font-size: 12px;
+}
+table .CaptCont td {
+    padding-top: 9px;
+}
+table .CaptCont td.normal {
+    padding-top: 7px;
+}

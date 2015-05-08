@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Text Style:
+% - One sentence per line, no line breaks within one sentence
+% - Use \tabref and \figref for table and figure references
+% - Do not ``beautify'' the tex code with your editor
+% - Use american english
+% - Use <value>\,<unit>, e.g.,  1\,Hz, 40\,Watt
+%
+
+% Structure:
+% - Intro: Why HDEEM?
+% – Related work: What else is happening in the world that is related?
+% - Challenges in Measuring Power and Energy: What ae the general challenges, what hurts accuracy and grnaularity?
+% – Current Measurements: What did we achieve so far (HRSK2, phase 1)?
+% – Integration in HPC env.: How did we integrate this into our tools?
+% – Future Developments: What will the Newsca2 look like (specifications)?
+%   What are the results of the current prototype?
+%
+%
+
+% Commands:
+%
+% - Use your own command to define tasks for other people. E.g., \JS{RS, please write \ldots} should be used by Joseph Schuchart to assign work to Robert Schoene. If you do not have your own latex command, define it!
+% - Use \tabref and \figref for table and figure references
+% - Use \todo for general todos
+% 
+
+% Build:
+% pdflatex hdeem.tex
+% bibtex hdeem
+% pdflatex hdeem.tex
+% pdflatex hdeem.tex
+% pdflatex hdeem.tex
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[conference]{IEEEtran}
+
+% correct bad hyphenation here
+
+\usepackage{color}
+\usepackage{listings}
+\usepackage{pgfplots}
+\usepackage[font=footnotesize]{subfig}
+%\usepackage{graphicx,dblfloatfix}
+\usepackage{stfloats}
+\usepackage{url,hyperref}
+
+% HKS 44_K 100%
+% HKS 57_K 100%
+% HKS 36_K 100%
+
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{Multiparameter resources selection for next generation HPC platforms}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{\IEEEauthorblockN{Yiannis Georgiou, David Glesser, \\Dineshkumar Rajagopal}
+\IEEEauthorblockA{BULL S.A.S\\
+%01062, Dresden, Germany\\
+Email: \{yiannis.georgiou, david.glesser, \\dineshkumar.rajagopal\}@bull.net}\\
+%weird hack
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\and
+\IEEEauthorblockN{Matthieu Hautreux}
+%TODO Bull please fill in here
+\IEEEauthorblockA{CEA DAM
+\\
+Email: \{matthieu.hautreux\}@cea.fr}\\
+%weird hack
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+}
+% make the title area
+\maketitle
+
+
+\newcommand{\JS}[1]{\textcolor{blue}{[JS: #1]}}
+\newcommand{\TI}[1]{\textcolor{red}{[TI: #1]}}
+\newcommand{\RS}[1]{\textcolor{cyan}{[RS: #1]}}
+\newcommand{\D}[1]{\textcolor{violet}{[DH: #1]}}
+\newcommand{\RED}[1]{\textcolor{red}{[ #1]}}
+\newcommand{\YG}[1]{\textcolor{orange}{[ #1]}}
+
+\newcommand{\figref}[1]{Figure~\ref{#1}}
+%\newcommand{\figref}[1]{\underline{Figure~\ref{#1}}}
+
+\newcommand{\tabref}[1]{Table~\ref{#1}}
+
+\newcommand{\secref}[1]{Section~\ref{#1}}
+
+\newcommand{\todo}[1]{\textbf{\textit{TODO: {#1}}}}
+
+\renewcommand{\bottomfraction}{.5}
+
+\setlength{\itemsep}{-2pt}
+
+\begin{abstract}
+RJMS
+
+
+\end{abstract}
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Introduction}
+
+
+
+%\vspace{-.5mm}
+\section{Related Work}
+\label{sec:related_work}
+
+
+\section{Layouts Framework}
+
+
+\section{Resources selection improvement}
+
+\section{Experimentation and Performance Evaluation}
+
+\label{sec:future}
+
+
+
+\section{Conclusion and Future Work}
+
+
+
+
+
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+\bibliographystyle{IEEEtran}
+\bibliography{references_all}
+
+
+
+
+
+% that's all folks
+\end{document}
+
+
