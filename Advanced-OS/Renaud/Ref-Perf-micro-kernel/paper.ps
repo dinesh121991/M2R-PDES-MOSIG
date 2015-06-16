@@ -1,0 +1,5852 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 612 792 0 1 16 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Times-Roman FMFONTDEFINE
+2 0 /Times-Italic FMFONTDEFINE
+3 0 /Courier FMFONTDEFINE
+4 1 /Symbol FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 1 0 0 1 0]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+72 648 540 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 14 Q
+0 X
+(Dealing W) 112.45 710.67 T
+(ith Disaster: Surviving Misbehaved Kernel Extensions) 175.59 710.67 T
+1 12 Q
+(Mar) 142.29 684 T
+(go I. Seltzer) 162.07 684 T
+(, Y) 219.91 684 T
+(asuhiro Endo, Christopher Small, Keith A. Smith) 233.37 684 T
+2 F
+(Harvar) 259.06 668 T
+(d University) 293.95 668 T
+72 117 297 639 R
+7 X
+V
+0 F
+0 X
+(Abstract) 162.17 631 T
+1 10 Q
+0.09 (T) 72 616.33 P
+0.09 (oday\325) 77.41 616.33 P
+0.09 (s extensible operating systems allow applications) 99.63 616.33 P
+0.12 (to modify kernel behavior by providing mechanisms for) 72 604.33 P
+0.31 (application code to run in the kernel address space. The) 72 592.33 P
+0.63 (advantage of this approach is that it provides improved) 72 580.33 P
+2.06 (application \337exibility and performance; the disadvan-) 72 568.33 P
+0.59 (tage is that buggy or malicious code can jeopardize the) 72 556.33 P
+-0.14 (integrity of the kernel. It has been demonstrated that it is) 72 544.33 P
+1 (feasible to use safe languages, software fault isolation,) 72 532.33 P
+0.21 (or virtual memory protection to safeguard the main ker-) 72 520.33 P
+4.24 (nel. However) 72 508.33 P
+4.24 (, such protection mechanisms do not) 129.71 508.33 P
+2.26 (address the full range of problems, such as resource) 72 496.33 P
+0.67 (hoarding, that can arise when application code is intro-) 72 484.33 P
+(duced into the kernel.) 72 472.33 T
+0.48 (In this paper) 97.2 460.33 P
+0.48 (, we present an analysis of extension) 147.75 460.33 P
+1.28 (mechanisms in the VINO kernel. VINO uses software) 72 448.33 P
+0.07 (fault isolation as its safety mechanism and a lightweight) 72 436.33 P
+0.93 (transaction system to cope with resource-hoarding. W) 72 424.33 P
+0.93 (e) 292.56 424.33 P
+2.69 (explain how these two mechanisms are suf) 72 412.33 P
+2.69 (\336cient to) 259.03 412.33 P
+3.29 (protect against a lar) 72 400.33 P
+3.29 (ge class of errant or malicious) 160.29 400.33 P
+3.58 (extensions, and we quantify the overhead that this) 72 388.33 P
+(protection introduces.) 72 376.33 T
+5.53 (W) 97.2 364.33 P
+5.53 (e \336nd that while the overhead of these) 105.84 364.33 P
+0.71 (techniques is high relative to the cost of the extensions) 72 352.33 P
+4.34 (themselves, it is low relative to the bene\336ts that) 72 340.33 P
+(extensibility brings.) 72 328.33 T
+0 12 Q
+(1) 72 303 T
+(Intr) 90 303 T
+(oduction) 110.45 303 T
+1 10 Q
+1.55 (Many of today\325) 72 288.33 P
+1.55 (s research operating systems share the) 136.77 288.33 P
+1.46 (goal of providing applications with a richer and more) 72 276.33 P
+-0.21 (powerful interface to kernel functionality) 72 264.33 P
+-0.21 (. There are sev-) 235.45 264.33 P
+2.99 (eral approaches under) 72 252.33 P
+2.99 (going exploration and analysis) 165.54 252.33 P
+1.13 (today) 72 240.33 P
+1.13 (. The Scout system [9] supports static specializa-) 93.57 240.33 P
+0.03 (tion: Scout administrators can run a kernel that has been) 72 228.33 P
+2.59 (specialized for a particular workload on a particular) 72 216.33 P
+-0.07 (machine. By tar) 72 204.33 P
+-0.07 (geting a particular kernel for a particular) 135.27 204.33 P
+0.96 (workload, Scout can take advantage of advanced com-) 72 192.33 P
+4.38 (piler optimization techniques, ef) 72 180.33 P
+4.38 (\336cient kernel code) 214.38 180.33 P
+2.03 (paths, and a smaller system footprint. The extensible) 72 168.33 P
+-0.24 (systems, such as SPIN [4] and VINO [15] allow applica-) 72 156.33 P
+3.54 (tions to download code into the kernel to provide) 72 144.33 P
+0.12 (improved functionality and performance. Synthetix [13]) 72 132.33 P
+0.37 (provides improved \337exibility and functionality by iden-) 72 120.33 P
+315 72 540 639 R
+7 X
+V
+0 X
+1.67 (tifying commonly executed paths and producing opti-) 315 632.33 P
+0.25 (mized versions of them, but does not allow applications) 315 620.33 P
+(to modify or extend the kernel.) 315 608.33 T
+3.12 (In this paper) 340.2 596.33 P
+3.12 (, we concentrate on the class of) 396.03 596.33 P
+2.3 (extensible systems. An extensible system is one that) 315 584.33 P
+-0.09 (permits clients to modify the behavior of a shared server) 315 572.33 P
+0 (by loading client-speci\336c extension code into the server) 315 560.33 P
+0 (.) 537.5 560.33 P
+0.62 (Such extensibility is useful in a wide range of systems.) 315 548.33 P
+1.71 (Database clients might extend their server by loading) 315 536.33 P
+-0.25 (code into it to support new data types [8]. In a traditional) 315 524.33 P
+7.56 (operating system, user applications can exploit) 315 512.33 P
+0.56 (extensibility to customize the policies and functionality) 315 500.33 P
+0.52 (implemented by the kernel \050e.g., the eviction policy for) 315 488.33 P
+0.09 (the \336le cache, or the delivery order for signals and other) 315 476.33 P
+7.08 (asynchronous events\051. Finally) 315 464.33 P
+7.08 (, in a microkernel) 448.22 464.33 P
+4.13 (operating system, the same extensions that are of) 315 452.33 P
+0.84 (interest in a traditional operating system can be loaded) 315 440.33 P
+-0.2 (into the relevant system servers rather than the operating) 315 428.33 P
+-0.1 (system kernel. Although we focus on extensibility in the) 315 416.33 P
+2.38 (context of a monolithic operating system kernel, the) 315 404.33 P
+4.25 (issues and technology discussed in this paper are) 315 392.33 P
+(relevant to these other classes of extensible systems.) 315 380.33 T
+4.57 (An extensible operating system supports the) 340.2 368.33 P
+1.76 (downloading of application extensions, or) 315 356.33 P
+2 F
+1.76 (grafts,) 494.34 356.33 P
+1 F
+1.76 (into) 524.44 356.33 P
+0.94 (the kernel) 315 344.33 P
+2 F
+0.94 (.) 355.65 344.33 P
+1 F
+0.94 (Allowing applications to load code into the) 361.59 344.33 P
+2.58 (kernel spells immediate disaster unless the kernel is) 315 332.33 P
+5.78 (well-protected against buggy or malicious grafts.) 315 320.33 P
+0.6 (Safeguarding the kernel from errant grafts requires two) 315 308.33 P
+3.01 (dif) 315 296.33 P
+3.01 (ferent forms of protection. First, the kernel must) 325.93 296.33 P
+0.56 (guarantee that grafts do not misuse memory by reading) 315 284.33 P
+3.58 (inappropriate data \050e.g., device registers or another) 315 272.33 P
+-0.24 (user) 315 260.33 P
+-0.24 (\325) 332.03 260.33 P
+-0.24 (s data\051, writing inappropriate data, or executing bad) 334.81 260.33 P
+1.91 (instructions. This problem has been addressed by the) 315 248.33 P
+0.07 (use of safe languages such as Modula-3 [1) 315 236.33 P
+0.07 (1], as used by) 484.8 236.33 P
+-0.06 (SPIN, software fault isolation [20], as used by VINO, or) 315 224.33 P
+0.7 (virtual memory address domains, as used by Mach [1].) 315 212.33 P
+3.72 (Second, the kernel must ensure that grafts do not) 315 200.33 P
+0.14 (consume resources to the extent that they jeopardize the) 315 188.33 P
+6.12 (acceptable performance of the kernel and other) 315 176.33 P
+-0.23 (applications. This problem has been less well researched) 315 164.33 P
+(and is the topic of this paper) 315 152.33 T
+(.) 427.77 152.33 T
+1.42 (In Section 2, we discuss the dif) 340.2 140.33 P
+1.42 (ferent ways that) 473.28 140.33 P
+4.51 (grafts can inadvertently or intentionally jeopardize) 315 128.33 P
+0.57 (system integrity) 315 116.33 P
+0.57 (. In Section 3, we discuss VINO\325) 379.09 116.33 P
+0.57 (s graft) 514.16 116.33 P
+1.81 (architecture and how it addresses the issues raised in) 315 104.33 P
+0.34 (Section 2. In Section 4, we quantify the cost of VINO\325) 315 92.33 P
+0.34 (s) 536.11 92.33 P
+1.01 (mechanisms. In Section 5, we present related work. In) 315 80.33 P
+72 63.67 297 113.67 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 63.67 297 113.67 R
+7 X
+0 0 0 1 0 0 0 K
+V
+72 68.67 297 117.67 R
+V
+72 103.67 297 113.67 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 110.67 576 110.67 2 L
+0.25 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+72 63.67 297 113.67 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+4.03 (This work was sponsored in part by grants from Sun) 72 97.67 P
+1.6 (Microsystems Laboratories, Bellcore, the Sloan Foundation,) 72 86.67 P
+(and the National Science Foundation.) 72 75.67 T
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 1 0 0 1 0]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+72 72 297 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+1.73 (Section 6, we discuss the lessons we have learned in) 72 713.33 P
+(building VINO, and we conclude in Section 7.) 72 701.33 T
+0 12 Q
+(2) 72 676 T
+(How Grafts Misbehave) 90 676 T
+1 10 Q
+1.34 (Our model of grafts is that they are similar to regular) 72 661.33 P
+0.5 (processes that run inside the kernel. SFI is used instead) 72 649.33 P
+-0.2 (of the traditional VM mechanisms to prevent illegal data) 72 637.33 P
+1.75 (accesses. Each graft receives its own heap and stack,) 72 625.33 P
+-0.19 (and when a graft changes kernel state \050e.g., by opening a) 72 613.33 P
+0.14 (\336le\051, the kernel records the fact so that any such modi\336-) 72 601.33 P
+-0.13 (cations can be undone if the graft misbehaves. In a trust-) 72 589.33 P
+1.52 (ing world, these precautions are suf) 72 577.33 P
+1.52 (\336cient to avoid or) 221.61 577.33 P
+2.23 (cope with innocent errors such as access through an) 72 565.33 P
+0.3 (invalid pointer) 72 553.33 P
+0.3 (. However) 130.36 553.33 P
+0.3 (, in an untrusting world, kernel) 171.91 553.33 P
+1.03 (extensions might be malicious, seeking to destroy sys-) 72 541.33 P
+1.54 (tem integrity) 72 529.33 P
+1.54 (, performance, or security) 124.28 529.33 P
+1.54 (. In building an) 231.27 529.33 P
+-0.1 (extensible system, we strive to prevent grafts from caus-) 72 517.33 P
+1.02 (ing more damage than can be caused by a maliciously) 72 505.33 P
+2.17 (written user) 72 493.33 P
+2.17 (-level program. Therefore, we consider it) 121.46 493.33 P
+1.7 (unacceptable for a bug in a graft to crash the kernel,) 72 481.33 P
+0.59 (while it might be tolerable for a graft to loop in\336nitely) 72 469.33 P
+0.59 (,) 294.5 469.33 P
+0.28 (so long as it consumes only as much processing time as) 72 457.33 P
+(would a user) 72 445.33 T
+(-level program with the same in\336nite loop.) 122.9 445.33 T
+0.02 (There are three reasons why a maliciously written) 97.2 433.33 P
+3.38 (graft is more dangerous than a maliciously written) 72 421.33 P
+-0.22 (process. The \336rst is that grafts run in supervisor mode. If) 72 409.33 P
+2.29 (no special care is taken, grafts have the potential to) 72 397.33 P
+0.99 (wreak havoc with the kernel. The second is that grafts) 72 385.33 P
+0.95 (are given access to a more powerful interface. Though) 72 373.33 P
+1.15 (still restricted, grafts have access to more kernel entry) 72 361.33 P
+1.67 (points than ordinary processes, including some of the) 72 349.33 P
+2.11 (kernel\325) 72 337.33 P
+2.11 (s synchronization points, providing grafts with) 99.77 337.33 P
+0.96 (simple and ef) 72 325.33 P
+0.96 (fective ways to sabotage the system. The) 127.63 325.33 P
+1.98 (more restrictive the graft interface, the easier it is to) 72 313.33 P
+5.16 (protect against malice, but the more limited the) 72 301.33 P
+0.62 (functionality of the grafts. It is a continuing struggle to) 72 289.33 P
+-0.17 (determine the correct balance between expressive power) 72 277.33 P
+1.43 (and simplicity in designing a safe graft interface. The) 72 265.33 P
+1.12 (\336nal reason that a graft can be more dangerous than a) 72 253.33 P
+0.14 (process is that once a graft is installed, the system relies) 72 241.33 P
+1.02 (on the correct operation of the graft to provide system) 72 229.33 P
+0.06 (services, and the graft\325) 72 217.33 P
+0.06 (s actions can potentially af) 162.72 217.33 P
+0.06 (fect all) 269.45 217.33 P
+0.62 (the processes on the system. This problem is shared by) 72 205.33 P
+0.84 (other extension models, such as upcalls. Depending on) 72 193.33 P
+0.58 (the function that a graft or user) 72 181.33 P
+0.58 (-level server provides, a) 199.17 181.33 P
+2.98 (malicious one can prevent the system from making) 72 169.33 P
+(progress or can cause it to crash.) 72 157.33 T
+2.42 (W) 97.2 145.33 P
+2.42 (e have identi\336ed \336ve classes of misbehavior) 105.84 145.33 P
+1.16 (that grafts might exhibit. Each is described below) 72 133.33 P
+1.16 (. W) 277.76 133.33 P
+1.16 (e) 292.56 133.33 P
+0.84 (use the classi\336cations to derive nine guiding principles) 72 121.33 P
+2.47 (for the construction of a stable, extensible operating) 72 109.33 P
+(system.) 72 97.33 T
+315 72 540 720 R
+7 X
+V
+0 F
+0 X
+(2.1) 315 713.33 T
+(Illegal Data Access) 336.6 713.33 T
+1 F
+1.22 (Because grafts run in supervisor mode, we cannot use) 315 701.33 P
+2.84 (conventional virtual memory mechanisms to prevent) 315 689.33 P
+1.04 (grafts from making illegal memory accesses. Safe lan-) 315 677.33 P
+0.1 (guages and software fault isolation provide mechanisms) 315 665.33 P
+0.5 (for limiting the data accessible to a graft. W) 315 653.33 P
+0.5 (e must also) 494 653.33 P
+-0.2 (provide a mechanism that allows the kernel to determine) 315 641.33 P
+0.16 (whether a graft has been processed or compiled by such) 315 629.33 P
+(a tool.) 315 617.33 T
+4.58 (It is not suf) 340.2 605.33 P
+4.58 (\336cient to prevent a graft from) 399.05 605.33 P
+2.22 (accessing information to which it is not entitled; we) 315 593.33 P
+1.77 (must also ensure that a graft cannot execute a kernel) 315 581.33 P
+1.04 (function that can provide the graft with information to) 315 569.33 P
+1.42 (which it is not entitled. This means that any interface) 315 557.33 P
+0.17 (that returns actual data to its caller \050as opposed to meta-) 315 545.33 P
+0.67 (data\051 cannot be called by a graft. In general, the kernel) 315 533.33 P
+1.91 (can pass meta-data \050such as buf) 315 521.33 P
+1.91 (fer headers\051 freely to) 450.71 521.33 P
+0.69 (grafts, so long as the data to which they refer \050e.g., the) 315 509.33 P
+(actual data buf) 315 497.33 T
+(fers\051 are protected.) 373.69 497.33 T
+0 F
+(2.2) 315 475.33 T
+(Resour) 336.6 475.33 T
+(ce Hoarding) 366.97 475.33 T
+1 F
+0.09 (Grafts can consume system resources. They can attempt) 315 463.33 P
+1.29 (to loop in\336nitely) 315 451.33 P
+1.29 (, allocate excessive amounts of mem-) 383.6 451.33 P
+2.52 (ory) 315 439.33 P
+2.52 (, or \337ood the network with packets. Because the) 327.68 439.33 P
+2.71 (interface given to grafts is more powerful than that) 315 427.33 P
+0.4 (given to user) 315 415.33 P
+0.4 (-level code, there is the potential for grafts) 367.26 415.33 P
+-0.15 (to cause more serious damage. For example, if grafts are) 315 403.33 P
+1.15 (allowed to acquire kernel locks, they can block kernel) 315 391.33 P
+1 (progress more ef) 315 379.33 P
+1 (fectively than a process that is unable) 384.02 379.33 P
+1.75 (to directly acquire locks. Similarly) 315 367.33 P
+1.75 (, if grafts can con-) 459.96 367.33 P
+1.65 (sume kernel resources, such as physical memory) 315 355.33 P
+1.65 (, and) 518.91 355.33 P
+0.96 (hold them over long intervals, resource contention and) 315 343.33 P
+(starvation can cause signi\336cant problems.) 315 331.33 T
+(Consider this malicious code fragment:) 340.2 319.33 T
+3 8 Q
+(lock\050resourceA\051;) 351 308.67 T
+(while \0501\051;) 351 298.67 T
+1 10 Q
+0.93 (If resourceA is highly contested, then we cannot) 340.2 287.33 P
+2.62 (let the graft hold it arbitrarily long. In fact, a graft) 315 275.33 P
+1.25 (cannot be allowed to hold any limited kernel resource) 315 263.33 P
+(for an arbitrarily long period of time.) 315 251.33 T
+0.29 (W) 340.2 239.33 P
+0.29 (e cannot rely on a static check to prevent grafts) 348.84 239.33 P
+0.35 (from hoarding resources. Therefore, we must be able to) 315 227.33 P
+2 F
+1.98 (pr) 315 215.33 P
+1.98 (eempt) 323.52 215.33 P
+1 F
+1.98 (, and, if necessary) 347.4 215.33 P
+1.98 (,) 424.61 215.33 P
+2 F
+1.98 (terminate) 431.58 215.33 P
+1 F
+1.98 ( the thread from) 469.91 215.33 P
+1.17 (which a graft is called. If we terminate the thread, we) 315 203.33 P
+2.26 (undo any kernel state changes that have been made,) 315 191.33 P
+0.35 (releasing any resources held by the thread and allowing) 315 179.33 P
+(the rest of the system to make forward progress.) 315 167.33 T
+4.8 (Through preemption and scheduling we can) 340.2 155.33 P
+2.12 (prevent a graft from taking more than its share of a) 315 143.33 P
+-0.02 (resource. Even a graft with an in\336nite loop gets no more) 315 131.33 P
+-0.13 (CPU time than would a user) 315 119.33 P
+-0.13 (-level process with the same) 427.2 119.33 P
+(in\336nite loop.) 315 107.33 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 1 0 0 1 0]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+54 540 567 729 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+54 540 567 729 R
+7 X
+0 0 0 1 0 0 0 K
+V
+81 540 530.83 725.83 R
+V
+1 9 Q
+0 X
+(1. Grafts must be preemptible \050\2442.2\051.) 95.92 706.83 T
+(2. Grafts cannot hold kernel locks or limited kernel resources for excessive periods of time \050\2442.2\051.) 95.92 691.83 T
+(3. Grafts cannot access memory to which they have not been granted permission \050\2442.1\051.) 95.92 676.83 T
+(4. Grafts cannot call functions that alter or return data that the graft is not allowed to access \050\2442.3\051.) 95.92 661.83 T
+(5. Grafts cannot replace restricted kernel functions \050\2442.3\051.) 95.92 646.83 T
+(6. The kernel must not execute grafts that are not known to be safe \050\2442.1, \2442.3\051.) 95.92 631.83 T
+(7. Grafts must not call functions to which they have not been granted access \050\2442.1\051.) 95.92 616.83 T
+(8. Malicious grafts can only af) 95.92 601.83 T
+(fect applications that have agreed to use them \050\2442.4, \2442.5\051.) 205.74 601.83 T
+(9. The kernel must be able to make progress even with a faulty graft in its path \050\2442.2, \2442.4, \2442.5\051.) 95.92 586.83 T
+0 F
+0.93 (T) 89.92 570.83 P
+0.93 (able 1.) 95.09 570.83 P
+0.93 (Rules for Grafting.) 125.52 570.83 P
+1 F
+0.93 (Based on the ways in which grafts might corrupt the kernel, we derive these rules for) 203.79 570.83 P
+89.92 542.83 530.83 556.83 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+89.92 549.83 593.92 549.83 2 L
+0.25 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+54 540 567 729 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(creating a safe, stable extensible kernel. W) 89.92 559.83 T
+(e include the numbers of the sections that imply each rule.) 243.15 559.83 T
+89.92 715.58 89.92 581.08 2 L
+V
+0.5 H
+0 Z
+N
+521.92 715.58 521.92 581.08 2 L
+V
+N
+89.67 715.83 522.17 715.83 2 L
+V
+N
+89.67 700.83 522.17 700.83 2 L
+V
+N
+89.67 685.83 522.17 685.83 2 L
+V
+N
+89.67 670.83 522.17 670.83 2 L
+V
+N
+89.67 655.83 522.17 655.83 2 L
+V
+N
+89.67 640.83 522.17 640.83 2 L
+V
+N
+89.67 625.83 522.17 625.83 2 L
+V
+N
+89.67 610.83 522.17 610.83 2 L
+V
+N
+89.67 595.83 522.17 595.83 2 L
+V
+N
+89.67 580.83 522.17 580.83 2 L
+V
+N
+0 0 612 792 C
+72 72 297 540 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 10 Q
+0 X
+(2.3) 72 533.33 T
+(Attempting to Use Incorr) 93.6 533.33 T
+(ect Interfaces) 201.45 533.33 T
+1 F
+2.63 (There are certain parts of the kernel that cannot be) 72 521.33 P
+0.42 (extended for a single application. For example, a single) 72 509.33 P
+-0.08 (application, running as a normal user) 72 497.33 P
+-0.08 (, cannot be allowed) 219.49 497.33 P
+0.07 (to replace a global kernel policy) 72 485.33 P
+0.07 (. If it could, the applica-) 200.28 485.33 P
+-0.21 (tion could take over the system by downloading a highly) 72 473.33 P
+3.49 (biased scheduler) 72 461.33 P
+3.49 (. Such global graft points must be) 141.31 461.33 P
+0.19 (accessible only to privileged users \050users who, in a con-) 72 449.33 P
+0.76 (ventional system, would be allowed to halt the system,) 72 437.33 P
+0.7 (install new drivers, build a new kernel, etc.\051. Addition-) 72 425.33 P
+2.06 (ally) 72 413.33 P
+2.06 (, the kernel must somehow verify that the down-) 86.35 413.33 P
+0.17 (loaded graft has been properly protected \050e.g., compiled) 72 401.33 P
+1.68 (with the correct compiler\051. Finally) 72 389.33 P
+1.68 (, we must limit the) 215.55 389.33 P
+0.07 (functions that are callable from grafts. As pointed out in) 72 377.33 P
+1.21 (Section 2.1, grafts should not be allowed to call func-) 72 365.33 P
+0.06 (tions that return private data. Additionally) 72 353.33 P
+0.06 (, grafts should) 239.95 353.33 P
+0.73 (not be able to call functions that change kernel state in) 72 341.33 P
+0.84 (an unrecoverable fashion; a graft should not be able to) 72 329.33 P
+(call shutdown\050\051.) 72 317.33 T
+0 F
+(2.4) 72 295.33 T
+(Antisocial Behavior) 93.6 295.33 T
+1 F
+3.06 (Our next category of graft misbehavior arises from) 72 283.33 P
+-0.25 (grafts that simply do not do what they have agreed to do.) 72 271.33 P
+0.65 (Consider a scheduling graft used by a collection of cli-) 72 259.33 P
+0.93 (ents and a server) 72 247.33 P
+0.93 (. Assume that the graft always selects) 141.16 247.33 P
+3.02 (the same process to run. This scheduling discipline) 72 235.33 P
+0.39 (penalizes the members of the scheduling group, but has) 72 223.33 P
+3.09 (no adverse ef) 72 211.33 P
+3.09 (fect on processes that use the normal) 131.3 211.33 P
+1.62 (scheduling discipline. W) 72 199.33 P
+1.62 (e \336nd this model of behavior) 173.61 199.33 P
+3.18 (acceptable, applying Cao's principle for de\336ning an) 72 187.33 P
+0.05 (acceptable allocation policy: the selection of an applica-) 72 175.33 P
+2.21 (tion speci\336c policy should not adversely af) 72 163.33 P
+2.21 (fect other) 256.75 163.33 P
+2.04 (applications [5]. The task of the kernel is to prevent) 72 151.33 P
+2.02 (grafts from damaging the integrity of the kernel. W) 72 139.33 P
+2.02 (e) 292.56 139.33 P
+2.07 (interpret this to mean crashing the kernel, corrupting) 72 127.33 P
+0.74 (data, or interfering with processes that have) 72 115.33 P
+2 F
+0.74 (not) 254.33 115.33 P
+1 F
+0.74 ( agreed) 267.11 115.33 P
+(to use the graft.) 72 103.33 T
+315 72 540 540 R
+7 X
+V
+0 F
+0 X
+(2.5) 315 533.33 T
+(Covert Denial of Service) 336.6 533.33 T
+1 F
+0.31 (A graft can attempt a denial of service attack, by taking) 315 521.33 P
+1.45 (advantage of the fact that the system is relying on its) 315 509.33 P
+2.47 (correct execution to make forward progress. A page) 315 497.33 P
+1.12 (replacement graft is such an example. When a page is) 315 485.33 P
+0.81 (about to be evicted, the page daemon calls the graft so) 315 473.33 P
+0.26 (that the graft can present an alternate page to replace. If) 315 461.33 P
+1.29 (the graft never returns, the page daemon cannot make) 315 449.33 P
+1.24 (forward progress causing the system to eventually run) 315 437.33 P
+1.52 (out of free pages. Therefore, it is essential to provide) 315 425.33 P
+0.78 (some mechanism by which we can detect such a throt-) 315 413.33 P
+0.74 (tling state and return the system to a state where it can) 315 401.33 P
+(make forward progress.) 315 389.33 T
+0 F
+(2.6) 315 367.33 T
+(Summary) 336.6 367.33 T
+1 F
+-0.19 (T) 315 355.33 P
+-0.19 (able 1 summarizes the restrictions that we must impose) 320.41 355.33 P
+0.26 (on grafts if we are to protect the kernel. In the next sec-) 315 343.33 P
+2.33 (tion, we discuss how VINO addresses each of these) 315 331.33 P
+(restrictions.) 315 319.33 T
+0 12 Q
+(3) 315 294 T
+(The VINO Grafting Ar) 333 294 T
+(chitectur) 451.78 294 T
+(e) 497.54 294 T
+1 10 Q
+2.42 (VINO is an extensible operating system designed to) 315 279.33 P
+1.68 (provide resource-intensive applications greater control) 315 267.33 P
+1.35 (over resource management. VINO supports the down-) 315 255.33 P
+0.78 (loading of kernel extensions, which are written in C++) 315 243.33 P
+-0.13 (and protected using software fault isolation. T) 315 231.33 P
+-0.13 (o facilitate) 497.64 231.33 P
+0.25 (graceful recovery from an extension failure, VINO runs) 315 219.33 P
+2.63 (each invocation of an extension in the context of a) 315 207.33 P
+2 F
+1.43 (transaction) 315 195.33 P
+1 F
+1.43 (. If the invocation fails or must be aborted) 360.56 195.33 P
+0.05 (\050e.g., because it is monopolizing resources\051, the transac-) 315 183.33 P
+0.42 (tion mechanism undoes all actions taken by the invoca-) 315 171.33 P
+(tion of the extension.) 315 159.33 T
+0.1 (The VINO kernel is constructed from a collection) 340.2 147.33 P
+1.19 (of objects and consists of an inner kernel and a set of) 315 135.33 P
+4.44 (resources. VINO provides two dif) 315 123.33 P
+4.44 (ferent modes of) 468.37 123.33 P
+8.08 (extensibility) 315 111.33 P
+8.08 (. First, a process can replace the) 363.8 111.33 P
+1.39 (implementation of a member function \050method\051 on an) 315 99.33 P
+0.34 (object; this type of extension is used to override default) 315 87.33 P
+3.9 (policies, such as cache replacement or read-ahead.) 315 75.33 P
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 1 0 0 1 0]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+72 72 297 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+2.17 (Second, a process can register a handler for a given) 72 713.33 P
+4.76 (event in the kernel \050e.g., the establishment of a) 72 701.33 P
+0.18 (connection on a particular TCP port\051. Extensions of this) 72 689.33 P
+2.19 (type are used to construct new kernel-based services) 72 677.33 P
+(such as HTTP and NFS servers.) 72 665.33 T
+5.39 (VINO runs on Intel\325) 97.2 653.33 P
+5.39 (s x86 processors. The) 194.18 653.33 P
+0.75 (machine-independent parts of VINO consist of entirely) 72 641.33 P
+1.4 (new code. Following traditional engineering practices,) 72 629.33 P
+2.83 (we have encapsulated all of the machine dependent) 72 617.33 P
+3.26 (parts of the kernel behind a standardized interface.) 72 605.33 P
+1.87 (Beneath this interface we use the machine dependent) 72 593.33 P
+0.1 (portions of NetBSD 1.) 72 581.33 P
+0.12 0.4 (0) 162.31 581.33 B
+0.1 (\321locore, the pmap module, and) 167.71 581.33 P
+2.62 (the device drivers. By using the machine dependent) 72 569.33 P
+0.62 (code from a pre-existing system, which itself runs on a) 72 557.33 P
+1.85 (variety of platforms, we hope to simplify the task of) 72 545.33 P
+(porting VINO to other architectures.) 72 533.33 T
+3.71 (In this section, we discuss the VINO kernel) 97.2 521.33 P
+3.42 (transaction mechanism, which is used to allow the) 72 509.33 P
+0.96 (kernel to recover from misbehavior by extensions, and) 72 497.33 P
+1.12 (how the kernel determines when to abort an extension) 72 485.33 P
+-0.2 (invocation. W) 72 473.33 P
+-0.2 (e then describe our software fault isolation) 127.66 473.33 P
+0.85 (tool and dynamic linker) 72 461.33 P
+0.85 (, and give examples of the two) 169.42 461.33 P
+(types of grafting.) 72 449.33 T
+0 F
+(3.1) 72 427.33 T
+(Kernel T) 93.6 427.33 T
+(ransaction Support) 131.47 427.33 T
+1 F
+0.25 (W) 72 415.33 P
+0.25 (e encapsulate each graft invocation in a transaction to) 80.64 415.33 P
+0.5 (allow us to spontaneously abort a graft and clean up its) 72 403.33 P
+0.37 (state. When a function is grafted into the kernel a small) 72 391.33 P
+2.11 (wrapper function is interposed; the wrapper begins a) 72 379.33 P
+1.74 (transaction for the graft invocation and then calls the) 72 367.33 P
+0.44 (grafted function. When the grafted function returns, the) 72 355.33 P
+(wrapper commits the transaction.) 72 343.33 T
+2.57 (The transaction support necessary for grafts is) 97.2 331.33 P
+0.78 (simpler than a conventional data manager) 72 319.33 P
+0.78 (\325) 243.17 319.33 P
+0.78 (s transaction) 245.95 319.33 P
+1.36 (mechanism. The single goal of graft transactions is to) 72 307.33 P
+-0.15 (provide a means for backing out changes made by faulty) 72 295.33 P
+0.92 (grafts. Therefore, the transaction system does not need) 72 283.33 P
+3.27 (to handle permanent data, so its log need only be) 72 271.33 P
+0.87 (transient, and it never has to \322redo\323 operations; it only) 72 259.33 P
+3.12 (has to undo them) 72 247.33 P
+1 8 Q
+2.49 (1) 149.96 251.33 P
+1 10 Q
+3.12 (. Therefore, of the four \322ACID\323) 153.96 247.33 P
+8.34 (properties typically associated with transactions) 72 235.33 P
+2.65 (\050atomicity) 72 223.33 P
+2.65 (, consistency) 112.46 223.33 P
+2.65 (, isolation, and durability\051, we) 166.12 223.33 P
+-0.22 (need only provide the \336rst three. However) 72 211.33 P
+-0.22 (, because graft) 239.41 211.33 P
+-0.17 (functions may indirectly invoke other grafts, we found it) 72 199.33 P
+0.8 (necessary to include support for nested transactions. In) 72 187.33 P
+2.17 (this manner) 72 175.33 P
+2.17 (, any graft can abort without aborting its) 120.71 175.33 P
+(calling graft.) 72 163.33 T
+0.65 (All graft transactions are managed by the default) 97.2 151.33 P
+4.31 (VINO transaction manager) 72 139.33 P
+4.31 (. When a transaction is) 188.38 139.33 P
+72 112 297 127 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 125 216 125 2 L
+0.25 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 612 792 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+4.15 (1. Note that conventional transaction semantics can be) 72 106 P
+3.69 (provided by creating a new instance of our transaction) 72 96 P
+3.13 (manager and replacing the transient log manager with a) 72 86 P
+(permanent one.) 72 76 T
+315 72 540 720 R
+7 X
+V
+1 10 Q
+0 X
+0.76 (initiated the manager allocates a transaction object that) 315 713.33 P
+0.37 (is associated with the thread that invoked the graft. The) 315 701.33 P
+0.66 (VINO transaction manager uses two-phase locking and) 315 689.33 P
+2.05 (an in-memory undo call stack. Because the kernel is) 315 677.33 P
+-0.1 (preemptible, it must acquire locks on all resources being) 315 665.33 P
+0.8 (accessed or modi\336ed. In the non-transaction case these) 315 653.33 P
+5.04 (locks are released as soon as a thread is done) 315 641.33 P
+0.89 (manipulating the resource. When the currently running) 315 629.33 P
+0.81 (thread has a transaction associated with it, lock release) 315 617.33 P
+(is delayed until commit or abort.) 315 605.33 T
+5.24 (Modi\336cations to permanent kernel state are) 340.2 593.33 P
+5.2 (encapsulated in accessor functions \050i.e. a grafted) 315 581.33 P
+0.44 (function cannot directly manipulate kernel data; it must) 315 569.33 P
+0.09 (go through data accessor functions\051. Each such accessor) 315 557.33 P
+0.9 (function that can be called from a grafted function has) 315 545.33 P
+3.2 (an associated undo function. Whenever an accessor) 315 533.33 P
+2.05 (function is called, if there is a transaction associated) 315 521.33 P
+2.64 (with the currently running thread, the corresponding) 315 509.33 P
+2.03 (undo operation is pushed onto the transaction\325) 315 497.33 P
+2.03 (s undo) 511.58 497.33 P
+4 (call stack) 315 485.33 P
+1 8 Q
+3.2 (2) 356.49 489.33 P
+1 10 Q
+4 (. If a transaction aborts, the transaction) 360.49 485.33 P
+0.84 (manager invokes each undo operation on the undo call) 315 473.33 P
+1.12 (stack, and returns a transaction abort error to the graft) 315 461.33 P
+2.78 (stub, which then calls the default function \050i.e., the) 315 449.33 P
+(function that was replaced by the graft\051.) 315 437.33 T
+4.41 (When a non-nested transaction commits, the) 340.2 425.33 P
+1.36 (locks are released, the undo call stack and transaction) 315 413.33 P
+3.45 (object are freed, and execution continues normally) 315 401.33 P
+3.45 (.) 537.5 401.33 P
+0.73 (When a nested transaction commits, its undo call stack) 315 389.33 P
+0.33 (and locks are mer) 315 377.33 P
+0.33 (ged with those of its parent. Although) 386.63 377.33 P
+5.27 (dif) 315 365.33 P
+5.27 (ferent in implementation, graft transactions are) 325.93 365.33 P
+-0.03 (similar in concept to the volatile transactions used in the) 315 353.33 P
+(Quicksilver system [7].) 315 341.33 T
+0 F
+(3.2) 315 319.33 T
+(When to Abort Graft T) 336.6 319.33 T
+(ransactions) 435.85 319.33 T
+1 F
+1.21 (T) 315 307.33 P
+1.21 (ransactions provide the mechanism by which we can) 320.76 307.33 P
+-0.12 (abort resource intensive grafts, but we still need a policy) 315 295.33 P
+-0.02 (to determine when to abort a graft. Grafts are allowed to) 315 283.33 P
+0.18 (run so long as they do not interfere with the behavior of) 315 271.33 P
+0.64 (other processes. For the purpose of discussing resource) 315 259.33 P
+1.67 (hoarding, we can divide the various system resources) 315 247.33 P
+0.7 (into two categories. For some resources, we are prima-) 315 235.33 P
+0.01 (rily concerned that a graft does not hold the resource for) 315 223.33 P
+0 (too long, thus becoming a bottleneck to all other threads) 315 211.33 P
+1.31 (that need the resource. W) 315 199.33 P
+1.31 (e call these) 421.36 199.33 P
+2 F
+1.31 (time-constrained) 472.23 199.33 P
+1.85 (r) 315 187.33 P
+1.85 (esour) 318.52 187.33 P
+1.85 (ces.) 340.37 187.33 P
+1 F
+1.85 ( W) 355.64 187.33 P
+1.85 (ith other resources, such as memory) 369.03 187.33 P
+1.85 (, we) 521.49 187.33 P
+0.33 (wish to ensure that a graft does not use too much of the) 315 175.33 P
+0.82 (resource. W) 315 163.33 P
+0.82 (e call these) 363.33 163.33 P
+2 F
+0.82 (quantity-constrained r) 412.71 163.33 P
+0.82 (esour) 502.88 163.33 P
+0.82 (ces.) 524.73 163.33 P
+1 F
+0.4 (In VINO, we use a dif) 315 151.33 P
+0.4 (ferent technique to enforce limits) 405.66 151.33 P
+(on each of these types of resource.) 315 139.33 T
+315 105 540 120 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+315 118 459 118 2 L
+0.25 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 612 792 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+-0.05 (2. Our current implementation requires that this code be added) 315 99 P
+0.39 (by hand. This could clearly be automated with a preprocessor) 315 88 P
+(and appropriate source-code decoration.) 315 77 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "4" 4
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 1 0 0 1 0]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+72 72 297 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+1.99 (Consider the case of locks as an example of a) 97.2 713.33 P
+0.07 (time-constrained resource. If a graft holds a lock that no) 72 701.33 P
+0.8 (other thread requests, then continuing to hold that lock) 72 689.33 P
+1.98 (does not af) 72 677.33 P
+1.98 (fect the rest of the system. Conversely) 119.66 677.33 P
+1.98 (, if) 283.91 677.33 P
+3.03 (other threads do request the lock, then the graft is) 72 665.33 P
+2.38 (potentially degrading system performance. Therefore,) 72 653.33 P
+1.6 (with every lockable resource, we associate a time-out) 72 641.33 P
+0.28 (value that indicates how long a lock can be held on that) 72 629.33 P
+0 (object during periods of contention. This time-out based) 72 617.33 P
+5.28 (locking also provides an implicit mechanism for) 72 605.33 P
+4.53 (breaking deadlocks. Because resource requirements) 72 593.33 P
+1.58 (vary tremendously) 72 581.33 P
+1.58 (, reasonable time-out intervals must) 147.64 581.33 P
+1.33 (be determined \050experimentally\051 on a per) 72 569.33 P
+1.33 (-resource-type) 239.25 569.33 P
+1.45 (basis. For example, a page may be locked for tens of) 72 557.33 P
+3.62 (milliseconds during I/O while a free space bitmap) 72 545.33 P
+-0.09 (should be locked for only a few hundreds of instructions) 72 533.33 P
+(while it is being traversed.) 72 521.33 T
+2.31 (When a request for a lock blocks, the waiting) 97.2 509.33 P
+0.56 (thread schedules a time-out whose duration is based on) 72 497.33 P
+0.99 (the resource being requested. If the time-out on a lock) 72 485.33 P
+-0.15 (expires, and the lock is held by a thread that is executing) 72 473.33 P
+1.81 (a transaction, we abort that transaction. Note that we) 72 461.33 P
+2.99 (abort the transaction even if the lock was acquired) 72 449.33 P
+1.12 (before the graft was invoked. In such a case, the graft) 72 437.33 P
+0.56 (will return to the invoking code which presumably will) 72 425.33 P
+(release the lock\050s\051 in a timely manner) 72 413.33 T
+(.) 221.97 413.33 T
+8.6 (T) 97.2 401.33 P
+8.6 (o enforce limits on quantity-constrained) 102.61 401.33 P
+1.01 (resources, we use the same mechanisms for grafts that) 72 389.33 P
+(we use for user) 72 377.33 T
+(-level threads and processes. Each thread) 132.61 377.33 T
+0.64 (in VINO has a set of resource limits associated with it.) 72 365.33 P
+0.36 (These limits constrain the amounts of various resources) 72 353.33 P
+1.53 (\050e.g., memory\051 that the thread may consume. When a) 72 341.33 P
+1.61 (graft is installed, it initially has limits of zero \050i.e., it) 72 329.33 P
+2.74 (cannot allocate any resources\051. The installing thread) 72 317.33 P
+1.53 (may transfer arbitrary amounts from its own limits to) 72 305.33 P
+0.81 (the newly installed graft, or the thread can request that) 72 293.33 P
+0.91 (all of the graft\325) 72 281.33 P
+0.91 (s allocation requests be \322billed\323 against) 134.43 281.33 P
+0.79 (the installing thread\325) 72 269.33 P
+0.79 (s own limits. If multiple processes) 155.81 269.33 P
+1.99 (wish to pool resources \050e.g., a collection of database) 72 257.33 P
+4.17 (clients and servers may wish to pool their wired) 72 245.33 P
+0.83 (memory resources to create a shared buf) 72 233.33 P
+0.83 (fer pool\051, they) 238.41 233.33 P
+0.59 (can each delegate their resource rights to the graft, in a) 72 221.33 P
+5.65 (manner analogous to ticket delegation in lottery) 72 209.33 P
+(scheduling [21].) 72 197.33 T
+1.16 (When a thread invokes a grafted function in the) 97.2 185.33 P
+-0.03 (kernel, the thread\325) 72 173.33 P
+-0.03 (s resource limits are replaced by those) 144.43 173.33 P
+1.47 (associated with the graft. Thus, the same mechanisms) 72 161.33 P
+1.67 (that prevent processes from exceeding resource limits) 72 149.33 P
+1.75 (are automatically applied to grafts. When the process) 72 137.33 P
+1.28 (would normally be denied requests for new resources,) 72 125.33 P
+(the graft\325) 72 113.33 T
+(s requests also fail.) 108.38 113.33 T
+315 72 540 720 R
+7 X
+V
+0 F
+0 X
+(3.3) 315 713.33 T
+(Graft Code Safety) 336.6 713.33 T
+1 F
+0.5 (As stated above, grafts are protected through the use of) 315 701.33 P
+0.88 (software fault isolation [20]. The overhead of software) 315 689.33 P
+2.32 (fault isolation has been shown to range from 5% to) 315 677.33 P
+1.03 (200%, depending on the application. W) 315 665.33 P
+1.03 (e developed an) 477.95 665.33 P
+0.47 (SFI tool, MiSFIT) 315 653.33 P
+0.47 (, for this purpose [17]. At compilation) 384.95 653.33 P
+1.94 (time MiSFIT inserts instructions to protect loads and) 315 641.33 P
+0.83 (stores. Code is added to force the tar) 315 629.33 P
+0.83 (get address to fall) 466.7 629.33 P
+0.87 (within the range of memory allocated to the graft. The) 315 617.33 P
+0.94 (cost of this protection is two to \336ve cycles per load or) 315 605.33 P
+(store.) 315 593.33 T
+-0.14 (T) 340.2 581.33 P
+-0.14 (o protect function calls, VINO kernel developers) 345.61 581.33 P
+5.88 (maintain a list of) 315 569.33 P
+2 F
+5.88 (graft-callable) 408.52 569.33 P
+1 F
+5.88 ( functions. Only) 463.52 569.33 P
+0.93 (functions on this list may be called from grafts. Direct) 315 557.33 P
+0.68 (function calls are checked when grafts are dynamically) 315 545.33 P
+1 (linked into the kernel; the function is looked up in the) 315 533.33 P
+0.1 (graft-callable list; if the tar) 315 521.33 P
+0.1 (get function is not on the list,) 422.43 521.33 P
+(the graft is not loaded into the system.) 315 509.33 T
+0.73 (Indirect function calls \050e.g., C++ virtual function) 340.2 497.33 P
+0.16 (calls\051 are checked at run-time by looking up the address) 315 485.33 P
+2.4 (of the tar) 315 473.33 P
+2.4 (get function in a hash table containing the) 355.72 473.33 P
+2.34 (addresses of all graft-callable functions. If the tar) 315 461.33 P
+2.34 (get) 527.78 461.33 P
+2.72 (function is not on the list, the graft\325) 315 449.33 P
+2.72 (s transaction is) 475.13 449.33 P
+2.2 (aborted. In general, the cost of probing a hash table) 315 437.33 P
+0.84 (depends on the contents of the table and the key being) 315 425.33 P
+0.37 (probed for) 315 413.33 P
+0.37 (. Through the use of a sparse open hash table) 356.75 413.33 P
+2.23 (we \336nd our average cost is ten to \336fteen cycles per) 315 401.33 P
+(indirect function call.) 315 389.33 T
+2.14 (Graft-callable kernel routines must perform the) 340.2 377.33 P
+1.82 (same type of ar) 315 365.33 P
+1.82 (gument checking and veri\336cation that) 381.64 365.33 P
+0.66 (system calls do. A graft is run with the user identity of) 315 353.33 P
+1.55 (the process that installs it; graft-callable functions are) 315 341.33 P
+0.7 (responsible for checking that the user has been granted) 315 329.33 P
+3.35 (access to \336les, memory) 315 317.33 P
+3.35 (, and devices that the graft) 417.72 317.33 P
+1.67 (attempts to use. In this way the protection domain in) 315 305.33 P
+1.04 (which the graft runs is \050at least in theory\051 the same as) 315 293.33 P
+1.32 (the protection domain of the process that installed the) 315 281.33 P
+(graft.) 315 269.33 T
+3.35 (VINO must ensure that code loaded into the) 340.2 257.33 P
+6.19 (kernel has been processed by MiSFIT) 315 245.33 P
+6.19 (. MiSFIT) 496.58 245.33 P
+1.08 (computes a cryptographic digital signature of the graft) 315 233.33 P
+0.07 (and stores it with the compiled code. When VINO loads) 315 221.33 P
+-0.09 (a graft it recomputes the checksum and compares it with) 315 209.33 P
+0.59 (the saved copy) 315 197.33 P
+0.59 (. If the two do not match the graft is not) 374.96 197.33 P
+0.39 (loaded. T) 315 185.33 P
+0.39 (ools that perform this type of code signing are) 352.46 185.33 P
+(commercially available [10].) 315 173.33 T
+0 F
+(3.4) 315 151.33 T
+(Function Graft Example) 336.6 151.33 T
+1 F
+0.65 (Once a graft has been compiled, processed by MiSFIT) 315 139.33 P
+0.65 (,) 537.5 139.33 P
+0.25 (and assembled, it is ready to be grafted into the running) 315 127.33 P
+3.14 (system. T) 315 115.33 P
+3.14 (o install a graft, an application must \336rst) 356.33 115.33 P
+0.06 (obtain a handle for the) 315 103.33 P
+2 F
+0.06 (graft point.) 407.8 103.33 P
+1 F
+0.06 (This is accomplished) 455.43 103.33 P
+2.22 (by looking up the graft point in a kernel-maintained) 315 91.33 P
+0.01 (graft namespace. The name is composed of the object to) 315 79.33 P
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "5" 5
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 1 0 0 1 0]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+72 72 297 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+0.16 (be grafted \050e.g., the open \336le\051 and the name of the func-) 72 551.33 P
+0.56 (tion to be replaced \050e.g., \322read-ahead\323\051. The graft point) 72 539.33 P
+-0.05 (handle provides a) 72 527.33 P
+2 F
+-0.05 (r) 144.89 527.33 P
+-0.05 (eplace) 148.41 527.33 P
+1 F
+-0.05 (method that is used to instruct) 176.96 527.33 P
+0.39 (the kernel to replace the function at the graft point with) 72 515.33 P
+(the new function. Figure 1 shows an example.) 72 503.33 T
+0.26 (This interface enables the replacement of a single) 97.2 491.33 P
+-0.24 (member function for a given object. The list of functions) 72 479.33 P
+-0.07 (that can be grafted on each class is speci\336ed by the class) 72 467.33 P
+3.27 (designer; some classes may not allow any of their) 72 455.33 P
+-0.21 (functions to be grafted; others may allow all functions to) 72 443.33 P
+(be grafted.) 72 431.33 T
+0 F
+(3.5) 72 409.33 T
+(Event Graft Example) 93.6 409.33 T
+1 F
+0.52 (The interface discussed above is suitable for modifying) 72 397.33 P
+0.19 (the behavior of a single object. However) 72 385.33 P
+0.19 (, an application) 235.23 385.33 P
+0.31 (may want to drop an entire service into the kernel, such) 72 373.33 P
+1.71 (as an HTTP server [4], an NFS server) 72 361.33 P
+1.71 (, or a database) 234.66 361.33 P
+0.92 (server) 72 349.33 P
+0.92 (. Our) 95.88 349.33 P
+2 F
+0.92 (event graft) 120.77 349.33 P
+1 F
+0.92 ( model is based on the idea that) 164.74 349.33 P
+1.34 (these services are typically) 72 337.33 P
+1.34 (, if not always, designed to) 182.83 337.33 P
+1.01 (respond to a stream of incoming external events. Each) 72 325.33 P
+2.3 (of these servers receives a request, processes it, and) 72 313.33 P
+2.57 (sends a response. W) 72 301.33 P
+2.57 (e model servers as handlers for) 160.01 301.33 P
+1.36 (events, where each request is viewed as an event. W) 72 289.33 P
+1.36 (e) 292.56 289.33 P
+-0.16 (extend our de\336nition of function graft points, introduced) 72 277.33 P
+2.23 (above, to encompass these events: event graft points) 72 265.33 P
+2.23 (correspond to the external events to which a service) 72 253.33 P
+(responds.) 72 241.33 T
+1.92 (Along with the replacement of a graft function) 97.2 229.33 P
+-0.02 (shown above, we also permit the) 72 217.33 P
+2 F
+-0.02 (addition) 205.45 217.33 P
+1 F
+-0.02 (of a new graft) 241.26 217.33 P
+0.13 (function to a graft point. Rather than replace an existing) 72 205.33 P
+0.73 (function, the grafted function will be called in addition) 72 193.33 P
+2.62 (to any other functions added to the graft point. W) 72 181.33 P
+2.62 (e) 292.56 181.33 P
+0.01 (provide an interface for applications to specify the order) 72 169.33 P
+(in which grafted functions are called.) 72 157.33 T
+1.1 (When an event occurs in the kernel \050e.g., a new) 97.2 145.33 P
+0.9 (connection is established on the TCP port dedicated to) 72 133.33 P
+-0.22 (HTTP) 72 121.33 P
+-0.22 (, or a packet is received on the UDP port for NFS\051,) 95.89 121.33 P
+(VINO spawns a worker thread) 72 109.33 T
+0.48 (and begins a transaction.) 196.68 109.33 P
+2.01 (It then invokes the grafted function \050passing it a \336le) 72 97.33 P
+1.08 (descriptor or other data required to process the event\051.) 72 85.33 P
+72 72 297 720 C
+73.8 558 295.2 720 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+78.67 558 293.28 715.55 R
+7 X
+0 0 0 1 0 0 0 K
+V
+3 8 Q
+0 X
+(f) 96.67 710.21 T
+(ile_o *db;) 101.47 710.21 T
+(graftpoint_handle_o *gp;) 96.67 700.21 T
+(db = f) 96.67 680.21 T
+(ile_o::open\050\322db\323, \322r\323\051;) 125.47 680.21 T
+(gp = graft_namespaces->lookup\050db,) 96.67 670.21 T
+(\322readahead\323\051;) 204.67 660.21 T
+(gp->replace\050\322my_readahead.o\323\051;) 96.67 650.21 T
+0 9 Q
+0.22 (Figur) 78.67 630.55 P
+0.22 (e 1.) 100.01 630.55 P
+0.22 (Function graft example.) 117.73 630.55 P
+1 F
+0.22 (The database server is) 212.89 630.55 P
+0.56 (replacing the kernel\325) 78.67 621.55 P
+0.56 (s default \336le read-ahead function with) 153.77 621.55 P
+3.23 (an application-speci\336c version. The server looks up a) 78.67 612.55 P
+1.32 (handle for the read-ahead function of the database in the) 78.67 603.55 P
+4.02 (graft namespace. It then installs the new read-ahead) 78.67 594.55 P
+1.99 (function. Although the function calls shown here are to) 78.67 585.55 P
+(C++ member functions, they invoke VINO system calls.) 78.67 576.55 T
+72 72 297 720 C
+0 0 612 792 C
+315 72 540 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+1.99 (When the grafted function returns, the worker thread) 315 452.33 P
+3.81 (commits the transaction and exits. An example of) 315 440.33 P
+-0.03 (adding a function to an event graft point, and the outline) 315 428.33 P
+(of an HTTP server graft, are shown in Figure 2.) 315 416.33 T
+0 F
+(3.6) 315 394.33 T
+(Summary) 336.6 394.33 T
+1 F
+1.01 (Returning to T) 315 382.33 P
+1.01 (able 1, we can now identify how VINO) 375.2 382.33 P
+3.73 (copes with the various classes of misbehavior) 315 370.33 P
+3.73 (. By) 519.6 370.33 P
+-0.03 (design, our kernel is preemptible. Therefore, any thread,) 315 358.33 P
+1.08 (including any thread that called a graft, is preemptible) 315 346.33 P
+3.1 (\050Rule 1\051. The combination of transaction abort and) 315 334.33 P
+1.07 (resource accounting protects against resource hoarding) 315 322.33 P
+-0.08 (\050Rule 2\051. If a graft consumes too many resources or runs) 315 310.33 P
+0.56 (for too long a period of time while holding a high-con-) 315 298.33 P
+2.23 (tention lock, its transaction is aborted. When a graft) 315 286.33 P
+-0.24 (transaction is aborted, the graft is forcibly removed from) 315 274.33 P
+0.87 (the kernel, so that new invocations of the call use nor-) 315 262.33 P
+1.91 (mal kernel code and not the misbehaving graft code.) 315 250.33 P
+3.71 (Our SFI compiler generates instructions to prevent) 315 238.33 P
+2.09 (grafts from accessing memory to which they are not) 315 226.33 P
+0.28 (entitled \050Rule 3\051 and from executing functions to which) 315 214.33 P
+(the graft does not have access.) 315 202.33 T
+0.69 (Rules 4 and 7 are provided for by a combination) 340.2 190.33 P
+1.04 (of static and dynamic methods. When constructing the) 315 178.33 P
+1.43 (list of graft callable functions, we must exclude those) 315 166.33 P
+6.49 (functions that return data without checking for) 315 154.33 P
+4.12 (appropriate permissions \050Rule 4\051. MiSFIT and the) 315 142.33 P
+1.25 (dynamic linker ensure that only functions on the graft) 315 130.33 P
+(callable list are invoked by grafts \050Rule 7\051.) 315 118.33 T
+0.61 (Rules 5 and 6 are enforced statically through our) 340.2 106.33 P
+0.32 (downloading mechanism. In addition to verifying that a) 315 94.33 P
+0.48 (graft does not call inappropriate functions, the dynamic) 315 82.33 P
+315 72 540 720 C
+315 459 540 720 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+319 474 535 715.67 R
+7 X
+0 0 0 1 0 0 0 K
+V
+3 8 Q
+0 X
+(// http server installation,) 319 710.33 T
+(// invoked at user level) 319 700.33 T
+(graftpoint_handle_o *gp;) 337 690.33 T
+(gp = graft_namespace->lookup\050\322tcp/80\323\051;) 337 670.33 T
+(gp->add\050\322http_server.o\323\051;) 337 660.33 T
+(// http server code, run as graft in kernel.) 319 640.33 T
+(http_server\050f) 319 630.33 T
+(ile_o *fd\051) 381.4 630.33 T
+({) 319 620.33 T
+(char buf[256];) 337 610.33 T
+(fd->read\050buf, sizeof\050buf\051\051;) 337 600.33 T
+(// process http request...) 337 590.33 T
+(...) 337 580.33 T
+(}) 319 570.33 T
+0 9 Q
+-0.22 (Figur) 319 550.67 P
+-0.22 (e 2.) 340.34 550.67 P
+-0.22 (Event grafting example.) 357.61 550.67 P
+1 F
+-0.22 (The \336rst code fragment) 451.44 550.67 P
+1.35 (installs the server code on TCP port 80; the second code) 319 541.67 P
+2.85 (fragment represents the server itself. Each time a new) 319 532.67 P
+1.98 (connection is accepted on TCP port 80 a worker thread) 319 523.67 P
+3.47 (starts a new transaction and invokes the http_server\050\051) 319 514.67 P
+5.43 (function, passing it the \336le descriptor from which) 319 505.67 P
+0.65 (http_server\050\051 can read the http request. When http_server\050\051) 319 496.67 P
+0.57 (\336nishes handling the connection, it returns, and the worker) 319 487.67 P
+(thread commits the transaction and closes the connection.) 319 478.67 T
+324 651.5 513 651.5 2 L
+7 X
+V
+0.5 H
+2 Z
+0 X
+N
+315 72 540 720 C
+0 0 612 792 C
+72.83 567 297.83 720 R
+0.5 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+315 470.33 540 721.17 R
+N
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "6" 6
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 1 0 0 1 0]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+72 72 297 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+2.88 (loader prohibits grafting onto restricted kernel entry) 72 713.33 P
+0.56 (points, such as the security enforcement modules \050Rule) 72 701.33 P
+1.83 (5\051. The digital signature scheme described in Section) 72 689.33 P
+0.99 (3.3 ensures that the kernel does not execute any grafts) 72 677.33 P
+(that are not known to be safe \050Rule 6\051.) 72 665.33 T
+3.9 (W) 97.2 653.33 P
+3.9 (e believe that the combination of resource) 105.84 653.33 P
+5.39 (accounting, the downloading mechanism, and the) 72 641.33 P
+-0.07 (separation of global and local policy decisions limits the) 72 629.33 P
+1.26 (applications af) 72 617.33 P
+1.26 (fected by malicious grafts to only those) 131.68 617.33 P
+1.6 (applications that use those grafts and ensures that the) 72 605.33 P
+0.81 (kernel can make forward process, even in the presence) 72 593.33 P
+(of a malicious graft \050Rules 8 and 9\051.) 72 581.33 T
+0 12 Q
+(4) 72 556 T
+(The Cost of Graft Pr) 90 556 T
+(otection) 196.43 556 T
+1 10 Q
+0.78 (In previous work we presented a taxonomy of types of) 72 541.33 P
+0.87 (kernel extensions [16], and we use that taxonomy here) 72 529.33 P
+0.25 (to evaluate the overhead of graft maintenance in VINO.) 72 517.33 P
+0.28 (W) 72 505.33 P
+0.28 (e identi\336ed three basic graft structures, each of which) 80.64 505.33 P
+-0.12 (encompasses a broad class of kernel graft points.) 72 493.33 P
+2 F
+-0.12 (Str) 269.04 493.33 P
+-0.12 (eam) 280.34 493.33 P
+0 (Grafts) 72 481.33 P
+1 F
+0 ( act much like UNIX \336lters, accepting data, trans-) 97.56 481.33 P
+-0.24 (forming or manipulating the data, and producing either a) 72 469.33 P
+1.85 (new data stream or result. Some examples of Stream) 72 457.33 P
+0.84 (Grafts are encryption, compression, and checksum cal-) 72 445.33 P
+2.92 (culation. A) 72 433.33 P
+2 F
+2.92 (Prioritization Graft) 124.78 433.33 P
+1 F
+2.92 ( chooses a candidate) 206.32 433.33 P
+-0.25 (from a set such as selecting a process to schedule, a page) 72 421.33 P
+0.34 (to evict, or a buf) 72 409.33 P
+0.34 (fer to \337ush. A) 139.01 409.33 P
+2 F
+0.34 (Black Box Graft) 198.42 409.33 P
+1 F
+0.34 ( is more) 264.1 409.33 P
+1.71 (general than Prioritization and Stream grafts; a Black) 72 397.33 P
+0.34 (Box graft has some number of inputs, some state, and a) 72 385.33 P
+1.95 (single output. From outside the graft, it appears as a) 72 373.33 P
+1.08 (\322black box\323 function, producing a single output value.) 72 361.33 P
+2.23 (File system read-ahead, access control checking, and) 72 349.33 P
+(name resolution are examples of Black Box grafts.) 72 337.33 T
+2.52 (In this section, we present sample grafts from) 97.2 325.33 P
+2.03 (each class and quantify the overhead associated with) 72 313.33 P
+1.31 (making the graft safe. The VINO system is still in its) 72 301.33 P
+1.08 (infancy) 72 289.33 P
+1.08 (, so we cannot run lar) 101.34 289.33 P
+1.08 (ge, complex applications.) 192.64 289.33 P
+2.1 (For this reason, we perform the analysis at the graft) 72 277.33 P
+-0.03 (level, as opposed to the application level. This allows us) 72 265.33 P
+0.35 (to perform \336ne grain measurements and also makes our) 72 253.33 P
+2.46 (measured overheads as conservative as possible. For) 72 241.33 P
+1.43 (example, if our protection mechanisms impose a 25%) 72 229.33 P
+0.19 (penalty on the graft in isolation, the observed penalty in) 72 217.33 P
+(a complete application can only be smaller) 72 205.33 T
+(.) 242.53 205.33 T
+1.46 (T) 97.2 193.33 P
+1.46 (able 2 outlines our measurement methodology) 102.61 193.33 P
+1.46 (,) 294.5 193.33 P
+2.66 (identifying how we decompose each graft to isolate) 72 181.33 P
+1.22 (individual overhead components.) 72 169.33 P
+1.22 (Figure 3 depicts the) 214.19 169.33 P
+5.96 (code paths and general structure of our grafts,) 72 157.33 P
+1.91 (highlighting the typical paths that we measure. In an) 72 145.33 P
+1.88 (ef) 72 133.33 P
+1.88 (fort to encapsulate the full cost of extensibility) 79.59 133.33 P
+1.88 (, we) 278.46 133.33 P
+3.48 (measure our) 72 121.33 P
+2 F
+3.48 (base path) 130.6 121.33 P
+1 F
+3.48 ( by removing any levels of) 172.69 121.33 P
+1.47 (indirection and results checking that we introduced to) 72 109.33 P
+0.4 (facilitate grafting. The) 72 97.33 P
+2 F
+0.4 (VINO path) 165.41 97.33 P
+1 F
+0.4 ( measures our normal) 209.42 97.33 P
+0.98 (kernel paths; it includes any extra levels of indirection) 72 85.33 P
+315 72 540 720 R
+7 X
+V
+0 X
+0.91 (we impose, but no transaction overhead. The) 315 713.33 P
+2 F
+0.91 (null path) 503.25 713.33 P
+1 F
+0.88 (includes full support for grafting, including transaction) 315 701.33 P
+1.48 (begin and end, but does the minimal amount of work) 315 689.33 P
+1.85 (possible for each example graft. The) 315 677.33 P
+2 F
+1.85 (safe) 474.65 677.33 P
+1 F
+1.85 ( and) 490.76 677.33 P
+2 F
+1.85 (unsafe) 513.89 677.33 P
+0.84 (paths) 315 665.33 P
+1 F
+0.84 ( include the full graft path, with transactions, and) 336.67 665.33 P
+-0.09 (quantify the MiSFIT overhead in the dif) 315 653.33 P
+-0.09 (ference between) 474.85 653.33 P
+2.2 (the two paths. Finally) 315 641.33 P
+2.2 (, the) 407.63 641.33 P
+2 F
+2.2 (abort path) 431.75 641.33 P
+1 F
+2.2 ( results from a) 475.9 641.33 P
+0.34 (transaction abort at the end of the graft execution in the) 315 629.33 P
+2 F
+0.44 (safe path) 315 617.33 P
+1 F
+0.44 (. As we measure the cost of these increasingly) 351.83 617.33 P
+3.89 (complex execution paths, we report both the total) 315 605.33 P
+4.73 (execution time of each path and the incremental) 315 593.33 P
+(overhead between successively complex paths) 315 581.33 T
+1 9 Q
+(.) 500.51 581.33 T
+1 10 Q
+1.76 (Our test platform consists of an Intel Endeavor) 340.2 337.33 P
+0.37 (motherboard with a 120 MHz Pentium processor) 315 325.33 P
+0.37 (, a 512) 512.33 325.33 P
+0.75 (KB pipeline burst L2 Cache, and 32 MB of 60ns EDO) 315 313.33 P
+0.13 (DRAM. W) 315 301.33 P
+0.13 (e use a single 5400 RPM Fujitsu M2694ESA) 358.77 301.33 P
+2.82 (disk with a SCSI interface, a formatted capacity of) 315 289.33 P
+0.81 (1080MB, an average seek time of 9.5 ms, and a 64KB) 315 277.33 P
+1.23 (buf) 315 265.33 P
+1.23 (fer) 328.15 265.33 P
+1.23 (. As our tests were performed on a Pentium, we) 338.7 265.33 P
+3.13 (were able to take advantage of the hardware cycle) 315 253.33 P
+-0.03 (counter on the) 315 241.33 P
+-0.03 (CPU) 374.62 241.33 P
+-0.03 (. W) 394.07 241.33 P
+-0.03 (e computed the number of cycles) 407.68 241.33 P
+2.31 (for each test, and then using the clock speed of the) 315 229.33 P
+1.67 (processor) 315 217.33 P
+1.67 (, converted from cycles to microseconds. T) 352.92 217.33 P
+1.67 (o) 535 217.33 P
+0.4 (reduce the sensitivity of our results to cache ef) 315 205.33 P
+0.4 (fects, we) 504.06 205.33 P
+1.88 (drop outliers by eliminating the top 10% and bottom) 315 193.33 P
+0.76 (10% of the measurements before computing the means) 315 181.33 P
+0.42 (and standard deviations. \050W) 315 169.33 P
+0.42 (e ran each test between 300) 427.66 169.33 P
+-0.08 (and 3000 times depending on the test.\051 In most cases the) 315 157.33 P
+1.2 (standard deviations were negligible \050less than 2.5% of) 315 145.33 P
+0.92 (the mean\051. W) 315 133.33 P
+0.92 (e observed higher standard deviations for) 370.18 133.33 P
+0.56 (very short duration events, because an individual cache) 315 121.33 P
+4.03 (miss can account for a signi\336cant fraction of the) 315 109.33 P
+3.98 (measurement. In a few of the tests, we still \336nd) 315 97.33 P
+2.69 (dif) 315 85.33 P
+2.69 (ferences in cache behavior between test cases; in) 325.93 85.33 P
+0 9 Q
+(Measur) 322.5 559 T
+(ement) 351.83 559 T
+(Explanation) 439.99 559 T
+1 F
+(Base path) 322.5 544 T
+(Kernel code path with all extra indi-) 394.5 544 T
+(rection and graft-support removed.) 394.5 534 T
+(VINO path) 322.5 519 T
+(Normal VINO kernel path, with indi-) 394.5 519 T
+(rection for graft support and return-) 394.5 509 T
+(value veri\336cation.) 394.5 499 T
+(Null path) 322.5 484 T
+-0.2 (Includes graft stubs, transaction begin) 394.5 484 P
+(and commit, and minimal \050null\051 graft.) 394.5 474 T
+(Unsafe path) 322.5 459 T
+(Includes full graft code and lock over-) 394.5 459 T
+(head) 394.5 449 T
+(Safe path) 322.5 434 T
+(Includes code protected with MiSFIT) 394.5 434 T
+(.) 528.82 434 T
+(Abort path) 322.5 419 T
+(Complete safe path with transaction) 394.5 419 T
+(abort instead of commit.) 394.5 409 T
+0 F
+8.85 (T) 319.5 393 P
+8.85 (able 2.) 324.67 393 P
+8.85 (Measur) 363.03 393 P
+8.85 (ement Methodology) 392.36 393 P
+8.85 (.) 476.96 393 P
+1 F
+8.85 (Each graft) 490.31 393 P
+5.6 (benchmark will decompose the graft cost into the) 319.5 382 P
+319.5 354 540 368 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+319.5 361 823.5 361 2 L
+0.25 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 612 792 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(components described here.) 319.5 371 T
+319.5 569.75 319.5 403.25 2 L
+V
+0.5 H
+0 Z
+N
+535.5 569.75 535.5 403.25 2 L
+V
+N
+319.25 570 535.75 570 2 L
+V
+N
+319.25 553 535.75 553 2 L
+V
+N
+319.25 528 535.75 528 2 L
+V
+0.25 H
+N
+319.25 493 535.75 493 2 L
+V
+N
+319.25 468 535.75 468 2 L
+V
+N
+319.25 443 535.75 443 2 L
+V
+N
+319.25 428 535.75 428 2 L
+V
+N
+319.25 403 535.75 403 2 L
+V
+0.5 H
+N
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "7" 7
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 1 0 0 1 0]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+70.57 66 306.57 441 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+70.57 66 306.57 441 R
+7 X
+0 0 0 1 0 0 0 K
+V
+166.67 229.01 193.67 261 R
+6 X
+V
+0.5 H
+0 Z
+0 X
+N
+1 11 Q
+(Graft) 0 -270 182.72 232.73 TF
+270.67 237.9 297.67 398.01 R
+N
+(Results checking) 0 -270 286.72 278.54 TF
+121.33 229.01 148.33 291.27 R
+7 X
+V
+0 X
+N
+(T) 0 -270 131.89 234.64 TF
+(ransaction) 0 -270 131.89 240.97 TF
+(begin) 0 -270 142.89 248.03 TF
+216.66 229.01 243.66 291.27 R
+7 X
+V
+0 X
+N
+(T) 0 -270 227.22 234.64 TF
+(ransaction) 0 -270 227.22 240.97 TF
+(end \050commit\051) 0 -270 238.22 230 TF
+201.13 387.76 212.67 384.45 201.13 381.15 201.13 384.45 4 Y
+V
+99 384.45 201.13 384.45 2 L
+7 X
+V
+2 Z
+0 X
+N
+259.3 387.76 270.83 384.45 259.3 381.15 259.3 384.45 4 Y
+V
+239.17 384.45 259.3 384.45 2 L
+7 X
+V
+0 X
+N
+153.67 166.74 171.67 211.22 R
+7 X
+V
+0 Z
+0 X
+N
+(locks) 0 -270 164.37 177.85 TF
+187.24 166.74 205.24 211.22 R
+7 X
+V
+0 X
+N
+(locks) 0 -270 197.94 177.85 TF
+(...) 175.67 186.86 T
+174.82 220.02 166.66 211.22 168.92 223.01 171.87 221.51 4 Y
+V
+175.67 229.01 171.87 221.51 2 L
+7 X
+V
+2 Z
+0 X
+N
+191.41 223.01 193.66 211.22 185.51 220.02 188.46 221.51 4 Y
+V
+184.67 229.01 188.46 221.51 2 L
+7 X
+V
+0 X
+N
+109.13 251.52 120.67 248.21 109.13 244.9 109.13 248.21 4 Y
+V
+100.33 248.21 109.13 248.21 2 L
+7 X
+V
+0 X
+N
+154.3 251.52 165.83 248.21 154.3 244.9 154.3 248.21 4 Y
+V
+149 248.21 154.3 248.21 2 L
+7 X
+V
+0 X
+N
+205.13 251.52 216.67 248.21 205.13 244.9 205.13 248.21 4 Y
+V
+193.67 248.21 205.13 248.21 2 L
+7 X
+V
+0 X
+N
+259.13 251.52 270.67 248.21 259.13 244.9 259.13 248.21 4 Y
+V
+243.66 248.21 259.13 248.21 2 L
+7 X
+V
+0 X
+N
+(Unsafe path) 106.83 217.08 T
+72 63 304.57 157 R
+7 X
+V
+0 9 Q
+0 X
+1 (Figur) 72 151 P
+1 (e 3.) 93.34 151 P
+1 (Graft Evaluation Model.) 111.84 151 P
+1 F
+1 (The) 211.84 151 P
+2 F
+1 (base path) 229.09 151 P
+1 F
+1 ( represents) 264.83 151 P
+2.2 (the cost of kernel functionality without the extra indirection) 72 142 P
+0.14 (required to support grafting. The) 72 133 P
+2 F
+0.14 (VINO path) 192.66 133 P
+1 F
+0.14 ( includes the cost of) 232.04 133 P
+1.12 (indirection. The) 72 124 P
+2 F
+1.12 (null path) 133.99 124 P
+1 F
+1.12 ( includes the graft overhead and any) 167.37 124 P
+0.11 (additional overhead required to check the graft\325) 72 115 P
+0.11 (s return value\050s\051,) 243.62 115 P
+0.01 (but not the actual graft code. The) 72 106 P
+2 F
+0.01 (unsafe path) 193.54 106 P
+1 F
+0.01 ( includes the actual) 235.3 106 P
+0.11 (graft, but does not include MiSFIT overhead, and the) 72 97 P
+2 F
+0.11 (abort path) 266.71 97 P
+1 F
+-0.21 (is the complete,) 72 88 P
+2 F
+-0.21 (unsafe path) 130.36 88 P
+1 F
+-0.21 ( with transaction commit replaced by) 171.9 88 P
+1.67 (a transaction abort. The shaded boxes represent points where) 72 79 P
+(policy decisions are made.) 72 70 T
+1 11 Q
+(Base path) 135.9 416.39 T
+212 366.68 239 423 R
+6 X
+V
+0 Z
+0 X
+N
+(Default) 0 -270 227.55 377.81 TF
+(VINO path) 130.74 390.67 T
+109.13 283.18 120.67 279.88 109.13 276.57 109.13 279.88 4 Y
+V
+99 279.88 109.13 279.88 2 L
+7 X
+V
+2 Z
+0 X
+N
+259.13 283.18 270.67 279.88 259.13 276.57 259.13 279.88 4 Y
+V
+243.66 279.88 259.13 279.88 2 L
+7 X
+V
+0 X
+N
+(Null path) 114 297.8 T
+166.5 298.47 193.5 360.73 R
+7 X
+V
+0 Z
+0 X
+N
+(T) 0 -270 178.2 304.15 TF
+(ransaction) 0 -270 178.2 310.49 TF
+(abort) 0 -270 189.2 315.63 TF
+(Abort path) 0 -270 215.61 305.56 TF
+200.03 307.89 193.5 317.96 204.37 312.88 202.2 310.39 4 Y
+V
+224.17 291.27 202.2 310.38 2 L
+7 X
+V
+2 Z
+0 X
+N
+212.9 362.88 224.16 367 216.79 357.53 214.84 360.2 4 Y
+V
+193.5 344.64 214.85 360.2 2 L
+7 X
+V
+0 X
+N
+201.13 411.64 212.67 408.33 201.13 405.03 201.13 408.33 4 Y
+V
+72.5 408.33 201.13 408.33 2 L
+7 X
+V
+0 X
+N
+285.97 411.64 297.5 408.33 285.97 405.03 285.97 408.33 4 Y
+V
+239.9 408.33 285.97 408.33 2 L
+N
+72.5 436 295.57 436 2 L
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+166.67 263.51 193.67 295.5 R
+6 X
+V
+0 Z
+0 X
+N
+(Null) 0 -270 178.56 269.5 TF
+(graft) 0 -270 187.89 268.9 TF
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+155.13 283.18 166.67 279.88 155.13 276.57 155.13 279.88 4 Y
+V
+149 279.88 155.13 279.88 2 L
+7 X
+V
+2 Z
+0 X
+N
+205.13 283.18 216.67 279.88 205.13 276.57 205.13 279.88 4 Y
+V
+193.67 279.88 205.13 279.88 2 L
+7 X
+V
+0 X
+N
+72.44 237.9 99.44 396 R
+7 X
+V
+0 Z
+0 X
+N
+(VINO kernel code) 0 -270 88.5 272.97 TF
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+72 441 297 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+4.29 (these cases, we explicitly measure and report the) 72 713.33 P
+(additional cache overheads.) 72 701.33 T
+3 (For each of our sample grafts, we perform a) 97.2 689.33 P
+-0.09 (simple cost-bene\336t analysis. In each case, the cost of the) 72 677.33 P
+1.12 (graft is the time to execute the grafted function, along) 72 665.33 P
+5.84 (with the general overhead of executing a graft) 72 653.33 P
+3.06 (\050transaction protection, MiSFIT overhead, etc.\051. The) 72 641.33 P
+2.18 (dif) 72 629.33 P
+2.18 (ference between the) 82.93 629.33 P
+2 F
+2.18 (safe path) 171.93 629.33 P
+1 F
+2.18 ( and the) 210.51 629.33 P
+2 F
+2.18 (VINO path) 251.21 629.33 P
+1 F
+-0.17 (provides the total cost of a graft in terms of the overhead) 72 617.33 P
+0.64 (that it adds to the system. The dif) 72 605.33 P
+0.64 (ference between each) 209.65 605.33 P
+0.15 (successive pair of measurements in T) 72 593.33 P
+0.15 (able 2 corresponds) 221.73 593.33 P
+0.41 (to one part of the overhead. The) 72 581.33 P
+2 F
+0.41 (null path) 205.37 581.33 P
+1 F
+0.41 ( adds the cost) 241.62 581.33 P
+1.53 (of transaction protecting a graft function to the) 72 569.33 P
+2 F
+1.53 (VINO) 273.67 569.33 P
+3.83 (path) 72 557.33 P
+1 F
+3.83 (. The cost of the graft function itself can be) 89.78 557.33 P
+0.7 (determined by comparing the) 72 545.33 P
+2 F
+0.7 (null path) 194.76 545.33 P
+1 F
+0.7 ( with the) 231.3 545.33 P
+2 F
+0.7 (unsafe) 270.89 545.33 P
+2.99 (path) 72 533.33 P
+1 F
+2.99 ( \050where we add the graft function without any) 89.78 533.33 P
+1.77 (MiSFIT protection\051. Finally) 72 521.33 P
+1.77 (, we compute the MiSFIT) 186.85 521.33 P
+2.09 (overhead by comparing the) 72 509.33 P
+2 F
+2.09 (unsafe path) 191.99 509.33 P
+1 F
+2.09 ( and the) 240.47 509.33 P
+2 F
+2.09 (safe) 280.89 509.33 P
+(path) 72 497.33 T
+1 F
+( measurements.) 89.78 497.33 T
+0.1 (The bene\336ts associated with each graft depend on) 97.2 485.33 P
+1.12 (the speci\336c functionality being grafted into the kernel.) 72 473.33 P
+1.48 (W) 72 461.33 P
+1.48 (e estimate the bene\336t derived from each of our test) 80.64 461.33 P
+0.63 (grafts and compare this to the cost of the graft in order) 72 449.33 P
+315 72 540 720 R
+7 X
+V
+0 X
+3.38 (to determine the suitability of the VINO extension) 315 713.33 P
+-0.06 (architecture for the dif) 315 701.33 P
+-0.06 (ferent types of grafts that we have) 404.32 701.33 P
+(measured.) 315 689.33 T
+0 F
+(4.1) 315 667.33 T
+(A Black Box Graft: Read-Ahead) 336.6 667.33 T
+1 F
+0.28 (File read-ahead is an example of a policy for which tra-) 315 655.33 P
+2.13 (ditional operating systems implement a general algo-) 315 643.33 P
+4.27 (rithm that is good for most applications, but not) 315 631.33 P
+-0.17 (necessarily optimal for all. A typical \336le read-ahead pol-) 315 619.33 P
+1.63 (icy operates on the assumption that most applications) 315 607.33 P
+4.96 (perform sequential I/O. When the system detects) 315 595.33 P
+0.64 (sequential access to a \336le, it asynchronously prefetches) 315 583.33 P
+2.85 (some additional amount of \336le data with each read) 315 571.33 P
+1.4 (request. Because most \336le accesses are sequential [3],) 315 559.33 P
+2.65 (this policy usually improves performance. There are) 315 547.33 P
+1.06 (several cases, however) 315 535.33 P
+1.06 (, where this general policy does) 408.07 535.33 P
+0.53 (not improve \050and can even degrade\051 application perfor-) 315 523.33 P
+(mance [12].) 315 511.33 T
+-0.1 (At \336rst glance, it may seem that user) 340.2 499.33 P
+-0.1 (-level threads) 485.95 499.33 P
+3.22 (are the simple and obvious solution to application-) 315 487.33 P
+-0.25 (directed prefetching. However) 315 475.33 P
+-0.25 (, without kernel support, a) 436 475.33 P
+0.77 (strictly user) 315 463.33 P
+0.77 (-level prefetching implementation is unable) 362.51 463.33 P
+2.5 (to exploit kernel-level information about the on-disk) 315 451.33 P
+0.36 (layout of the \336le data. Similarly) 315 439.33 P
+0.36 (, without explicit kernel) 443.37 439.33 P
+5.05 (support, an application that performs many short) 315 427.33 P
+1.15 (sequential reads to dif) 315 415.33 P
+1.15 (ferent of) 406.3 415.33 P
+1.15 (fsets in a lar) 441.41 415.33 P
+1.15 (ge \336le may) 493.27 415.33 P
+4.65 (incur the overhead of having the kernel prefetch) 315 403.33 P
+6.41 (unneeded parts of the \336le. Finally) 315 391.33 P
+6.41 (, thread-level) 480.83 391.33 P
+1.95 (prefetching is indistinguishable from normal user I/O) 315 379.33 P
+0.84 (and the kernel is unable to assign accurate priorities to) 315 367.33 P
+(pending I/O requests.) 315 355.33 T
+0 F
+(4.1.1) 315 333.33 T
+(Cost-bene\336t Analysis of Read-ahead) 340.2 333.33 T
+1 F
+-0.09 (File read-ahead is one of the most appealing kernel poli-) 315 321.33 P
+1.04 (cies to graft, because the potential gains are lar) 315 309.33 P
+1.04 (ge. For) 510.62 309.33 P
+0.46 (the remainder of this discussion, we will consider read-) 315 297.33 P
+0.91 (ahead in the context of a speci\336c hypothetical applica-) 315 285.33 P
+2.19 (tion, modeled on a random access workload such as) 315 273.33 P
+-0.24 (might be generated by a database server) 315 261.33 P
+-0.24 (. The core of this) 472.94 261.33 P
+0.2 (application is a loop that reads a block of data, and then) 315 249.33 P
+1.25 (performs some computation on it. W) 315 237.33 P
+1.25 (e assume that the) 467.65 237.33 P
+0.63 (application reads the blocks of data in a non-sequential) 315 225.33 P
+0.17 (order) 315 213.33 P
+0.17 (, but has advance knowledge of what blocks it will) 335.7 213.33 P
+(need.) 315 201.33 T
+-0.02 (Because the default kernel read-ahead policy only) 340.2 189.33 P
+5.9 (supports sequential access, no prefetching would) 315 177.33 P
+3.54 (normally be done. Thus, each time the application) 315 165.33 P
+2.54 (issued a non-sequential read request, it would block) 315 153.33 P
+0.93 (until the data was fetched from disk. If the application) 315 141.33 P
+3.58 (can graft a new read-ahead function onto the \336le,) 315 129.33 P
+0.88 (however) 315 117.33 P
+0.88 (, then each time it reads one block, it can also) 349.03 117.33 P
+3.2 (prefetch the next block. Thus, we can imagine the) 315 105.33 P
+1.75 (application reading block A and prefetching block B,) 315 93.33 P
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "8" 8
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 1 0 0 1 0]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+72 72 297 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+3.72 (computing on block A, then reading block B and) 72 713.33 P
+(prefetching block C, and computing on block B.) 72 701.33 T
+1.68 (What are the costs and bene\336ts associated with) 97.2 689.33 P
+0.5 (this scheme? Consider the request to read block B. The) 72 677.33 P
+0.77 (cost for the application is the overhead associated with) 72 665.33 P
+0.18 (prefetching the block as described above. The bene\336t to) 72 653.33 P
+3.18 (the application is that the amount of time that the) 72 641.33 P
+0.42 (application is suspended waiting for block B is reduced) 72 629.33 P
+-0.25 (by the amount of time since that prefetch request. This is) 72 617.33 P
+0.14 (the amount of time that the application spent computing) 72 605.33 P
+0.42 (between read requests. Thus, the application will win if) 72 593.33 P
+0.43 (the cost of the read-ahead graft is less than the time the) 72 581.33 P
+(application spends between read requests.) 72 569.33 T
+0 F
+(4.1.2) 72 547.33 T
+(Implementing the Read-ahead Graft) 97.2 547.33 T
+1 F
+1.2 (In VINO, application level \336le descriptors are handles) 72 535.33 P
+0.11 (for kernel level) 72 523.33 P
+2 F
+0.11 (open-\336le) 135.93 523.33 P
+1 F
+0.11 ( objects. T) 170.92 523.33 P
+0.11 (raditional \336le-related) 212.74 523.33 P
+1.15 (system calls \050read, seek, etc.\051 are translated to method) 72 511.33 P
+2.09 (invocations on the appropriate open-\336le. Whenever a) 72 499.33 P
+0.25 (user issues a read request, the corresponding method on) 72 487.33 P
+1.42 (the open-\336le handles the read, and then calls its) 72 475.33 P
+2 F
+1.42 (com-) 277.01 475.33 P
+1.23 (pute-ra) 72 463.33 P
+1 F
+1.23 ( method to determine which \050if any\051 additional) 101.44 463.33 P
+0.11 (\336le blocks should be prefetched. This function is passed) 72 451.33 P
+0.3 (a descriptor describing the of) 72 439.33 P
+0.3 (fset and size of the current) 189.68 439.33 P
+1.48 (read request, and is allowed to provide a list of addi-) 72 427.33 P
+3.42 (tional \336le extents that should be prefetched. These) 72 415.33 P
+1.05 (prefetch requests are passed to the underlying \336le sys-) 72 403.33 P
+1.08 (tem where they are added to a per) 72 391.33 P
+1.08 (-\336le prefetch queue.) 214.59 391.33 P
+2.58 (The \336le system removes prefetch requests from this) 72 379.33 P
+1.95 (queue and issues them to the I/O system as memory) 72 367.33 P
+0.89 (becomes available for read-ahead. \050In this manner) 72 355.33 P
+0.89 (, if a) 277.17 355.33 P
+0.78 (graft of the) 72 343.33 P
+2 F
+0.78 (compute-ra) 121.26 343.33 P
+1 F
+0.78 (function asks for 100MB to be) 170.63 343.33 P
+0.8 (prefetched, it will not steal all of the system\325) 72 331.33 P
+0.8 (s memory) 256.48 331.33 P
+0.92 (pages. Instead, the 100MB will be prefetched in order) 72 319.33 P
+0.92 (,) 294.5 319.33 P
+0.96 (as pages become available.\051 The allocation of memory) 72 307.33 P
+0.03 (buf) 72 295.33 P
+0.03 (fers to satisfy read-ahead requests is determined by a) 85.15 295.33 P
+0.9 (global policy that cannot be grafted by users with nor-) 72 283.33 P
+(mal privileges.) 72 271.33 T
+-0.14 (The default read-ahead policy used by VINO only) 97.2 259.33 P
+2.09 (prefetches when the user accesses a \336le sequentially) 72 247.33 P
+2.09 (.) 294.5 247.33 P
+7.41 (Applications that wish to specify an alternate) 72 235.33 P
+0.84 (prefetching policy do so by grafting a new) 72 223.33 P
+2 F
+0.84 (compute-ra) 250.9 223.33 P
+1 F
+(function onto the appropriate open-\336le object.) 72 211.33 T
+0.86 (As described above, our hypothetical application) 97.2 199.33 P
+0.14 (would bene\336t from a read-ahead policy that permitted it) 72 187.33 P
+0.96 (to specify the blocks to be prefetched. T) 72 175.33 P
+0.96 (o this end, we) 238.56 175.33 P
+3.16 (implemented a graftable read-ahead policy for non-) 72 163.33 P
+1.15 (sequential access. A memory buf) 72 151.33 P
+1.15 (fer is shared between) 208.87 151.33 P
+1.67 (the application and the read-ahead graft, allowing the) 72 139.33 P
+0.64 (application to specify its anticipated \336le access pattern.) 72 127.33 P
+1.46 (The graft version of the) 72 115.33 P
+2 F
+1.46 (compute-ra) 176.24 115.33 P
+1 F
+1.46 (function uses the) 226.3 115.33 P
+(data in this shared buf) 72 103.33 T
+(fer to issue read-ahead requests.) 160.14 103.33 T
+315 72 540 720 R
+7 X
+V
+0 F
+0 X
+(4.1.3) 315 713.33 T
+(Measuring Read-ahead Graft Overhead) 340.2 713.33 T
+1 F
+1.57 (W) 315 701.33 P
+1.57 (e tested the read-ahead graft by reading three thou-) 323.64 701.33 P
+2.32 (sand four kilobyte blocks in a random order from a) 315 689.33 P
+1.91 (twelve megabyte \336le. Each time the application code) 315 677.33 P
+2.36 (issued a read request to the open \336le object, it also) 315 665.33 P
+0 (placed the location and size of its subsequent read in the) 315 653.33 P
+2.14 (shared buf) 315 641.33 P
+2.14 (fer so that it could be prefetched. T) 358.89 641.33 P
+2.14 (able 3) 513.7 641.33 P
+(shows the overhead for the read-ahead graft.) 315 629.33 T
+0.22 (From these measurements, we see that the cost of) 340.2 216.33 P
+8.07 (executing the grafted read-ahead function \050the) 315 204.33 P
+0.3 (dif) 315 192.33 P
+0.3 (ference between the) 325.93 192.33 P
+2 F
+0.3 (unsafe path) 409.3 192.33 P
+1 F
+0.3 ( and the) 455.99 192.33 P
+2 F
+0.3 (null path) 491.05 192.33 P
+1 F
+0.3 (\051 is) 527.2 192.33 P
+0.89 (37) 315 180.33 P
+4 F
+0.89 (m) 328.39 180.33 P
+1 F
+0.89 (s. Most of this cost is the overhead of acquiring a) 334.15 180.33 P
+1.86 (lock before accessing the shared memory buf) 315 168.33 P
+1.86 (fer) 507.04 168.33 P
+1.86 (. The) 517.59 168.33 P
+0.84 (other cost of executing the grafted read-ahead function) 315 156.33 P
+1.12 (is the grafting overhead\321the cost of running the graft) 315 144.33 P
+3.34 (function in a transaction, the overhead of applying) 315 132.33 P
+1.91 (MiSFIT to the graft function, and the extra checking) 315 120.33 P
+2.51 (required to validate the values returned by the graft) 315 108.33 P
+-0.18 (function. T) 315 96.33 P
+-0.18 (able 3 shows that the total cost of starting and) 358.56 96.33 P
+4.58 (committing a transaction is 64) 315 84.33 P
+4 F
+4.58 (m) 461.5 84.33 P
+1 F
+4.58 (s. The overhead) 467.26 84.33 P
+0 9 Q
+(Overhead) 435.5 607 T
+(\050) 447.16 597 T
+4 F
+(m) 450.16 597 T
+0 F
+(s\051) 455.34 597 T
+(Elapsed) 493.24 607 T
+(time \050) 491.54 597 T
+4 F
+(m) 513.78 597 T
+0 F
+(s\051) 518.96 597 T
+1 F
+(Base path) 322.5 582 T
+(0.5) 503.25 582 T
+2 F
+(Indir) 333.3 567 T
+(ection cost) 350.97 567 T
+(1.0) 449.25 567 T
+1 F
+(VINO path) 322.5 552 T
+(1.5) 503.25 552 T
+2 F
+(T) 333.3 537 T
+(ransaction begin) 337.81 537 T
+(36.0) 444.75 537 T
+(Null graft cost) 333.3 522 T
+(1.5) 449.25 522 T
+(T) 333.3 507 T
+(ransaction commit) 337.81 507 T
+(+ 28.0) 436.42 507 T
+(Incr) 333.3 492 T
+(emental over) 347.96 492 T
+(head) 394.54 492 T
+(65.5) 444.75 492 T
+1 F
+(Null path) 322.5 477 T
+(67.0) 498.75 477 T
+2 F
+(Lock over) 333.3 462 T
+(head) 368.88 462 T
+(33.0) 444.75 462 T
+(Graft function) 333.3 447 T
+(2.0) 449.25 447 T
+(L1 cache miss time) 333.3 432 T
+(+ 2.0) 440.92 432 T
+(Incr) 333.3 417 T
+(emental over) 347.96 417 T
+(head) 394.54 417 T
+(37.0) 444.75 417 T
+1 F
+(Unsafe path) 322.5 402 T
+(104.0) 494.25 402 T
+2 F
+(MiSFIT over) 333.3 387 T
+(head) 379.38 387 T
+(3.0) 449.25 387 T
+1 F
+(Safe path) 322.5 372 T
+(107.0) 494.25 372 T
+2 F
+(Abort cost \050additional,) 333.3 357 T
+(above commit time\051) 333.3 347 T
+(1.0) 449.25 357 T
+1 F
+(Abort path) 322.5 332 T
+(108.0) 494.25 332 T
+0 F
+3.12 (T) 319.5 316 P
+3.12 (able 3.) 324.67 316 P
+3.12 (Read-ahead Graft Overhead.) 357.3 316 P
+1 F
+3.12 (The read-ahead) 481.16 316 P
+-0.13 (graft decides which page should be prefetched with each read) 319.5 305 P
+0.88 (request. The) 319.5 294 P
+2 F
+0.88 (base path) 367.99 294 P
+1 F
+0.88 ( measures the time to select the next) 403.62 294 P
+0.53 (\050i.e., sequential\051 block. The graft function allows the user to) 319.5 283 P
+1.28 (specify an access pattern. This simple function has a short) 319.5 272 P
+3.24 (execution time, yielding a disproportionately lar) 319.5 261 P
+3.24 (ge graft) 509.02 261 P
+319.5 233 540 247 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+319.5 240 823.5 240 2 L
+0.25 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 612 792 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(overhead.) 319.5 250 T
+319.5 617.75 319.5 326.25 2 L
+V
+0.5 H
+0 Z
+N
+535.5 617.75 535.5 326.25 2 L
+V
+N
+319.25 618 535.75 618 2 L
+V
+N
+319.25 591 535.75 591 2 L
+V
+N
+319.25 576 535.75 576 2 L
+V
+0.25 H
+N
+319.25 546 535.75 546 2 L
+V
+N
+427.5 501 481.5 501 2 L
+V
+0.5 H
+N
+319.25 471 535.75 471 2 L
+V
+0.25 H
+N
+427.5 426 481.5 426 2 L
+V
+N
+319.25 396 535.75 396 2 L
+V
+N
+319.25 366 535.75 366 2 L
+V
+N
+319.25 326 535.75 326 2 L
+V
+0.5 H
+N
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "9" 9
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 1 0 0 1 0]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+72 72 297 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+6.19 (imposed by MiSFIT) 72 713.33 P
+6.19 (, derived by comparing the) 164.76 713.33 P
+1.3 (measurements of the safe path and the) 72 701.33 P
+2 F
+1.3 (unsafe path) 236.34 701.33 P
+1 F
+1.3 (, is) 284.03 701.33 P
+3.48 (another three microseconds. Thus the total grafting) 72 689.33 P
+(overhead for this function is 65.5) 72 677.33 T
+4 F
+(m) 207.26 677.33 T
+1 F
+(s.) 213.02 677.33 T
+1.88 (Returning to our cost bene\336t analysis, the total) 97.2 665.33 P
+1.56 (cost of executing the grafted read-ahead function \050the) 72 653.33 P
+2 F
+0.52 (safe path) 72 641.33 P
+1 F
+0.52 ( from T) 108.91 641.33 P
+0.52 (able 3\051 is 107) 139.8 641.33 P
+4 F
+0.52 (m) 195.52 641.33 P
+1 F
+0.52 (s. Thus, our application) 201.28 641.33 P
+2.5 (would bene\336t from using this graft assuming that it) 72 629.33 P
+3.49 (spends at least 107) 72 617.33 P
+4 F
+3.49 (m) 163.71 617.33 P
+1 F
+3.49 (s between read requests. For) 169.48 617.33 P
+0.12 (comparison, it takes 137) 72 605.33 P
+4 F
+0.12 (m) 172.75 605.33 P
+1 F
+0.12 (s to sum a four kilobyte array) 178.51 605.33 P
+0.36 (of integers on our test machine. \0504KB is our \336le system) 72 593.33 P
+(block size.\051) 72 581.33 T
+0 F
+(4.2) 72 559.33 T
+(A Prioritization Graft: Page Eviction) 93.6 559.33 T
+1 F
+1.19 (V) 72 547.33 P
+1.19 (irtual memory page eviction is another example of a) 78.62 547.33 P
+2.04 (policy for which traditional operating systems imple-) 72 535.33 P
+-0.18 (ment a general algorithm \050e.g., some variant of the clock) 72 523.33 P
+-0.15 (algorithm\051 that is good for most applications, but not all.) 72 511.33 P
+0.14 (Applications for which LRU is the right paging strategy) 72 499.33 P
+1.83 (will enjoy \336ne performance under this algorithm, but) 72 487.33 P
+-0.09 (there are cited cases where such an algorithm is subopti-) 72 475.33 P
+(mal [2,12,18].) 72 463.33 T
+4.13 (The key challenge in supporting application-) 97.2 451.33 P
+0.38 (provided page out selection is to do so in a manner that) 72 439.33 P
+-0.21 (does not compromise the integrity of the virtual memory) 72 427.33 P
+4.22 (system. There are three requirements necessary to) 72 415.33 P
+1.46 (enforce this. First, the page eviction decision must be) 72 403.33 P
+7.15 (made in a timely fashion, because poor VM) 72 391.33 P
+2.11 (performance can slow the entire system. Second, the) 72 379.33 P
+0.53 (value returned by the graft must be valid \050or detectably) 72 367.33 P
+-0.2 (invalid\051. Third, the graft cannot permit the application to) 72 355.33 P
+0.03 (use more physical memory than would be allowed if the) 72 343.33 P
+(same application ran without a page eviction graft.) 72 331.33 T
+0 F
+(4.2.1) 72 309.33 T
+(VINO VM Page Eviction) 97.2 309.33 T
+1 F
+1.11 (The VINO virtual memory system is based loosely on) 72 297.33 P
+2.68 (the Mach VM system [14]. A virtual address space) 72 285.33 P
+4.04 (\050V) 72 273.33 P
+4.04 (AS\051 consists of a collection of memory objects) 81.26 273.33 P
+-0.03 (mapped to virtual address ranges. A memory object rep-) 72 261.33 P
+-0.22 (resents a contiguous piece of data that may be backed by) 72 249.33 P
+0.26 (a variety of objects such as a device, a network connec-) 72 237.33 P
+-0.17 (tion, or a \336le. Once a memory object is associated with a) 72 225.33 P
+2.65 (particular object, the object becomes responsible for) 72 213.33 P
+0.71 (handling page faults to the memory object in a manner) 72 201.33 P
+1.71 (appropriate for the materialized item \050e.g., read a \336le) 72 189.33 P
+(from disk, read data from a network connection\051.) 72 177.33 T
+0.62 (V) 97.2 165.33 P
+0.62 (irtual memory page eviction is implemented by) 103.82 165.33 P
+1.19 (a two-level eviction algorithm. A global page eviction) 72 153.33 P
+2.09 (algorithm selects a victim page. Then, if the owning) 72 141.33 P
+1.2 (V) 72 129.33 P
+1.2 (AS has installed a page eviction graft, it invokes the) 77.93 129.33 P
+1.49 (graft passing it the victim page and a list of all other) 72 117.33 P
+0.76 (pages that the virtual memory system currently assigns) 72 105.33 P
+1.8 (to the particular V) 72 93.33 P
+1.8 (AS. The V) 149.16 93.33 P
+1.8 (AS-speci\336c function can) 194.52 93.33 P
+315 72 540 720 R
+7 X
+V
+0 X
+2.26 (accept the victim page or suggest another page as a) 315 713.33 P
+(replacement \050similar to Cao\325) 315 701.33 T
+(s replacement strategy [5]\051.) 429.15 701.33 T
+5.25 (The global algorithm then veri\336es that the) 340.2 689.33 P
+1.91 (selected page belongs to the speci\336c V) 315 677.33 P
+1.91 (AS and is not) 480.11 677.33 P
+0.56 (wired. If either of these checks fails the system ignores) 315 665.33 P
+2.68 (the request and evicts the original victim. When an) 315 653.33 P
+1.76 (acceptable choice is returned, we use Cao\325) 315 641.33 P
+1.76 (s approach) 495.2 641.33 P
+0.16 (and place the original victim into the global LRU queue) 315 629.33 P
+0.1 (in the spot occupied by the replacement speci\336ed by the) 315 617.33 P
+(graft.) 315 605.33 T
+0 F
+(4.2.2) 315 139.33 T
+(Measuring Page Eviction Graft Overhead) 340.2 139.33 T
+1 F
+0.43 (W) 315 127.33 P
+0.43 (e tested our sample page eviction graft with an appli-) 323.64 127.33 P
+1.84 (cation that has a 2MB data footprint of which a few) 315 115.33 P
+-0.23 (pages are performance critical. The application and graft) 315 103.33 P
+2.92 (share a region of memory in which the application) 315 91.33 P
+2.13 (places the page numbers of those pages it wishes to) 315 79.33 P
+0 9 Q
+(Overhead) 435.5 584 T
+(\050) 447.16 574 T
+4 F
+(m) 450.16 574 T
+0 F
+(s\051) 455.34 574 T
+(Elapsed) 493.24 584 T
+(time \050) 491.54 574 T
+4 F
+(m) 513.78 574 T
+0 F
+(s\051) 518.96 574 T
+1 F
+(Base path) 322.5 560 T
+(39) 505.5 560 T
+2 F
+(Indir) 333.3 546 T
+(ection cost) 350.97 546 T
+(1) 456 546 T
+1 F
+(VINO path) 322.5 532 T
+(40) 505.5 532 T
+2 F
+(T) 333.3 518 T
+(ransaction begin) 337.81 518 T
+(52) 451.5 518 T
+(Null graft cost) 333.3 504 T
+(2) 456 504 T
+(T) 333.3 490 T
+(ransaction commit) 337.81 490 T
+(34) 451.5 490 T
+(Results checking) 333.3 476 T
+(+2) 449.92 476 T
+(Incr) 333.3 462 T
+(emental over) 347.96 462 T
+(head) 394.54 462 T
+(90) 451.5 462 T
+1 F
+(Null path) 322.5 448 T
+(130) 501 448 T
+2 F
+(Lock over) 333.3 434 T
+(head) 368.88 434 T
+(34) 451.5 434 T
+(Graft function) 333.3 420 T
+(Results checking) 333.3 406 T
+(160) 447 420 T
+(+5) 449.92 406 T
+(Incr) 333.3 392 T
+(emental over) 347.96 392 T
+(head) 394.54 392 T
+(199) 447 392 T
+1 F
+(Unsafe path) 322.5 378 T
+(329) 501 378 T
+2 F
+(MiSFIT over) 333.3 364 T
+(head) 379.38 364 T
+(26) 451.5 364 T
+1 F
+(Safe path) 322.5 350 T
+(355) 501 350 T
+2 F
+(Abort cost \050additional,) 333.3 336 T
+(above commit time\051) 333.3 326 T
+(\3207) 451.5 336 T
+1 F
+(Abort path) 322.5 312 T
+(348) 501 312 T
+0 F
+0 (T) 319.5 296 P
+0 (able 4.) 324.67 296 P
+0 (Page Eviction Graft Overhead.) 354.18 296 P
+1 F
+0 (The grafted code) 475.42 296 P
+5.46 (runs in addition to the default code. Because the) 319.5 285 P
+-0.06 (pagedaemon runs as a background thread, its behavior is not) 319.5 274 P
+2.7 (completely deterministic, and we observe high standard) 319.5 263 P
+1.29 (deviations when calculating incremental overheads. While) 319.5 252 P
+1.28 (the measurements with over 329) 319.5 241 P
+4 F
+1.28 (m) 441.6 241 P
+1 F
+1.28 (s duration had less than) 446.79 241 P
+2.39 (3% standard deviation, short-duration measurements had) 319.5 230 P
+0.02 (high standard deviations \050the highest was 16% for the) 319.5 219 P
+2 F
+0.02 (VINO) 515.4 219 P
+-0.06 (path) 319.5 208 P
+1 F
+-0.06 (\051. For both) 335.5 208 P
+2 F
+-0.06 (unsafe) 375.83 208 P
+1 F
+-0.06 ( and) 399.33 208 P
+2 F
+-0.06 (safe paths) 416.71 208 P
+1 F
+-0.06 (, the graft overrules the) 452.9 208 P
+0.77 (default victim selection. The total cost of the) 319.5 197 P
+2 F
+0.77 (abort path) 488.86 197 P
+1 F
+0.77 ( is) 527.38 197 P
+0.94 (lower than the) 319.5 186 P
+2 F
+0.94 (safe path,) 376.05 186 P
+1 F
+0.94 (because results checking and list) 415.17 186 P
+319.5 158 540 172 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+319.5 165 823.5 165 2 L
+0.25 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 612 792 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(manipulation are simpli\336ed.) 319.5 175 T
+319.5 593.75 319.5 306.25 2 L
+V
+0.5 H
+0 Z
+N
+535.5 593.75 535.5 306.25 2 L
+V
+N
+319.25 594 535.75 594 2 L
+V
+N
+319.25 568 535.75 568 2 L
+V
+N
+319.25 554 535.75 554 2 L
+V
+0.25 H
+N
+319.25 526 535.75 526 2 L
+V
+N
+427.5 470 481.5 470 2 L
+V
+N
+319.25 442 535.75 442 2 L
+V
+N
+427.5 400 481.5 400 2 L
+V
+N
+319.25 372 535.75 372 2 L
+V
+N
+319.25 344 535.75 344 2 L
+V
+N
+319.25 306 535.75 306 2 L
+V
+0.5 H
+N
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "10" 10
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 1 0 0 1 0]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+72 72 297 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+0.42 (retain in memory) 72 713.33 P
+0.42 (. During page out, the graft checks the) 141.06 713.33 P
+-0.17 (globally selected victim to ensure that it is not one of the) 72 701.33 P
+-0.22 (pages listed by the application. If it is, the graft scans the) 72 689.33 P
+0.1 (list of pages that it is allowed to evict, returning the \336rst) 72 677.33 P
+1.36 (page it \336nds that is not on its list of important pages.) 72 665.33 P
+0.74 (T) 72 653.33 P
+0.74 (able 4 shows the dif) 77.41 653.33 P
+0.74 (ferent measurement paths for this) 160.18 653.33 P
+(graft.) 72 641.33 T
+2.08 (When a graft disagrees with the default victim) 97.2 629.33 P
+1.64 (selection, the cost of victim selection increases by an) 72 617.33 P
+0.18 (order of magnitude, but is quite reasonable compared to) 72 605.33 P
+0.56 (the cost of the I/O operation that might be saved. If we) 72 593.33 P
+-0.06 (apply a cost-bene\336t analysis, the cost of adding the graft) 72 581.33 P
+0.94 (is 316) 72 569.33 P
+4 F
+0.94 (m) 100.56 569.33 P
+1 F
+0.94 (s, while the bene\336t of avoiding a page fault is) 106.32 569.33 P
+3.23 (approximately 18 ms in our system. The graft can) 72 557.33 P
+2.97 (disagree with the victim selection approximately 57) 72 545.33 P
+0.63 (times for each I/O that we save. In addition, the cost is) 72 533.33 P
+-0.01 (reduced to 159) 72 521.33 P
+4 F
+-0.01 (m) 133.88 521.33 P
+1 F
+-0.01 (s when the graft agrees with the default) 139.65 521.33 P
+0.72 (victim selection, and because the pageout daemon runs) 72 509.33 P
+4.42 (asynchronously) 72 497.33 P
+4.42 (, the increased cost of victim page) 134.12 497.33 P
+(selection is unlikely to reduce application performance.) 72 485.33 T
+0 F
+(4.3) 72 463.33 T
+(A Prioritization Graft: Scheduling) 93.6 463.33 T
+1 F
+0.74 (It is often the case that a group of threads or processes) 72 451.33 P
+1.46 (work in concert, and should be scheduled as a group.) 72 439.33 P
+1.43 (For example, a database server process and its clients) 72 427.33 P
+0 (can be thought of as a single application; when there are) 72 415.33 P
+4.5 (no outstanding server requests, the server process) 72 403.33 P
+1.57 (should not be scheduled, but when several clients are) 72 391.33 P
+2.17 (blocked on requests to the server) 72 379.33 P
+2.17 (, the server process) 213.84 379.33 P
+-0.01 (should be given a proportionally lar) 72 367.33 P
+-0.01 (ger share of the total) 214.83 367.33 P
+0.96 (CPU in order to more quickly reply to the outstanding) 72 355.33 P
+(requests.) 72 343.33 T
+1.55 (Each user) 97.2 331.33 P
+1.55 (-level process has associated with it a) 137.7 331.33 P
+0.18 (kernel-level thread. When the kernel thread is chosen to) 72 319.33 P
+1.18 (be run next, its) 72 307.33 P
+2 F
+1.18 (schedule-delegate) 138.68 307.33 P
+1 F
+1.18 (function is run. The) 214.57 307.33 P
+-0.21 (default version of this function returns the identity of the) 72 295.33 P
+-0.13 (thread itself \050i.e., instructions to run the selected thread\051.) 72 283.33 P
+3.71 (The schedule-delegate function can be replaced by) 72 271.33 P
+0.4 (grafting a process-speci\336c function that, in the example) 72 259.33 P
+1.18 (above, would have the client return the identity of the) 72 247.33 P
+-0.21 (server process when the client was waiting for the server) 72 235.33 P
+(to reply to a request.) 72 223.33 T
+4.25 (Our example schedule-delegate graft scans a) 97.2 211.33 P
+-0.06 (process list of 64 entries, examines each \050to determine if) 72 199.33 P
+1.46 (one of the other processes should be run instead\051 and) 72 187.33 P
+(then returns its own ID.) 72 175.33 T
+4.86 (The) 97.2 163.33 P
+2 F
+4.86 (base path) 120.11 163.33 P
+1 F
+4.86 ( measurement is the cost of) 163.57 163.33 P
+0.25 (switching processes on our system, the primary costs of) 72 151.33 P
+0.39 (which are choosing which thread to run next, switching) 72 139.33 P
+0.11 (kernel threads, and switching VM contexts. In this case,) 72 127.33 P
+0.55 (the) 72 115.33 P
+2 F
+0.55 (VINO path) 87.27 115.33 P
+1 F
+0.55 ( dif) 131.43 115.33 P
+0.55 (fers from the) 145.41 115.33 P
+2 F
+0.55 (base path) 201.2 115.33 P
+1 F
+0.55 (only in a call) 243.41 115.33 P
+1 (to a function that returns the new threads\325) 72 103.33 P
+1 (s ID and the) 245.39 103.33 P
+1.95 (code to verify that the returned ID is that of a valid) 72 91.33 P
+0.91 (thread \050which is accomplished by probing a hash table) 72 79.33 P
+315 72 540 720 R
+7 X
+V
+0 X
+2.26 (containing the valid thread IDs\051. The) 315 713.33 P
+2 F
+2.26 (null path) 478.81 713.33 P
+1 F
+2.26 ( adds) 516.91 713.33 P
+1.15 (transaction support around an invocation to this trivial) 315 701.33 P
+1.67 (function. The) 315 689.33 P
+2 F
+1.67 (unsafe path) 374.72 689.33 P
+1 F
+1.67 ( invokes the graft described) 422.78 689.33 P
+-0.1 (above without SFI protection, and the) 315 677.33 P
+2 F
+-0.1 (safe path) 467.98 677.33 P
+1 F
+-0.1 ( includes) 504.27 677.33 P
+0.93 (the cost of SFI protection. The results are presented in) 315 665.33 P
+(T) 315 653.33 T
+(able 6.) 320.41 653.33 T
+0.98 (Because this graft walks the process list, it must) 340.2 229.33 P
+-0.05 (acquire a lock for the list. The) 315 217.33 P
+2 F
+-0.05 (unsafe) 437.42 217.33 P
+1 F
+-0.05 ( and) 463.53 217.33 P
+2 F
+-0.05 (safe paths) 482.87 217.33 P
+1 F
+-0.05 ( add) 523.11 217.33 P
+0.99 (this cost to the cost of the code that walks the process) 315 205.33 P
+1.23 (list; the) 315 193.33 P
+2 F
+1.23 (safe path) 349.7 193.33 P
+1 F
+1.23 ( adds the cost of MiSFIT protection.) 387.32 193.33 P
+2.23 (Each iteration of the loop that walks the 64-element) 315 181.33 P
+1.64 (process list takes about 0.5) 315 169.33 P
+4 F
+1.64 (m) 433.21 169.33 P
+1 F
+1.64 (s, primarily because our) 438.98 169.33 P
+(collection class implementation is not well-optimized.) 315 157.33 T
+2.58 (The cost for this graft, starting with the \336xed) 340.2 145.33 P
+1.35 (transaction begin/commit cost, is higher than the) 315 133.33 P
+2 F
+1.35 (base) 521.67 133.33 P
+3.11 (path) 315 121.33 P
+1 F
+3.11 ( cost \050for switching processes twice\051. Although) 332.78 121.33 P
+0.41 (twice the cost of a process switch, it is still roughly 2%) 315 109.33 P
+0.56 (of a typical timeslice of 10 ms \050as opposed to 0.5% for) 315 97.33 P
+(the) 315 85.33 T
+2 F
+(base path) 329.72 85.33 T
+1 F
+(\051.) 368.33 85.33 T
+0 9 Q
+(Overhead) 435.5 621 T
+(\050) 447.16 611 T
+4 F
+(m) 450.16 611 T
+0 F
+(s\051) 455.34 611 T
+(Elapsed) 493.24 626 T
+(T) 490.12 616 T
+(ime \050) 495.96 616 T
+4 F
+(m) 515.2 616 T
+0 F
+(s\051) 520.38 616 T
+1 F
+(Base path \050two switches\051) 322.5 598 T
+(54) 505.5 598 T
+2 F
+(Indir) 333.3 585 T
+(ection cost) 350.97 585 T
+(1) 456 585 T
+1 F
+(VINO path) 322.5 572 T
+(55) 505.5 572 T
+2 F
+(T) 333.3 559 T
+(ransaction begin) 337.81 559 T
+(38) 451.5 559 T
+(Null graft cost) 333.3 546 T
+(2) 456 546 T
+(T) 333.3 533 T
+(ransaction commit) 337.81 533 T
+(30) 451.5 533 T
+(L1 cache miss time) 333.3 520 T
+(+6) 449.92 520 T
+(Incr) 333.3 507 T
+(emental Over) 347.96 507 T
+(head) 396.53 507 T
+(76) 451.5 507 T
+1 F
+(Null path) 322.5 494 T
+(131) 501 494 T
+2 F
+(Lock over) 333.3 481 T
+(head) 368.88 481 T
+(33) 451.5 481 T
+(Graft function) 333.3 468 T
+(35) 451.5 468 T
+(Result checking) 333.3 455 T
+1 F
+(+) 450.92 455 T
+2 F
+(4) 456 455 T
+(Incr) 333.3 442 T
+(emental Over) 347.96 442 T
+(head) 396.53 442 T
+(72) 451.5 442 T
+1 F
+(Unsafe path) 322.5 429 T
+(203) 501 429 T
+2 F
+(MiSFIT over) 333.3 416 T
+(head) 379.38 416 T
+(5) 456 416 T
+1 F
+(Safe path) 322.5 403 T
+(208) 501 403 T
+2 F
+(Abort cost \050additional,) 333.3 390 T
+(above commit time\051) 333.3 380 T
+(3) 456 390 T
+1 F
+(Abort path) 322.5 367 T
+(21) 501.33 367 T
+(1) 510 367 T
+0 F
+3.37 (T) 319.5 352 P
+3.37 (able 5.) 324.67 352 P
+3.37 (Scheduling Graft Overhead) 357.55 352 P
+1 F
+3.37 (. The) 470.79 352 P
+2 F
+3.37 (base path) 498.28 352 P
+1 F
+0.41 (measurement includes the time to select the next process to) 319.5 341 P
+0.52 (run, switch to it, and switch back \050including switching VM) 319.5 330 P
+0.77 (contexts twice\051. The) 319.5 319 P
+2 F
+0.77 (null path) 397.29 319 P
+1 F
+0.77 ( includes a call to a function) 430.31 319 P
+0.55 (that returns its ar) 319.5 308 P
+0.55 (gument \050the candidate thread\051. The) 381.71 308 P
+2 F
+0.55 (unsafe) 512.9 308 P
+0.35 (path) 319.5 297 P
+1 F
+0.35 ( adds the invocation of a non-trivial function that locks) 335.5 297 P
+3.73 (and searches the process list. The lar) 319.5 286 P
+3.73 (gest increase in) 473.45 286 P
+0.52 (overhead comes from the transaction and lock costs, which) 319.5 275 P
+319.5 247 540 261 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+319.5 254 823.5 254 2 L
+0.25 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 612 792 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(sum to twice the process switch cost.) 319.5 264 T
+319.5 640.75 319.5 362.25 2 L
+V
+0.5 H
+0 Z
+N
+535.5 640.75 535.5 362.25 2 L
+V
+N
+319.25 641 535.75 641 2 L
+V
+N
+319.25 606 535.75 606 2 L
+V
+N
+319.25 593 535.75 593 2 L
+V
+0.25 H
+N
+319.25 567 535.75 567 2 L
+V
+N
+427.5 515 481.5 515 2 L
+V
+N
+319.25 489 535.75 489 2 L
+V
+N
+427.5 450 481.5 450 2 L
+V
+N
+319.25 424 535.75 424 2 L
+V
+N
+319.25 398 535.75 398 2 L
+V
+N
+319.25 362 535.75 362 2 L
+V
+0.5 H
+N
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "11" 11
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 1 0 0 1 0]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+72 72 297 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+2.93 (The bene\336t of permitting processes to control) 97.2 713.33 P
+0.88 (scheduling is dif) 72 701.33 P
+0.88 (\336cult to quantify; however) 139.69 701.33 P
+0.88 (, the bene\336t) 248.3 701.33 P
+0.45 (of being able to control which process runs next can be) 72 689.33 P
+8.55 (considerable. Multimedia applications are often) 72 677.33 P
+1.35 (structured as several cooperating processes or threads.) 72 665.33 P
+0.68 (In a conventional system, if the user interface thread is) 72 653.33 P
+2.3 (scheduled when it comes time for the application to) 72 641.33 P
+0.37 (display the next video frame, the best the UI thread can) 72 629.33 P
+0.59 (do is yield, and hope that the video thread is scheduled) 72 617.33 P
+2.45 (soon. W) 72 605.33 P
+2.45 (ith the ability to delegate a timeslice in the) 107.38 605.33 P
+2.01 (manner discussed here, the UI thread could hand of) 72 593.33 P
+2.01 (f) 293.67 593.33 P
+2.66 (directly to the video thread, with the goal of better) 72 581.33 P
+(meeting the scheduling deadlines of the application.) 72 569.33 T
+1.91 (An operating system with support for real-time) 97.2 557.33 P
+0.13 (scheduling and service guarantees might better meet the) 72 545.33 P
+0.37 (needs of this particular application; however) 72 533.33 P
+0.37 (, we do not) 251.46 533.33 P
+2.64 (believe that we can) 72 521.33 P
+2 F
+2.64 (a priori) 161.99 521.33 P
+1 F
+2.64 ( determine all desirable) 195.48 521.33 P
+(scheduling policies and hard-code them into the kernel.) 72 509.33 T
+0 F
+(4.4) 72 487.33 T
+(A Str) 93.6 487.33 T
+(eam Graft: Encryption/Decryption) 116.47 487.33 T
+1 F
+1.04 (A stream graft is used to transform a data stream as it) 72 475.33 P
+-0.1 (passes through the kernel. Examples of stream grafts are) 72 463.33 P
+1.74 (compression \050and decompression\051, logging, mirroring,) 72 451.33 P
+(and encryption \050and decryption\051.) 72 439.33 T
+0.19 (Our graft performs a trivial \050xor) 97.2 427.33 P
+0.19 (-style\051 encryption) 225.99 427.33 P
+1.75 (of data as it is copied to user level, and symmetrical) 72 415.33 P
+2.13 (decryption as it is brought into the kernel from user) 72 403.33 P
+8.85 (level. The encryption algorithm used is not) 72 391.33 P
+4.56 (computationally intensive, which is a conservative) 72 379.33 P
+3.16 (position to take. The primary cost imposed by our) 72 367.33 P
+0.84 (software fault isolation tool is protection against errant) 72 355.33 P
+2.47 (loads and stores, so the higher the ratio of memory) 72 343.33 P
+4.53 (accesses to other instructions, the higher the SFI) 72 331.33 P
+0.6 (overhead. The most trivial stream graft just copies data) 72 319.33 P
+0.97 (from input to output without transforming it; this graft) 72 307.33 P
+2.88 (has the highest ratio of stores to other instructions.) 72 295.33 P
+3.94 (Therefore, the simpler the transformation the graft) 72 283.33 P
+0.56 (performs, the more conservative the overhead estimate.) 72 271.33 P
+2.15 (For example, the cost of a computationally intensive) 72 259.33 P
+5.7 (encryption scheme \050e.g., DES\051 would dwarf the) 72 247.33 P
+(overhead associated with software fault isolation.) 72 235.33 T
+2.27 (Our sample graft is passed an 8KB input data) 97.2 223.33 P
+3.7 (buf) 72 211.33 P
+3.7 (fer block and an 8KB output buf) 85.15 211.33 P
+3.7 (fer) 237.13 211.33 P
+3.7 (. The graft) 247.68 211.33 P
+-0.04 (encrypts the data into the output buf) 72 199.33 P
+-0.04 (fer and returns. This) 216.02 199.33 P
+2.57 (graft is particularly interesting in that it requires no) 72 187.33 P
+0.87 (synchronization overhead \050the input and output buf) 72 175.33 P
+0.87 (fers) 282.01 175.33 P
+1.01 (have been obtained in the caller\051, but of) 72 163.33 P
+1.01 (fers nearly the) 237.77 163.33 P
+0.25 (worst case of software fault isolation overhead, because) 72 151.33 P
+0.24 (it consists almost entirely of load and store instructions.) 72 139.33 P
+(T) 72 127.33 T
+(able 6 shows the overhead for the encryption graft.) 77.41 127.33 T
+1.99 (For the) 97.2 115.33 P
+2 F
+1.99 (base path) 132.29 115.33 P
+1 F
+1.99 ( measurement we use the in-) 172.9 115.33 P
+0.68 (kernel bcopy function to copy an 8KB buf) 72 103.33 P
+0.68 (fer \050105) 245.73 103.33 P
+4 F
+0.68 (m) 281.52 103.33 P
+1 F
+0.68 (s\051.) 287.28 103.33 P
+3.4 (The) 72 91.33 P
+2 F
+3.4 (VINO path) 93.46 91.33 P
+1 F
+3.4 ( adds a function indirection that is) 140.47 91.33 P
+1.45 (suf) 72 79.33 P
+1.45 (\336ciently fast to be undetectable, and, as above, the) 84.04 79.33 P
+315 72 540 720 R
+7 X
+V
+2 F
+0 X
+1.68 (null path) 315 713.33 P
+1 F
+1.68 ( adds transaction begin and commit \05064) 352.52 713.33 P
+4 F
+1.68 (m) 524.52 713.33 P
+1 F
+1.68 (s\051.) 530.28 713.33 P
+1.08 (The) 315 701.33 P
+2 F
+1.08 (base) 334.13 701.33 P
+1 F
+1.08 ( and) 352.46 701.33 P
+2 F
+1.08 (VINO path) 374.05 701.33 P
+1 F
+1.08 ( measurements are arti\336cially) 418.74 701.33 P
+1.03 (low because they call bcopy in a tight loop. Using the) 315 689.33 P
+1.72 (Pentium on-chip counters, we measured an additional) 315 677.33 P
+0.87 (24) 315 665.33 P
+4 F
+0.87 ( m) 325 665.33 P
+1 F
+0.87 (s spent servicing L1 cache misses in the) 334.13 665.33 P
+2 F
+0.87 (null path) 503.29 665.33 P
+1 F
+(case, for a bcopy time of 193) 315 653.33 T
+4 F
+(m) 433.86 653.33 T
+1 F
+(s.) 439.62 653.33 T
+1.12 (The) 340.2 342.33 P
+2 F
+1.12 (unsafe path) 359.37 342.33 P
+1 F
+1.12 ( encrypts the data as it copies it) 406.88 342.33 P
+1.4 (from input to output, adding another 166) 315 330.33 P
+4 F
+1.4 (m) 490.34 330.33 P
+1 F
+1.4 (s over and) 496.1 330.33 P
+0.92 (above the cost of the bcopy) 315 318.33 P
+0.92 (, for a total of 359) 428.65 318.33 P
+4 F
+0.92 (m) 508.88 318.33 P
+1 F
+0.92 (s. The) 514.64 318.33 P
+3.16 (encryption takes 3.4 times that of a straight bcopy) 315 306.33 P
+6.76 (\050which is implemented using a hardware copy) 315 294.33 P
+1.34 (instruction that has a cost of only one cycle per word) 315 282.33 P
+(copied\051.) 315 270.33 T
+1.37 (The cost of MiSFIT protection on the) 340.2 258.33 P
+2 F
+1.37 (safe path) 502.24 258.33 P
+1 F
+0.05 (adds 187) 315 246.33 P
+4 F
+0.05 (m) 353.44 246.33 P
+1 F
+0.05 (s, for a total of 546) 359.2 246.33 P
+4 F
+0.05 (m) 438.13 246.33 P
+1 F
+0.05 (s, or 5.2 times a straight) 443.89 246.33 P
+0.04 (bcopy) 315 234.33 P
+0.04 (. This overhead is not surprising, given the lack of) 338.79 234.33 P
+2.14 (optimization in our software fault isolation tool. Our) 315 222.33 P
+2.43 (tool protects each indirect memory access; since the) 315 210.33 P
+1.29 (graft consists primarily of memory accesses, we see a) 315 198.33 P
+1.95 (protection overhead between two and three times the) 315 186.33 P
+(cost of the function itself.) 315 174.33 T
+0 F
+(4.5) 315 152.33 T
+(T) 336.6 152.33 T
+(ransaction Failur) 342.53 152.33 T
+(e Overhead) 416.52 152.33 T
+1 F
+2.29 (In each of our sample grafts, we measured the time) 315 140.33 P
+0.31 (required to abort the graft. This cost is a function of the) 315 128.33 P
+0.18 (number and complexity of the undo functions, the num-) 315 116.33 P
+-0.24 (ber of locks to release, and the constant overhead associ-) 315 104.33 P
+5.32 (ated with ending a transaction. This cost varies) 315 92.33 P
+0.69 (dramatically) 315 80.33 P
+0.69 (, depending on the complexity of the graft.) 364.34 80.33 P
+0 9 Q
+(Overhead) 435.5 630 T
+(\050) 447.16 620 T
+4 F
+(m) 450.16 620 T
+0 F
+(s\051) 455.34 620 T
+(Elapsed) 493.24 630 T
+(time \050) 491.54 620 T
+4 F
+(m) 513.78 620 T
+0 F
+(s\051) 518.96 620 T
+1 F
+(Base path) 322.5 605 T
+(105) 501 605 T
+(VINO path) 322.5 590 T
+(105) 501 590 T
+2 F
+(T) 333.3 575 T
+(ransaction begin) 337.81 575 T
+(32) 451.5 575 T
+(T) 333.3 560 T
+(ransaction commit) 337.81 560 T
+(32) 451.5 560 T
+(L1 cache miss time) 333.3 545 T
+(+24) 445.42 545 T
+(Incr) 333.3 530 T
+(emental over) 347.96 530 T
+(head) 394.54 530 T
+(88) 451.5 530 T
+1 F
+(Null path) 322.5 515 T
+(193) 501 515 T
+2 F
+(Graft function) 333.3 500 T
+(166) 447 500 T
+1 F
+(Unsafe path) 322.5 485 T
+(359) 501 485 T
+2 F
+(MiSFIT over) 333.3 470 T
+(head) 379.38 470 T
+(187) 447 470 T
+1 F
+(Safe path) 322.5 455 T
+(546) 501 455 T
+2 F
+(Abort cost \050additional,) 333.3 440 T
+(above commit time\051) 333.3 430 T
+(4) 456 440 T
+1 F
+(Abort path) 322.5 415 T
+(550) 501 415 T
+0 F
+1.41 (T) 319.5 399 P
+1.41 (able 6.) 324.67 399 P
+1.41 (Encryption Graft Overhead.) 355.59 399 P
+1 F
+1.41 (As expected, this) 471.83 399 P
+1.53 (graft is a worst-case scenario for software fault isolation,) 319.5 388 P
+319.5 360 540 374 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+319.5 367 823.5 367 2 L
+0.25 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 612 792 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(imposing more than 100% overhead on the graft function.) 319.5 377 T
+319.5 640.75 319.5 409.25 2 L
+V
+0.5 H
+0 Z
+N
+535.5 640.75 535.5 409.25 2 L
+V
+N
+319.25 641 535.75 641 2 L
+V
+N
+319.25 614 535.75 614 2 L
+V
+N
+319.25 599 535.75 599 2 L
+V
+0.25 H
+N
+319.25 584 535.75 584 2 L
+V
+N
+427.5 539 481.5 539 2 L
+V
+N
+319.25 509 535.75 509 2 L
+V
+N
+319.25 479 535.75 479 2 L
+V
+N
+319.25 449 535.75 449 2 L
+V
+N
+319.25 409 535.75 409 2 L
+V
+0.5 H
+N
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "12" 12
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 1 0 0 1 0]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+72 72 297 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+0.01 (For each of the grafts described above, we measured the) 72 713.33 P
+0.53 (cost of aborting the) 72 701.33 P
+2 F
+0.53 (null path) 154.12 701.33 P
+1 F
+0.53 ( as well as the full grafted) 190.49 701.33 P
+(path. These measurements are shown in T) 72 689.33 T
+(able 7.) 239.32 689.33 T
+0.04 (Our sample grafts have suf) 97.2 677.33 P
+0.04 (\336ciently little state that) 204.93 677.33 P
+0.23 (the full abort cost is only 0% to 40% more than the null) 72 665.33 P
+1.48 (abort cost. Most of these grafts have little) 72 653.33 P
+2 F
+1.48 (undo) 252.46 653.33 P
+1 F
+1.48 ( work) 272.46 653.33 P
+1.55 (and few locks. While we believe that these grafts are) 72 641.33 P
+0.09 (representative of the \336ne-grain grafts that VINO allows,) 72 629.33 P
+1.08 (more complex grafts will have higher abort costs. The) 72 617.33 P
+5.6 (total abort time is represented by the equation:) 72 605.33 P
+14.77 (. The abort) 223.87 593.33 P
+1.01 (overheads we measured ranged from 32\32038) 72 581.33 P
+4 F
+1.01 (m) 251.73 581.33 P
+1 F
+1.01 (s, and we) 257.49 581.33 P
+0.49 (measured the cost of releasing a lock at 10) 72 569.33 P
+4 F
+0.49 (m) 248.88 569.33 P
+1 F
+0.49 (s per lock.) 254.64 569.33 P
+0.65 (The undo cost should be somewhat less than the actual) 72 557.33 P
+3.13 (cost of running the graft. Therefore, the abort cost) 72 545.33 P
+3.24 (equation becomes:) 72 533.33 P
+3.24 (, where L is the) 222.13 533.33 P
+-0.14 (number of locks to be released, G is the cost of the graft,) 72 521.33 P
+(and c is a constant less than one.) 72 509.33 T
+5.06 (The most signi\336cant variable in aborting a) 97.2 332.33 P
+0.84 (transaction occurs when the graft hoards resources and) 72 320.33 P
+0.76 (must be timed out. W) 72 308.33 P
+0.76 (e currently schedule time-outs on) 160.64 308.33 P
+2.97 (system-clock boundaries, which occur every 10 ms.) 72 296.33 P
+0.31 (Therefore, the delay for timing out a transaction will be) 72 284.33 P
+2.04 (between 10 and 20 ms. This is obviously too coarse) 72 272.33 P
+7.71 (grain for some resources, and we expect to) 72 260.33 P
+0.84 (experimentally determine a more appropriate timing as) 72 248.33 P
+(the system matures.) 72 236.33 T
+0 F
+(4.6) 72 214.33 T
+(Summary) 93.6 214.33 T
+1 F
+2.51 (The overhead associated with using transactions and) 72 202.33 P
+0.92 (software fault isolation to protect kernel integrity from) 72 190.33 P
+0.6 (misbehaving grafts varies according the type of actions) 72 178.33 P
+0.53 (performed by the graft. As the encryption graft demon-) 72 166.33 P
+0.11 (strated, MiSFIT can increase the execution time of graft) 72 154.33 P
+2.3 (code by nearly 200%. For less data intensive grafts,) 72 142.33 P
+0.56 (such as the \336le read-ahead graft, the MiSFIT overhead,) 72 130.33 P
+0.27 (while lar) 72 118.33 P
+0.27 (ge relative to the cost of the graft itself, is only) 107.36 118.33 P
+-0.1 (a few microseconds. T) 72 106.33 P
+-0.1 (ransaction costs are relatively sta-) 161.88 106.33 P
+-0.24 (ble across all grafts, increasing in proportion to the num-) 72 94.33 P
+0.66 (ber of locks acquired on a graft\325) 72 82.33 P
+0.66 (s behalf. Each use of a) 203.72 82.33 P
+0 9 Q
+(Null Abort) 179.82 486 T
+(\050) 193.36 476 T
+4 F
+(m) 196.36 476 T
+0 F
+(s\051) 201.54 476 T
+(Full Abort) 241.52 486 T
+(\050) 254.56 476 T
+4 F
+(m) 257.56 476 T
+0 F
+(s\051) 262.74 476 T
+1 F
+(Read-Ahead) 82.5 461 T
+(32) 196.86 461 T
+(45) 258.06 461 T
+(Page Eviction) 82.5 446 T
+(38) 196.86 446 T
+(50) 258.06 446 T
+(Scheduling) 82.5 431 T
+(33) 196.86 431 T
+(45) 258.06 431 T
+(Encryption) 82.5 416 T
+(36) 196.86 416 T
+(36) 258.06 416 T
+0 F
+0.37 (T) 76.5 400 P
+0.37 (able 7.) 81.68 400 P
+0.37 (Graft Abort Costs.) 111.55 400 P
+1 F
+0.37 (For each of our sample grafts,) 187.16 400 P
+0.72 (the dif) 76.5 389 P
+0.72 (ference between the two columns is a function of the) 100.31 389 P
+3.44 (number and complexity of the undo functions and the) 76.5 378 P
+76.5 350 297 364 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+76.5 357 580.5 357 2 L
+0.25 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 612 792 C
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(number of locks that must be released.) 76.5 367 T
+76.5 496.75 76.5 410.25 2 L
+V
+0.5 H
+0 Z
+N
+292.5 496.75 292.5 410.25 2 L
+V
+N
+76.25 497 292.75 497 2 L
+V
+N
+76.25 470 292.75 470 2 L
+V
+N
+76.25 410 292.75 410 2 L
+V
+N
+72 589.08 223.87 601.08 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(a) 71.88 593.33 T
+(b) 75.87 593.33 T
+(o) 80.37 593.33 T
+(r) 84.87 593.33 T
+(t) 87.87 593.33 T
+(o) 94.87 593.33 T
+(v) 99.37 593.33 T
+(e) 103.87 593.33 T
+(r) 107.87 593.33 T
+(h) 110.86 593.33 T
+(e) 115.36 593.33 T
+(a) 119.36 593.33 T
+(d) 123.36 593.33 T
+(u) 137.43 593.33 T
+(n) 141.93 593.33 T
+(l) 146.43 593.33 T
+(o) 148.93 593.33 T
+(c) 153.43 593.33 T
+(k) 157.42 593.33 T
+(c) 164.17 593.33 T
+(o) 168.17 593.33 T
+(s) 172.67 593.33 T
+(t) 176.17 593.33 T
+(u) 188.24 593.33 T
+(n) 192.74 593.33 T
+(d) 197.24 593.33 T
+(o) 201.74 593.33 T
+(c) 208.49 593.33 T
+(o) 212.49 593.33 T
+(s) 216.99 593.33 T
+(t) 220.49 593.33 T
+(+) 130.1 593.33 T
+(+) 180.92 593.33 T
+0 0 612 792 C
+155.68 529.08 222.13 541.08 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(3) 156.68 533.33 T
+(5) 161.18 533.33 T
+4 F
+(m) 166.21 533.33 T
+2 F
+(s) 171.93 533.33 T
+1 F
+(1) 185 533.33 T
+(0) 189.5 533.33 T
+2 F
+(L) 194.53 533.33 T
+(c) 209.1 533.33 T
+(G) 213.63 533.33 T
+1 F
+(+) 177.68 533.33 T
+(+) 201.78 533.33 T
+0 0 612 792 C
+315 72 540 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+0.52 (transaction lock instead of a conventional kernel mutex) 315 713.33 P
+0.95 (lock adds approximately 19) 315 701.33 P
+4 F
+0.95 (m) 432.12 701.33 P
+1 F
+0.95 (s to the graft\325) 437.88 701.33 P
+0.95 (s execution) 493.78 701.33 P
+(time and 14) 315 689.33 T
+4 F
+(m) 364.72 689.33 T
+1 F
+(s to the abort cost.) 370.48 689.33 T
+3.38 (The measured cost of running a graft in the) 340.2 677.33 P
+1.85 (context of a transaction can be substantial, adding as) 315 665.33 P
+0.44 (much as 200) 315 653.33 P
+4 F
+0.44 (m) 369.37 653.33 P
+1 F
+0.44 (s to the execution time of the graft code.) 375.13 653.33 P
+0.44 (The true cost of downloading user code into the kernel,) 315 641.33 P
+0.02 (however) 315 629.33 P
+0.02 (, must be measured in terms of the performance) 349.03 629.33 P
+2.78 (and functionality gained by allowing applications to) 315 617.33 P
+1.84 (modify the kernel. Grafts may eliminate or hide disk) 315 605.33 P
+8.4 (accesses, avoid context switches, or eliminate) 315 593.33 P
+3.7 (programmer labor by allowing the reuse of kernel) 315 581.33 P
+0.43 (functionality) 315 569.33 P
+0.43 (. In many cases, the time gained more than) 365.46 569.33 P
+7.69 (compensates for the overhead of the grafting) 315 557.33 P
+0.77 (mechanisms. In other cases, the gains in \337exibility and) 315 545.33 P
+0.55 (savings in labor will be suf) 315 533.33 P
+0.55 (\336cient compensation, and in) 425.6 533.33 P
+4.61 (some cases, the cost will outweigh any potential) 315 521.33 P
+2.86 (bene\336ts, and we must explore other alternatives for) 315 509.33 P
+(kernel extensibility) 315 497.33 T
+(.) 391.29 497.33 T
+0 12 Q
+(5) 315 472 T
+(Related W) 333 472 T
+(ork) 386.66 472 T
+1 10 Q
+3.41 (VINO is one of many new operating systems that) 315 457.33 P
+1.85 (belongs to the class of extensible systems. It is most) 315 445.33 P
+0.46 (similar to the SPIN system [4]. In SPIN, extensions are) 315 433.33 P
+1.63 (written in a typesafe language \050Modula-3\051 and down-) 315 421.33 P
+0.07 (loaded into the kernel where they initiate a thread. Once) 315 409.33 P
+1.01 (installed, the thread can install handlers for any kernel) 315 397.33 P
+1.6 (events for which it has appropriate permission and in) 315 385.33 P
+1.49 (which it is interested. The use of a typesafe language) 315 373.33 P
+0.07 (simpli\336es some of the safety issues involved in building) 315 361.33 P
+0.01 (an extensible system, because the extensions cannot ref-) 315 349.33 P
+1.04 (erence disallowed interfaces or data. Cleaning up after) 315 337.33 P
+0.11 (errant extensions is also simpli\336ed in SPIN, because the) 315 325.33 P
+1.19 (Modula-3 garbage collector can clean up state when a) 315 313.33 P
+2.64 (graft terminates. However) 315 301.33 P
+2.64 (, the areas we found most) 424.58 301.33 P
+-0.07 (challenging, such as detecting and dealing with resource) 315 289.33 P
+1.28 (hoarding, identifying malicious extensions, and identi-) 315 277.33 P
+3.62 (fying the set of graft-callable and graft-replaceable) 315 265.33 P
+(interfaces, are also challenges for SPIN.) 315 253.33 T
+2.83 (Our event graft model is similar to the event) 340.2 241.33 P
+4.85 (model of SPIN. Where the function graft model) 315 229.33 P
+0 (\050discussed in section 3.4\051 is appropriate for simple, \336ne-) 315 217.33 P
+0.48 (grained graft points that correspond to single functions,) 315 205.33 P
+0 (event graft points provide better support for the addition) 315 193.33 P
+(of new services to the kernel.) 315 181.33 T
+0.57 (The Exokernel project [6] is an extreme example) 340.2 169.33 P
+2.75 (of an extensible system. The goal of the Exokernel) 315 157.33 P
+1.74 (project is to remove abstractions from the kernel and) 315 145.33 P
+5.84 (export a low-level machine interface directly to) 315 133.33 P
+0.36 (applications. User) 315 121.33 P
+0.36 (-level libraries implement most of the) 387.37 121.33 P
+2.78 (abstractions traditionally implemented by the kernel,) 315 109.33 P
+8.5 (and the kernel implements the bare-minimum) 315 97.33 P
+1.31 (functionality required to export the hardware interface) 315 85.33 P
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "13" 13
+%%Page: "14" 14
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 1 0 0 1 0]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+72 72 297 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+0.32 (to applications safely) 72 713.33 P
+0.32 (. There are two ways to extend the) 156.99 713.33 P
+0.34 (Exokernel. The \336rst is to modify the user) 72 701.33 P
+0.34 (-level libraries) 238.62 701.33 P
+1.07 (that implement the kernel abstractions. Because VINO) 72 689.33 P
+-0.1 (is a conventional kernel architecture, there is no analogy) 72 677.33 P
+0.11 (in VINO. The second method of extending Exokernel is) 72 665.33 P
+0.34 (to download code into the kernel and use software fault) 72 653.33 P
+(isolation, as is done in VINO, to ensure safety) 72 641.33 T
+(.) 255.77 641.33 T
+0.17 (Another approach to extensibility is to provide an) 97.2 629.33 P
+1.24 (interpretive environment in the kernel in which kernel) 72 617.33 P
+0.32 (extensions can be run. The interpreter can ensure safety) 72 605.33 P
+1.71 (by preventing extensions from wreaking havoc in the) 72 593.33 P
+3.57 (main kernel, but often incurs a signi\336cant runtime) 72 581.33 P
+(overhead [16].) 72 569.33 T
+2.1 (The adaptable systems, such as Synthetix [19],) 97.2 557.33 P
+1.3 (take a dif) 72 545.33 P
+1.3 (ferent approach from the extensible systems.) 111.64 545.33 P
+1.95 (Rather than having applications explicitly modify the) 72 533.33 P
+6.13 (kernel\325) 72 521.33 P
+6.13 (s behavior) 99.77 521.33 P
+6.13 (, Synthetix is designed so that) 146.88 521.33 P
+0.28 (commonly executed paths through the operating system) 72 509.33 P
+3.22 (can be specialized. For example, the common path) 72 497.33 P
+0.21 (through the \336le system accesses the same \336le descriptor) 72 485.33 P
+5.21 (and the same or sequentially next block in the) 72 473.33 P
+1.35 (designated \336le. By providing a specialized component) 72 461.33 P
+0.71 (that removes branches and the normal code to map \336le) 72 449.33 P
+0.88 (descriptors to kernel structures, the performance of the) 72 437.33 P
+2.19 (normal case can be greatly improved [13]. The only) 72 425.33 P
+4.17 (additional cost comes in the form of checks that) 72 413.33 P
+0.2 (distinguish between the normal path and the specialized) 72 401.33 P
+0.62 (path and allow the system to execute the correct one at) 72 389.33 P
+5.35 (the correct time. This approach is suf) 72 377.33 P
+5.35 (\336cient for) 252.49 377.33 P
+1.63 (improving performance for paths that already exist in) 72 365.33 P
+0.37 (the kernel, but does not address functionality that is not) 72 353.33 P
+(present in the kernel initially) 72 341.33 T
+(.) 186.34 341.33 T
+0 12 Q
+(6) 72 316 T
+(Lessons Learned) 90 316 T
+1 10 Q
+2.07 (C++ bought us some headaches that a safe language) 72 301.33 P
+2.09 (such as Modula-3 would have avoided. In particular) 72 289.33 P
+2.09 (,) 294.5 289.33 P
+2.11 (garbage collection would have simpli\336ed our task of) 72 277.33 P
+1.18 (cleaning up after a misbehaved graft aborts. W) 72 265.33 P
+1.18 (e could) 266.66 265.33 P
+4.45 (also have avoided work-arounds such as delaying) 72 253.33 P
+0.14 (deletes until transaction abort. Finally) 72 241.33 P
+0.14 (, the SFI overhead) 223.27 241.33 P
+-0.14 (for data intensive grafts, such as encryption, is irritating;) 72 229.33 P
+0.6 (a more constrained language would have provided pro-) 72 217.33 P
+0.6 (tection at the compiler level. While we have succeeded) 72 205.33 P
+0.73 (in making our kernel robust against malicious grafts, it) 72 193.33 P
+(has been painful at times.) 72 181.33 T
+3.29 (By far) 97.2 169.33 P
+3.29 (, the most challenging issues were not) 125.36 169.33 P
+5.05 (language issues; they were system design issues.) 72 157.33 P
+4.84 (Repeatedly) 72 145.33 P
+4.84 (, we found ourselves making trade-of) 116.34 145.33 P
+4.84 (fs) 289.78 145.33 P
+4.73 (between restricting the graft interface and adding) 72 133.33 P
+1.09 (overhead to handle all the types of malice we foresaw) 72 121.33 P
+1.56 (with the broadened interface we provided. In general,) 72 109.33 P
+1.49 (we strove to make grafts as \337exible as possible, even) 72 97.33 P
+2.13 (when it bought us extra complexity in the design or) 72 85.33 P
+315 72 540 720 R
+7 X
+V
+0 X
+4.22 (extra overhead in the protection mechanisms. The) 315 569.33 P
+1.64 (system is still too young for us to determine whether) 315 557.33 P
+4.79 (these trade-of) 315 545.33 P
+4.79 (fs were justi\336ed. As we gain more) 374.31 545.33 P
+4.56 (experience with sophisticated applications, we can) 315 533.33 P
+(reevaluate this design decision.) 315 521.33 T
+2.51 (W) 340.2 509.33 P
+2.51 (e also discovered that we had to think very) 348.84 509.33 P
+3.64 (dif) 315 497.33 P
+3.64 (ferently when designing a system for \336ne grain) 325.93 497.33 P
+0.9 (extensibility) 315 485.33 P
+0.9 (. Every decision that might conceivably be) 363.8 485.33 P
+1.64 (extended had to be encapsulated in an interface. This) 315 473.33 P
+0.46 (encourages extreme modularity) 315 461.33 P
+0.46 (. \050At this point, we have) 441.34 461.33 P
+2.61 (not been able to completely quantify this cost.\051 For) 315 449.33 P
+-0.04 (example, a conventional lock manager might implement) 315 437.33 P
+6.08 (the) 315 425.33 P
+3 F
+14.6 (get_lock) 335.8 425.33 P
+1 F
+6.08 ( request as shown in Figure 4.) 383.8 425.33 P
+0.02 (Unfortunately) 315 413.33 P
+0.02 (, this code encapsulates at least two policy) 370.45 413.33 P
+3.37 (decisions. First, it assumes that any incoming lock) 315 401.33 P
+1.28 (request can be granted if it does not con\337ict with any) 315 389.33 P
+2.87 (holders, ignoring the locks on the wait list \050e.g., it) 315 377.33 P
+0.47 (implements a reader priority locking protocol\051. Second,) 315 365.33 P
+0.47 (it assumes that locks should be appended to the waiters) 315 353.33 P
+9.35 (list, implying an ordering. A more general) 315 341.33 P
+2.03 (implementation of) 315 329.33 P
+3 F
+4.88 (get_lock) 395.17 329.33 P
+1 F
+2.03 ( is shown in Figure 5.) 443.17 329.33 P
+0.95 (This implementation encapsulates each policy decision) 315 317.33 P
+2.17 (at the cost of a level of indirection at each decision) 315 305.33 P
+3.69 (point. On our system, function calls typically cost) 315 293.33 P
+1.5 (approximately 35 cycles at 8.3 ns/cycle; these add up) 315 281.33 P
+(remarkably quickly) 315 269.33 T
+(.) 392.39 269.33 T
+4.23 (Perhaps the most daunting design issue that) 340.2 257.33 P
+2.51 (confronted us was selecting the right abstraction for) 315 245.33 P
+0.07 (grafts. Are they threads? Are they simple functions? W) 315 233.33 P
+0.07 (e) 535.56 233.33 P
+0.05 (revisit this question regularly) 315 221.33 P
+0.05 (, but our current position is) 431.43 221.33 P
+4.15 (that grafts are ef) 315 209.33 P
+4.15 (fectively user) 392.52 209.33 P
+4.15 (-level processes that) 450.61 209.33 P
+4.69 (happen to run in the kernel\325) 315 197.33 P
+4.69 (s address space. As) 448.72 197.33 P
+0.56 (processes are isolated from the kernel by address space) 315 185.33 P
+4.05 (boundaries, grafts are isolated from the kernel by) 315 173.33 P
+1.12 (software fault isolation. Grafts interact with the kernel) 315 161.33 P
+315 72 540 720 C
+315 72 540 153 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+323.57 77 537.7 145 R
+7 X
+0 0 0 1 0 0 0 K
+V
+3 8 Q
+0 X
+(get_lock\050requested_lock\051 {) 323.57 139.67 T
+(if \050can_grant = grantable\050lock\051\051) 341.57 129.67 T
+(lock_add\050lock, holders_list\051;) 359.57 119.67 T
+(else) 341.57 109.67 T
+(lock_add\050lock, waiters_list\051;) 359.57 99.67 T
+(}) 323.57 89.67 T
+0 9 Q
+(Figur) 323.57 79 T
+(e 5.) 344.91 79 T
+(Encapsulated lock algorithm.) 362.41 79 T
+315.87 73 536.62 147.33 R
+0.5 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+315 72 540 720 C
+0 0 612 792 C
+315 72 540 720 C
+315 576 540 720 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+324.17 585.5 539.21 717.83 R
+7 X
+0 0 0 1 0 0 0 K
+V
+3 8 Q
+0 X
+(get_lock\050requested_lock\051 {) 324.17 712.5 T
+(for \050lock=head\050holders_list\051;) 342.17 702.5 T
+(lock != NULL;) 360.17 692.5 T
+(lock=lock->next\051) 360.17 682.5 T
+(if \050is_conf) 360.17 672.5 T
+(lict\050lock,) 412.97 672.5 T
+(requested_lock\051\051 {) 432.17 662.5 T
+(append\050lock, waiters_list\051;) 378.17 652.5 T
+(break;) 378.17 642.5 T
+(}) 360.17 632.5 T
+(if \050lock != NULL\051) 342.17 622.5 T
+(append\050lock, holders_list\051;) 360.17 612.5 T
+(}) 324.17 602.5 T
+0 9 Q
+(Figur) 324.17 591.83 T
+(e 4.) 345.51 591.83 T
+(Conventional lock algorithm.) 363 591.83 T
+316.67 586.83 536 720.33 R
+0.5 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+315 72 540 720 C
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "14" 14
+%%Page: "15" 15
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 1 0 0 1 0]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+[ 0 1 1 0 1 0 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+72 72 297 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 10 Q
+0 X
+0.53 (through a selected set of interfaces, but these interfaces) 72 713.33 P
+1.6 (are much lower level and functionally richer than the) 72 701.33 P
+3.3 (processes\325 system call interface. In an ideal world,) 72 689.33 P
+-0.19 (grafts should look just like other kernel code, and for the) 72 677.33 P
+(most part, they do.) 72 665.33 T
+0 12 Q
+(7) 72 640 T
+(Conclusion) 90 640 T
+1 10 Q
+2.02 (T) 72 625.33 P
+2.02 (wo simple mechanisms, software fault isolation and) 77.41 625.33 P
+-0.13 (transactions, protect our kernel from mischievous exten-) 72 613.33 P
+0.1 (sions imposing penalties ranging from 104 to 270) 72 601.33 P
+4 F
+0.1 (m) 273.92 601.33 P
+1 F
+0.1 (s. In) 279.68 601.33 P
+0.92 (all of our test cases, these costs are outweighed by the) 72 589.33 P
+2.39 (potential bene\336ts of the grafts. Because grafts either) 72 577.33 P
+-0.07 (provide functionality not present in the system or signif-) 72 565.33 P
+-0.15 (icantly improve performance, we believe that such over-) 72 553.33 P
+2.33 (head is acceptable for most scenarios. It is certainly) 72 541.33 P
+-0.19 (possible that we have overlooked classes of misbehavior) 72 529.33 P
+2.19 (that we cannot detect and/or handle, but our mecha-) 72 517.33 P
+(nisms are applicable across a wide range of extensions.) 72 505.33 T
+0 12 Q
+(Acknowledgments) 72 480 T
+1 10 Q
+2.39 (W) 72 465.33 P
+2.39 (e would like to thank the program committee and) 80.64 465.33 P
+-0.15 (reviewers for their helpful comments, and especially our) 72 453.33 P
+2.17 (shepherd, Jim Gray) 72 441.33 P
+2.17 (, for his insight and assistance in) 153.73 441.33 P
+-0.07 (improving the paper and its presentation. W) 72 429.33 P
+-0.07 (e would also) 246.59 429.33 P
+1.79 (like to thank the members of the VINO group, espe-) 72 417.33 P
+(cially Aaron Brown and David Holland, for their help.) 72 405.33 T
+0 12 Q
+(Refer) 72 380 T
+(ences) 100.43 380 T
+1 9 Q
+([1]) 72 366 T
+0.87 (Accetta, M., Baron, R., Bolosky) 88.2 366 P
+0.87 (, W) 207.09 366 P
+0.87 (., Golub, D., Rashid,) 220.13 366 P
+0.62 (R., T) 88.2 355 P
+0.62 (evanian, A., and Y) 106.45 355 P
+0.62 (oung, M., \322Mach: A New Kernel) 174.9 355 P
+-0.05 (Foundation for UNIX Development,\323) 88.2 344 P
+2 F
+-0.05 (Pr) 225.71 344 P
+-0.05 (oc. Summer 1986) 234.37 344 P
+(USENIX Conf.,) 88.2 333 T
+1 F
+(Atlanta, GA, July 1986, 93\3201) 145.7 333 T
+(12.) 251.61 333 T
+([2]) 72 322 T
+1.23 (Appel, A., Li, K., \322V) 88.2 322 P
+1.23 (irtual Memory Primitives for User) 168.58 322 P
+2.33 (Programs,\323) 88.2 311 P
+2 F
+2.33 (Pr) 133.52 311 P
+2.33 (oc. ASPLOS IV) 142.19 311 P
+2.33 (,) 200.93 311 P
+1 F
+2.33 (Santa Clara, CA, April) 207.76 311 P
+(1991, 96\320107.) 88.2 300 T
+([3]) 72 289 T
+5.14 (Baker) 88.2 289 P
+5.14 (, M., Hartman, J., Kupfer) 109.33 289 P
+5.14 (, M., Shirrif) 220.5 289 P
+5.14 (f, K.,) 273.37 289 P
+3.76 (Ousterhout, J., \322Measurements of a Distributed File) 88.2 278 P
+0.11 (System,\323) 88.2 267 P
+2 F
+0.11 (Pr) 123.31 267 P
+0.11 (oc. 13th SOSP) 131.98 267 P
+1 F
+0.11 (, Paci\336c Grove, CA, Oct. 1991,) 183.45 267 P
+(198\320212.) 88.2 256 T
+([4]) 72 245 T
+4.05 (Bershad, B., Savage, S., Pardyak, P) 88.2 245 P
+4.05 (., Sirer) 235.46 245 P
+4.05 (, E. G.,) 263.4 245 P
+2.06 (Fiuczynski, M., Becker) 88.2 234 P
+2.06 (, D., Eggers, S., Chambers, C.,) 176.2 234 P
+3.75 (\322Extensibility) 88.2 223 P
+3.75 (, Safety) 137.62 223 P
+3.75 (, and Performance in the SPIN) 168.28 223 P
+0.88 (Operating System,\323) 88.2 212 P
+2 F
+0.88 (Pr) 163.21 212 P
+0.88 (oc. 15th SOSP) 171.88 212 P
+0.88 (,) 224.73 212 P
+1 F
+0.88 (Copper Mountain,) 230.12 212 P
+(CO, Dec. 1995, 267\320284.) 88.2 201 T
+([5]) 72 190 T
+1.54 (Cao, P) 88.2 190 P
+1.54 (., Felten, E., and Li, K., \322Application-Controlled) 112.75 190 P
+3.11 (File Caching Policies\323,) 88.2 179 P
+2 F
+3.11 (Pr) 183.02 179 P
+3.11 (oc. 1994 Summer USENIX) 191.69 179 P
+(Conf.,) 88.2 168 T
+1 F
+(Boston, MA, June 1994, 171\320182.) 112.46 168 T
+([6]) 72 157 T
+-0.03 (Engler) 88.2 157 P
+-0.03 (, D., Kaashoek, F) 111.83 157 P
+-0.03 (., and O\325T) 173.78 157 P
+-0.03 (oole, J., \322Exokernel: An) 210.09 157 P
+3.96 (Operating System Architecture for Application-Level) 88.2 146 P
+5.37 (Resource Management,\323) 88.2 135 P
+2 F
+5.37 (Pr) 190.15 135 P
+5.37 (oc. 15th SOSP) 198.82 135 P
+5.37 (,) 260.64 135 P
+1 F
+5.37 (Copper) 270.5 135 P
+(Mountain, CO, Dec. 1995, 251\320266.) 88.2 124 T
+([7]) 72 113 T
+2.79 (Haskin, R., Malachi, Y) 88.2 113 P
+2.79 (., Sawdon, W) 178.65 113 P
+2.79 (., and Chan, G.,) 232.14 113 P
+0.98 (\322Recovery Management in QuickSilver) 88.2 102 P
+0.98 (,\323) 233.49 102 P
+2 F
+0.98 (ACM T) 242.96 102 P
+0.98 (OCS 6) 270.02 102 P
+1 F
+0.98 (,) 294.75 102 P
+(1, Feb. 1988, 82\320108.) 88.2 91 T
+315 72 540 720 R
+7 X
+V
+0 X
+([8]) 315 714 T
+6.43 (Illustra Information T) 331.2 714 P
+6.43 (echnologies, \322Introduction to) 421.91 714 P
+0.15 (Illustra,\323 Part No. ILL0795-01Ill,) 331.2 703 P
+2 F
+0.15 (Illustra W) 454.53 703 P
+0.15 (eb DataBlade) 490.11 703 P
+2.71 (User) 331.2 692 P
+2.71 (\325) 349.03 692 P
+2.71 (s Guide) 350.86 692 P
+1 F
+2.71 (, Release 2.1 Beta. Sep. 1995. Part No.) 381.32 692 P
+(WEB-00-12-UG.) 331.2 681 T
+([9]) 315 670 T
+2.37 (Montz, A., Mosber) 331.2 670 P
+2.37 (ger) 404.51 670 P
+2.37 (, D., O'Malley) 415.64 670 P
+2.37 (, S., Peterson, L.,) 471.15 670 P
+0.91 (Proebsting, T) 331.2 659 P
+0.91 (., Hartman, J., \322Scout: A Communications-) 379.95 659 P
+2.27 (Oriented Operating System,\323 Department of Computer) 331.2 648 P
+0.95 (Science, University of Arizona, T) 331.2 637 P
+0.95 (echnical Report 94-20,) 455.86 637 P
+(June 1994.) 331.2 626 T
+([10]) 315 615 T
+2.89 (Microsoft Corp., \322How Software Publishers Can Use) 331.2 615 P
+5.18 (Authenticode T) 331.2 604 P
+5.18 (echnology) 391.99 604 P
+5.18 (,\323 http://www) 428.9 604 P
+5.18 (.microsoft.com/) 483 604 P
+(intdev/signcode.) 331.2 593 T
+([1) 315 582 T
+(1]) 322.16 582 T
+5.38 (Nelson, G.,) 331.2 582 P
+2 F
+5.38 (Systems Pr) 385.2 582 P
+5.38 (ogramming with Modula-3) 429.99 582 P
+1 F
+5.38 (,) 537.75 582 P
+(Prentice Hall, Englewood Clif) 331.2 571 T
+(fs, NJ, 1991.) 440.03 571 T
+([12]) 315 560 T
+1.3 (Patterson, R. H., Gibson, G. A., Ginting, E., Stodolsky) 331.2 560 P
+1.3 (,) 537.75 560 P
+0.23 (D., and Zelenka, J., \322Informed Prefetching and Caching,\323) 331.2 549 P
+2 F
+0.54 (Pr) 331.2 538 P
+0.54 (oc. 15th SOSP) 339.87 538 P
+0.54 (,) 392.03 538 P
+1 F
+0.54 (Copper Mountain, CO, Dec. 1995, 79\320) 397.07 538 P
+(91.) 331.2 527 T
+([13]) 315 516 T
+2.23 (Pu, C., Autrey) 331.2 516 P
+2.23 (. T) 386.82 516 P
+2.23 (., Black. A., Consel, C., Cowan, C.,) 398.38 516 P
+3.01 (Inouye, J., Kethana, L., W) 331.2 505 P
+3.01 (alpole, J., and Zhang, K.,) 437.48 505 P
+2.7 (\322Optimistic Incremental Specialization: Streamlining a) 331.2 494 P
+5.36 (Commercial Operating System,\323) 331.2 483 P
+2 F
+5.36 (Pr) 467.27 483 P
+5.36 (oc. 15th SOSP) 475.94 483 P
+5.36 (,) 537.75 483 P
+1 F
+(Copper Mountain, CO, Dec. 1995, 314\320324.) 331.2 472 T
+([14]) 315 461 T
+1.07 (Rashid, R., T) 331.2 461 P
+1.07 (evanian, A., Y) 380.47 461 P
+1.07 (oung, M., Golub, D., Baron,) 433.96 461 P
+2.51 (R., Black, D., Bolosky) 331.2 450 P
+2.51 (, W) 419.64 450 P
+2.51 (., and Chew) 434.32 450 P
+2.51 (, J., \322Machine-) 481.75 450 P
+3.53 (Independent V) 331.2 439 P
+3.53 (irtual Memory Management for Paged) 387.42 439 P
+2.55 (Uniprocessor and Multiprocessor Architectures,\323) 331.2 428 P
+2 F
+2.55 (Pr) 520.59 428 P
+2.55 (oc.) 529.25 428 P
+(ASPLOS II,) 331.2 417 T
+1 F
+(Palo Alto CA, Oct. 1987, 31\32039.) 375.44 417 T
+([15]) 315 406 T
+4.6 (Seltzer) 331.2 406 P
+4.6 (, M., Endo, Y) 355.83 406 P
+4.6 (., Small, C., Smith, K., \322An) 417.73 406 P
+1.98 (Introduction to the Architecture of the VINO Kernel,\323) 331.2 395 P
+1.35 (Harvard University Computer Science T) 331.2 384 P
+1.35 (echnical Report) 481.92 384 P
+(34-94, 1994.) 331.2 373 T
+([16]) 315 362 T
+1.02 (Small, C., Seltzer) 331.2 362 P
+1.02 (, M., \322A Comparison of OS Extension) 396.13 362 P
+2.17 (T) 331.2 351 P
+2.17 (echnologies,\323) 336.07 351 P
+2 F
+2.17 (Pr) 389.73 351 P
+2.17 (oc. 1996 USENIX Conf.,) 398.4 351 P
+1 F
+2.17 (San Diego,) 497.83 351 P
+(CA, Jan. 1996, 41\32054.) 331.2 340 T
+([17]) 315 329 T
+2.82 (Small, C., \322MiSFIT) 331.2 329 P
+2.82 (: A Minimal i386 Software Fault) 407.65 329 P
+1.94 (Isolation T) 331.2 318 P
+1.94 (ool,\323, Harvard University Computer Science) 371.76 318 P
+(T) 331.2 307 T
+(echnical Report TR-07-96, 1996.) 336.07 307 T
+([18]) 315 296 T
+5.54 (Stonebraker) 331.2 296 P
+5.54 (, M., \322Operating Support for Database) 374.33 296 P
+(Management,\323) 331.2 285 T
+2 F
+(CACM 24) 386.68 285 T
+1 F
+(, 7, July 1981, 412\320418.) 422.94 285 T
+([19]) 315 274 T
+2.05 (V) 331.2 274 P
+2.05 (olanschi, E., Muller) 336.54 274 P
+2.05 (, G., Consel, C., \322Safe Operating) 411.52 274 P
+1.48 (System Specialization: the RPC Case Study\323,) 331.2 263 P
+2 F
+1.48 (Pr) 506.35 263 P
+1.48 (oc. 1st) 515.02 263 P
+3.12 (W) 331.2 252 P
+3.12 (orkshop on Compiler Support for System Softwar) 337.87 252 P
+3.12 (e) 533.75 252 P
+1 F
+3.12 (,) 537.75 252 P
+(T) 331.2 241 T
+(uscon, AZ, Feb. 1996.) 336.38 241 T
+([20]) 315 230 T
+4.85 (W) 331.2 230 P
+4.85 (ahbe, R., Lucco, S., Anderson, T) 338.98 230 P
+4.85 (., Graham, S.,) 480.55 230 P
+2.71 (\322Ef) 331.2 219 P
+2.71 (\336cient Software-Based Fault Isolation,\323) 343.53 219 P
+2 F
+2.71 (Pr) 499.62 219 P
+2.71 (oc. 14th) 508.29 219 P
+(SOSP) 331.2 208 T
+(,) 351.04 208 T
+1 F
+(Asheville, NC, Dec. 1993, 175\320188.) 355.54 208 T
+([21]) 315 197 T
+6.07 (W) 331.2 197 P
+6.07 (aldspur) 338.98 197 P
+6.07 (ger) 365.31 197 P
+6.07 (, C., W) 376.44 197 P
+6.07 (eihl, W) 413.62 197 P
+6.07 (., \322Lottery Scheduling:) 445.36 197 P
+5.78 (Flexible Proportional-Share Resource Management,\323) 331.2 186 P
+2 F
+(Pr) 331.2 175 T
+(oc. 1st OSDI,) 339.87 175 T
+1 F
+(Monterey) 390.61 175 T
+(, CA, Nov) 425.02 175 T
+(. 1994, 1\3201) 461.43 175 T
+(1.) 501.6 175 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "15" 15
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Ascend
+%%Pages: 15
+%%DocumentFonts: Times-Bold
+%%+ Times-Roman
+%%+ Times-Italic
+%%+ Courier
+%%+ Symbol
+%%EOF
