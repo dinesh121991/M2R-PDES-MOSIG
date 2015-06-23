@@ -1,0 +1,339 @@
+<html xmlns:str="http://exslt.org/strings" lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CSE 121 Winter 2009</title> 
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta content="en" http-equiv="content-language">
+<meta content="text/css" http-equiv="content-style-type">
+<meta content="no" http-equiv="imagetoolbar">
+<meta content="Computer Science, engineering, ucsd, faculty, students, Jacobs School, San Diego, University" name="keywords">
+<meta content="UCSD Department of Computer Science and Engineering" name="description">
+<meta content="UCSD Department of Computer Science and Engineering" name="organization">
+<meta content="4.3.4.0" name="pageno">
+<link media="screen" type="text/css" href="../../../css/global_style.css" rel="stylesheet">
+<script type="text/javascript" language="JavaScript" src="../../../javascript/global_functions.js"> </script><script language="JavaScript" type="text/javascript">
+<!--
+        var NS4, IE, DOMstandard, CSScapable;
+        NS4 = (document.layers) ? 1 : 0;
+        IE = (document.all) ? 1 : 0;
+        DOMstandard = (document.getElementById) ? 1 : 0;
+        CSScapable = (NS4 || IE || DOMstandard) ? 1 : 0;
+        if(CSScapable)
+        {
+          if(NS4)
+            document.write('<link type="text/css" href="../../../css/ns_style.css" rel="stylesheet">');
+            else
+  	      document.write('<link media="screen" type="text/css" href="../../../css/dom_style.css" rel="stylesheet">');
+            }
+//-->
+          </script>
+</head>
+<body link="#006699" vlink="#800000" alink="#FF0000" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" rightmargin="0" style="background: #ffffff url(../../../images/IMG_bgimg.gif) no-repeat">
+<a name="top"> </a><script type="text/javascript" language="JavaScript">
+<!--
+
+      logotopon = new Image(187,29);
+      logotopon.src = "../../../images/H_logo_top_over.gif";
+      logotopoff = new Image(187,29);
+      logotopoff.src = "../../../images/H_logo_top.gif";
+      logobottomon = new Image(187,18);
+      logobottomon.src = "../../../images/H_logo_bottom_over.gif";
+      logobottomoff = new Image(187,18);
+      logobottomoff.src = "../../../images/H_logo_bottom.gif";
+      headeron = new Image(573,47);
+      headeron.src = "../../../images/H_header_on.gif";
+      headeroff = new Image(573,47);
+      headeroff.src = "../../../images/H_header_off.gif";
+        
+//-->
+</script>
+<table bgcolor="#efefef" cellpadding="0" cellspacing="0" border="0" width="760">
+<tr>
+<td valign="top" width="187"><a onmouseout="Off('logotop')" onmouseover="On('logotop'); return true" href="http://www.ucsd.edu"><img border="0" width="187" height="29" src="../../../images/H_logo_top.gif" name="logotop" alt="UCSD Main Website"></a><a onmouseout="Off('logobottom')" onmouseover="On('logobottom'); return true" href="http://www.jacobsschool.ucsd.edu"><img border="0" width="187" height="18" src="../../../images/H_logo_bottom.gif" name="logobottom" alt="UCSD Jacobs School"></a></td><td valign="top" width="573"><a onmouseout="Off('header')" onmouseover="On('header'); return true" href="../../../index.php"><img border="0" width="573" height="47" src="../../../images/H_header_off.gif" name="header" alt="Department of Computer Science and Engineering"></a></td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0" width="760">
+<tr>
+<td bgcolor="#efefef" valign="top" width="760"><img border="0" width="1" height="12" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="760">
+<tr>
+<td bgcolor="#efefef" valign="top" width="12"><img border="0" width="12" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" bgcolor="#efefef" width="172">
+<table cellpadding="0" cellspacing="0" border="0" width="172">
+<tr><td bgcolor="#ffffff" valign="top" colspan="4" width="172"><img border="0" width="172" height="38" src="121.gif" alt="CSE 121"></td></tr
+<tr>
+<td bgcolor="#cccccc" valign="top" width="1"><img border="0" width="1" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#ffffff" valign="top" width="6"><img border="0" width="6" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#ffffff" valign="top" width="159">
+<table border="0" cellpadding="0" cellspacing="0" width="159">
+<tr>
+<td colspan="3" width="159"><img border="0" width="1" height="10" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<td valign="top" width="9"></td><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="general.html"><b>Course Overview</b></a></font></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img border="0" width="9" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="general.html#structure"><b>Structure</b></a></font></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img border="0" width="9" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="general.html#grading"><b>Grading</b></a></font></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img border="0" width="9" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="general.html#collaboration"><b>Collaboration</b></a></font></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img border="0" width="9" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="general.html#books"><b>Useful books</b></a></font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img border="0" width="159" height="5" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img border="0" width="9" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="schedule.html"><b>Schedule</b></a></font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img border="0" width="159" height="5" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img border="0" width="9" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="papers.html"><b>Readings</b></a></font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img border="0" width="159" height="5" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<td valign="top" width="9"><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><b>Projects</b> (UCSD only)</font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img border="0" width="159" height="5" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<td valign="top" width="9"><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><b>Homeworks</b></font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img border="0" width="159" height="5" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<td valign="top" width="9"><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><b><a href="http://webboard.ucsd.edu">WebBoard</a></b></font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img border="0" width="159" height="5" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+</td><td bgcolor="#ffffff" valign="top" width="6"><img border="0" width="6" height="1" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="172">
+<tr>
+<td bgcolor="#efefef" valign="top" width="172"><img border="0" width="172" height="12" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="172">
+<tr>
+<td valign="top" colspan="6" width="172"><img border="0" width="172" height="26" src="../../../images/DA_IMG_search.gif" alt="Search"></td>
+</tr>
+<tr>
+<td bgcolor="#cccccc" valign="top" width="1"><img border="0" width="1" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#ffffff" valign="top" width="1"><img border="0" width="1" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#eff5ef" valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#eff5ef" valign="top" width="159">
+<br>
+<form onsubmit="return check_search_form(this)" id="site_search" name="site_search" method="post" action="/cgi-bin/htsearch">
+<input value="htdig" name="config" type="hidden"><input value="" name="restrict" type="hidden"><input value="" name="exclude" type="hidden"><input maxlength="50" size="15" class="searchform" id="search" name="words" alt="search" type="text">&nbsp;&nbsp;<input type="image" name="searchnow" width="34" height="17" border="0" alt="search" align="top" src="../../../images/IMG_gobutton.gif">
+</form>
+<font class="body2" size="-2" face="verdana, arial, geneva, san-serif"><a href="../../../home/search.html"><b>Advanced search</b></a>&nbsp;&nbsp;</font><img border="0" width="8" height="5" src="../../../images/IMG_arrows.gif" alt="arrows gif" class="inlineimage"><br>
+<br>
+<img border="0" width="159" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#eff5ef" valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" bgcolor="#ffffff" width="1"><img border="0" width="1" height="1" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<td valign="top" colspan="6" bgcolor="#ffffff" width="172"><img border="0" width="172" height="1" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="172">
+<tr>
+<td bgcolor="#efefef" valign="top" width="172"><img border="0" width="172" height="12" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+</td><td bgcolor="#efefef" valign="top" width="12"><img border="0" width="12" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#efefef" valign="top" width="552">
+<table cellpadding="0" cellspacing="0" border="0" width="552">
+<tr>
+<td bgcolor="#cc9966" valign="top" colspan="3" width="552"><img border="0" width="552" height="15" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+
+<tr>
+<td bgcolor="#ffffff" valign="top" width="20"><img border="0" width="20" height="5" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#ffffff" valign="top" width="512"><font class="body1" size="-1" face="verdana,arial, geneva, sans-serif"></font><img border="0" width="360" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#ffffff" valign="top" width="20"><img border="0" width="20" height="1" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+
+<tr>
+<td bgcolor="#ffffff" valign="top" width="20"><img border="0" width="20" height="1" src="../../../images/space.gif" alt="spacer gif"></td>
+<td bgcolor="#ffffff" valign="top" width="512">
+
+<font class="body1" size="-1" face="verdana,arial, geneva, sans-serif">
+<h1>Project 2: File System Evaluation</h1>
+<font color="red">Due: Thursday, March 12th, 2009 11:59PM PDT</font>
+<br>
+<h3>Overview</h3>
+
+<p>
+
+Throughout the quarter, we have read a number of file system papers
+designed to improve the FFS file system.  During class discussions,
+we've paid particular attention to the evaluation section, dicussing
+what the authors needed to prove, what the experiments demonstrated,
+and how well the authors succeed.  In the Journaling/Soft Updates
+paper in particular, we saw how the authors compared the two systems
+to each other as well against the existing FFS system.  Now that you
+have also designed and implemented your own simplified file system, it
+is time to evaluate it.  For this project you are required to write a
+short paper (4-6 pages) describing and evaluating your file system
+from project 1.  To aid you in your evaluation, you will be given code
+for two existing file systems - one implemented with FAT,
+and one implemented with iNodes. Both filesystems will be available on
+<b>ieng6-204</b> in the <b>/home/linux/ieng6/cs121w/public</b> directory.
+
+<p>
+
+<h3>Structure and Content</h3> <p> The structure and format of your
+paper should be similar to the design, implementation, and evaluation
+sections of the papers we have read so far in the class.  You may
+dispense with the related work section, and need spend only minimal
+time on the introduction and conclusion, as we know what the paper is
+about.  At this point in the term, you should have a good idea of how
+a technical paper is structured and the type of content we are looking
+for.  The paper will have two major purposes: (1) Explain the
+implementation of your file system and (2) evaluate the performance of
+your file system.
+
+<p>
+
+You are expected to document the design of your file system, and fully
+explain and evaluate any design trade-off decisions or optimizations
+you made.  You should compare your performance results to the baseline
+projects and be sure your evaluation explains how these decisions
+effected the outcome of your project.
+
+<p>
+
+In order to publish performance results, you will need tests and a
+testing environment.  You are expected to create this testing
+environment and write your own performance measurement tests, as well
+as describe this in your paper.  When writing tests, it would be
+benficial to design tests that support claims you make regarding your
+file system.  For example, if you claim your file system is better
+than a FAT filesystem at writing and reading large files, be sure to
+have a test directed at exploiting this behavior.  Also, when arguing
+for or against the general value of your file system, you might
+consider also comparing your file system under a "normal" load with
+the others.
+
+<p>
+
+Also, be sure to include proper references to another papers you
+reference, and include proper documentation if your implementation was
+motivated by any existing motivations.
+
+<p>
+
+We understand that some of you may not have completed project 1, and,
+hence, do not have an operational file system to test.  You should
+still document its implementation, and include performance results in
+so far as you are able.  For the aspects of performance that you are
+unable to document, you should still conduct tests comparing the two
+file systems we provide for you, and predict how your file system
+would fair in comparison.
+
+<h3>Form</h3>
+
+You may produce your report using any word processing, drawing, and
+graphing programs you like.  We suggest, however, you consider using
+either Microsoft Word, Excel, and Powerpoint, or LaTeX, Gnuplot, and
+your favorite diagram tool.  We likely will be unable to help you with
+any other drawing or plotting tools.  Your document can be one or two
+columns, with one inch margins and 10 or 11 point font, single-spaced.
+
+<h3>Grading</h3>
+
+<p>
+
+The grading of your project will be based on the quality and
+persuasiveness of your paper---NOT the absolute performance of your
+filesystem, although demonstrating reasonable performance is of course
+the goal.  The following questions will be kept in mind when
+evaluating your paper: How well was the design of the file system
+described?  Were all the design decisions justified in the paper?  Do
+the performance results correctly support claims made by the paper?
+How accurately and completely do the performance tests capture the
+performance of the file system?
+
+
+<h3>Turn In</h3>
+
+<p> You will turn in your projects using the turnin command.  Before
+turning in your project, convert it to a .pdf file and turn it in
+using the turnin command from the previous project.
+
+<p>
+Example:<br>
+% turnin -c cs121w -p project2 project2.pdf
+
+</font>
+
+
+<p>
+</td><td bgcolor="#ffffff" valign="top" width="20"><img border="0" width="20" height="1" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<br>
+<p>
+</font><img border="0" width="532" height="12" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="552">
+<tr>
+<td bgcolor="#efefef" valign="top" width="552"><img border="0" width="552" height="12" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+</td><td bgcolor="#efefef" valign="top" width="12"><img border="0" width="12" height="1" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="760">
+<tr>
+<td bgcolor="#efefef" valign="top" width="760"><img border="0" width="760" height="12" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="760">
+<tr>
+<td bgcolor="#003366" valign="top" align="center" width="760"><font class="addy" color="#ffffff" size="-2" face="verdana, arial, geneva, san-serif">9500 Gilman Drive, La Jolla, CA 92093-0114<br>
+</font></td>
+</tr>
+<tr>
+<td bgcolor="#efefef" valign="top" width="760"><img border="0" width="760" height="12" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<td bgcolor="#efefef" align="center" width="760"><font class="footernav" color="#003366" size="-2" face="verdana, arial, geneva, san-serif"><b><a href="../../../aboutcse/deptoverview.html">About CSE</a></b> | 
+          <b><a href="../../../csepeople/csepeoplehome.html">CSE People</a></b> | 
+          <b><a href="../../../facresearch/facultyresearch.html">Faculty &amp; Research</a></b> | 
+          <b><a href="../../../gradedu/gradeduhome.html">Graduate Education</a></b> | 
+          <b><a href="../../../undergrad/undergradeduhome.html">Undergraduate Education</a></b>
+<br>
+<b><a href="../../../deptadmin/index.php">Department Administration</a></b> | 
+          <b><a href="../../../aboutcse/contactinfo.html">Contact CSE</a></b> | 
+          <b><a href="../../../home/help/index.html">Help</a></b> | 
+          <b><a href="../../../home/search.html">Search</a></b> | 
+          <b><a href="../../../progress/progressroot.html">Site map</a></b> |
+          <b><a href="../../../index.php">Home</a></b>
+<br>
+<a href="mailto:snoeren@cs.ucsd.edu">snoeren@cs.ucsd.edu</a>
+<br>
+</font><a href="http://www.ucsd.edu/"><img border="0" width="379" height="25" src="../../../images/IMG_footer.gif" alt="Official web page of the University of California, San Diego" class="inlineimage"></a></td>
+</tr>
+<tr>
+<td bgcolor="#efefef" align="center" width="760"><font class="copyright" color="#003366" size="-2" face="verdana, arial, geneva, san-serif">
+          Copyright 
+          &copy;
+          2002 Regents of the University of California.  All rights reserved.
+          
+          
+        </font></td>
+</tr>
+<tr>
+<td bgcolor="#efefef" valign="top" width="760"><img border="0" width="760" height="15" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+</body>
+</html>

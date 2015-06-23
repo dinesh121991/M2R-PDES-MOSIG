@@ -1,0 +1,755 @@
+<html xmlns:str="http://exslt.org/strings" lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CSE 121 Winter 2009</title> 
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta content="en" http-equiv="content-language">
+<meta content="text/css" http-equiv="content-style-type">
+<meta content="no" http-equiv="imagetoolbar">
+<meta content="Computer Science, engineering, ucsd, faculty, students, Jacobs School, San Diego, University" name="keywords">
+<meta content="UCSD Department of Computer Science and Engineering" name="description">
+<meta content="UCSD Department of Computer Science and Engineering" name="organization">
+<meta content="4.3.4.0" name="pageno">
+<link media="screen" type="text/css" href="../../../css/global_style.css" rel="stylesheet">
+<script type="text/javascript" language="JavaScript" src="../../../javascript/global_functions.js"> </script><script language="JavaScript" type="text/javascript">
+<!--
+        var NS4, IE, DOMstandard, CSScapable;
+        NS4 = (document.layers) ? 1 : 0;
+        IE = (document.all) ? 1 : 0;
+        DOMstandard = (document.getElementById) ? 1 : 0;
+        CSScapable = (NS4 || IE || DOMstandard) ? 1 : 0;
+        if(CSScapable)
+        {
+          if(NS4)
+            document.write('<link type="text/css" href="../../../css/ns_style.css" rel="stylesheet">');
+            else
+  	      document.write('<link media="screen" type="text/css" href="../../../css/dom_style.css" rel="stylesheet">');
+            }
+//-->
+          </script>
+</head>
+<body link="#006699" vlink="#800000" alink="#FF0000" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" rightmargin="0" style="background: #ffffff url(../../../images/IMG_bgimg.gif) no-repeat">
+<a name="top"> </a><script type="text/javascript" language="JavaScript">
+<!--
+
+      logotopon = new Image(187,29);
+      logotopon.src = "../../../images/H_logo_top_over.gif";
+      logotopoff = new Image(187,29);
+      logotopoff.src = "../../../images/H_logo_top.gif";
+      logobottomon = new Image(187,18);
+      logobottomon.src = "../../../images/H_logo_bottom_over.gif";
+      logobottomoff = new Image(187,18);
+      logobottomoff.src = "../../../images/H_logo_bottom.gif";
+      headeron = new Image(573,47);
+      headeron.src = "../../../images/H_header_on.gif";
+      headeroff = new Image(573,47);
+      headeroff.src = "../../../images/H_header_off.gif";
+        
+//-->
+</script>
+<table bgcolor="#efefef" cellpadding="0" cellspacing="0" border="0" width="760">
+<tr>
+<td valign="top" width="187"><a onmouseout="Off('logotop')" onmouseover="On('logotop'); return true" href="http://www.ucsd.edu"><img border="0" width="187" height="29" src="../../../images/H_logo_top.gif" name="logotop" alt="UCSD Main Website"></a><a onmouseout="Off('logobottom')" onmouseover="On('logobottom'); return true" href="http://www.jacobsschool.ucsd.edu"><img border="0" width="187" height="18" src="../../../images/H_logo_bottom.gif" name="logobottom" alt="UCSD Jacobs School"></a></td><td valign="top" width="573"><a onmouseout="Off('header')" onmouseover="On('header'); return true" href="../../../index.php"><img border="0" width="573" height="47" src="../../../images/H_header_off.gif" name="header" alt="Department of Computer Science and Engineering"></a></td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0" width="760">
+<tr>
+<td bgcolor="#efefef" valign="top" width="760"><img border="0" width="1" height="12" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="760">
+<tr>
+<td bgcolor="#efefef" valign="top" width="12"><img border="0" width="12" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" bgcolor="#efefef" width="172">
+<table cellpadding="0" cellspacing="0" border="0" width="172">
+<tr><td bgcolor="#ffffff" valign="top" colspan="4" width="172"><img border="0" width="172" height="38" src="121.gif" alt="CSE 121"></td></tr
+<tr>
+<td bgcolor="#cccccc" valign="top" width="1"><img border="0" width="1" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#ffffff" valign="top" width="6"><img border="0" width="6" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#ffffff" valign="top" width="159">
+<table border="0" cellpadding="0" cellspacing="0" width="159">
+<tr>
+<td colspan="3" width="159"><img border="0" width="1" height="10" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<td valign="top" width="9"></td><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="general.html"><b>Course Overview</b></a></font></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img border="0" width="9" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="general.html#structure"><b>Structure</b></a></font></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img border="0" width="9" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="general.html#grading"><b>Grading</b></a></font></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img border="0" width="9" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="general.html#collaboration"><b>Collaboration</b></a></font></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img border="0" width="9" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="general.html#books"><b>Useful books</b></a></font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img border="0" width="159" height="5" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img border="0" width="9" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="schedule.html"><b>Schedule</b></a></font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img border="0" width="159" height="5" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img border="0" width="9" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="papers.html"><b>Readings</b></a></font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img border="0" width="159" height="5" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<td valign="top" width="9"><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><b>Projects</b> (UCSD only)</font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img border="0" width="159" height="5" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<td valign="top" width="9"><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><b>Homeworks</b></font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img border="0" width="159" height="5" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<td valign="top" width="9"><td valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><b><a href="http://webboard.ucsd.edu">WebBoard</a></b></font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img border="0" width="159" height="5" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+</td><td bgcolor="#ffffff" valign="top" width="6"><img border="0" width="6" height="1" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="172">
+<tr>
+<td bgcolor="#efefef" valign="top" width="172"><img border="0" width="172" height="12" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="172">
+<tr>
+<td valign="top" colspan="6" width="172"><img border="0" width="172" height="26" src="../../../images/DA_IMG_search.gif" alt="Search"></td>
+</tr>
+<tr>
+<td bgcolor="#cccccc" valign="top" width="1"><img border="0" width="1" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#ffffff" valign="top" width="1"><img border="0" width="1" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#eff5ef" valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#eff5ef" valign="top" width="159">
+<br>
+<form onsubmit="return check_search_form(this)" id="site_search" name="site_search" method="post" action="/cgi-bin/htsearch">
+<input value="htdig" name="config" type="hidden"><input value="" name="restrict" type="hidden"><input value="" name="exclude" type="hidden"><input maxlength="50" size="15" class="searchform" id="search" name="words" alt="search" type="text">&nbsp;&nbsp;<input type="image" name="searchnow" width="34" height="17" border="0" alt="search" align="top" src="../../../images/IMG_gobutton.gif">
+</form>
+<font class="body2" size="-2" face="verdana, arial, geneva, san-serif"><a href="../../../home/search.html"><b>Advanced search</b></a>&nbsp;&nbsp;</font><img border="0" width="8" height="5" src="../../../images/IMG_arrows.gif" alt="arrows gif" class="inlineimage"><br>
+<br>
+<img border="0" width="159" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#eff5ef" valign="top" width="5"><img border="0" width="5" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td valign="top" bgcolor="#ffffff" width="1"><img border="0" width="1" height="1" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<td valign="top" colspan="6" bgcolor="#ffffff" width="172"><img border="0" width="172" height="1" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="172">
+<tr>
+<td bgcolor="#efefef" valign="top" width="172"><img border="0" width="172" height="12" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+</td><td bgcolor="#efefef" valign="top" width="12"><img border="0" width="12" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#efefef" valign="top" width="552">
+<table cellpadding="0" cellspacing="0" border="0" width="552">
+<tr>
+<td bgcolor="#cc9966" valign="top" colspan="3" width="552"><img border="0" width="552" height="15" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+
+<tr>
+<td bgcolor="#ffffff" valign="top" width="20"><img border="0" width="20" height="5" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#ffffff" valign="top" width="512"><font class="body1" size="-1" face="verdana,arial, geneva, sans-serif"></font><img border="0" width="360" height="1" src="../../../images/space.gif" alt="spacer gif"></td><td bgcolor="#ffffff" valign="top" width="20"><img border="0" width="20" height="1" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+
+<tr>
+<td bgcolor="#ffffff" valign="top" width="20"><img border="0" width="20" height="1" src="../../../images/space.gif" alt="spacer gif"></td>
+<td bgcolor="#ffffff" valign="top" width="512">
+
+<font class="body1" size="-1" face="verdana,arial, geneva, sans-serif">
+<h1>Project 1: A Simple File System</h1>
+<font color="red"> Due: Thursday, February 5th, 2009 11:59PM PST</font>
+<br>
+<h3>Overview</h3>
+
+<p>
+
+So far in this class we have seen a number of methods for improving
+file system performance.  We have talked about how file systems take a
+physical disk and create user-friendly abstractions such as
+directories and named files.  Your job will now be to design and
+implement a basic application-level file system.  You will be given a
+block interface to a raw "disk," and, using this interface, you will
+be required to design a simplified yet functional file system.  For
+right now, we're just concerned with getting a file system
+operational.  We're not going to worry about things like realistic
+data placement, caching, and the like.  You are, however, going to be
+graded on how efficiently you use the disk.  In other words, how large
+a file can be stored on your disk?  What is the usable capacity of
+your file system if it's full of many 1-byte files?  How many disk
+blocks do you need to read to access a small file?  You should
+consider these factors when thinking about how to design your file
+system.
+
+ <p>
+
+You will be using <a href="http://fuse.sourceforge.net/">FUSE</a> to 
+implement this user level file system. FUSE is already installed on 
+<b>ieng6-AAA.ucsd.edu</b> (you can get your account information for
+this machine at <a href="http://sdacs.ucsd.edu/~icc/">
+http://sdacs.ucsd.edu/~icc/</a>). The AAA value will be disclosed in
+class once the server has been determined. <b>Important:</b> You must
+be in the 'fuse' group to access /dev/fuse. If you're not in this
+group, email acs-consult@ucsd and tell them to add you.
+
+<p>
+
+You are welcome to use your 
+own machine to do 
+the project.  Of course, you need to install FUSE on your machine; it's 
+available for Linux as well as FreeBSD. If your Linux Kernel is newer 
+than 2.6.14, FUSE is already installed in your machine. However, you will
+need the FUSE headers (<i>libfuse-dev</i> for those of you on Ubuntu).
+
+<p>
+
+<a href="project1.wi09.tgz">These</a> C files will provide the interfaces to the
+functions you will be writing.  The header file, cse121fs.h, defines the disk
+interface and any other include information you would like to add.
+cse121fs.c contains a skeleton implementation of the API;
+your job is to flesh out the implementation according to the
+specification below.
+<!-- The FUSE installation(/software/nonrdist/fuse) has an example directory that contains sample file
+systems; check it out for sample implementations. --> The 
+<a href="http://fuse.sourceforge.net"> FUSE</a> source has a 
+sample file system.
+<p>
+Here is a sample session using your file system:
+<br>
+
+<table style="text-align: left; " border="0" cellpadding="10" cellspacing="0">
+<tbody>
+    <tr>
+    <td style="vertical-align: top; background-color: rgb(192, 192, 192);">
+
+<pre>
+Compile the application
+$ wget http://www.cse.ucsd.edu/classes/wi09/cse121/project1.wi09.tgz
+$ tar zxvf project1.wi09.tgz
+$ cd project1
+$ make
+
+Start the file system in debug mode. Need to run it in /tmp
+$ cd /tmp
+$ mkdir `whoami`
+$ cd `whoami`
+$ cp ~/project1/* .
+$ mkdir shasta
+$ ./cse121fs -d shasta
+
+Now you can run another shell and use it
+$ cd /tmp/`whoami`/shasta
+
+To unmount
+$ fusermount -u /tmp/`whoami`/shasta
+
+While it may be convenient to work in /tmp,
+Be sure to copy your files out when you're done.
+
+<!--
+        <pre>After compiling your program ('make') into cse121fs then create a directory.
+The new directory MUST be placed in the /tmp directory or you will not be able to unmount it.
+Be sure to pick something unique so it doesn't conflict.
+~/project1$ mkdir /tmp/cs121w/mount_dir
+
+Change the permissions to allow FUSE to access the mount point
+~/project1$ chmod 755 /tmp/cs121w/mount_dir
+
+The following command will mount your file system on directory mount_dir
+~/project1$ ./cse121fs /tmp/cs121w/mount_dir
+
+Now you can use your file system as a normal file system
+(so ls, cd, cat commands work assuming you have implemented everything)
+
+The following command un mounts the file system
+~/project1$ fusermount -u /tmp/cs121w/mount_dir
+~/project1$
+-->
+    </tr>
+</tbody>
+</table><br>
+
+<h3>Simplifications and Assumptions</h3>
+
+In order to keep this project manageable, we're going to make several
+simplifying assumptions.  First, we are not mounting a physical disk;
+instead, we'll be using a fixed-size file on the normal file system.
+You will "mount" your filesystem by reading the disk image file
+provided.  This disk image is simply a flat file which will
+eventually contain all the metadata blocks and data blocks in your
+file system.  As a result, there is no need to worry about the
+physical characteristics of a disk (seek time, latency, disk layout)
+that some of the earlier papers we read addressed.  Instead, assume
+disk blocks are arranged in a linear order---i.e., block 3 is next to
+block 4.  When testing your project we will, however, use the number
+of disk accesses and the distance between subsequent block numbers as
+a rough metric of your file system's performance.
+
+<p>
+
+For the purposes of this project, you do not need to worry about the
+buffer cache; the OS will maintain the buffer cache for you and you
+don't need to do anything extra in your file system.  You can assume
+all disk image reads and writes are synchronous (the OS actually caches data
+blocks and delays writes to disk, but for the purposes of this project
+let's ignore this detail).  Also, all directory paths will be absolute
+and there is no notion of a working directory.  We will not concern
+ourselves with things like file ownership, protection bits, time
+stamps, and the like.  You do, however, need to maintain file size information
+somewhere.  Finally, the block size is fixed to be 512 bytes and
+filename/directory names are fixed, 28-byte character strings.
+
+<h3>Interface to Raw Disk</h3>
+
+You will be provided with the following interface to the raw mounted
+disk from which you will construct and access your file system.  <p>
+
+<b>int dread(int fd, int blocknum, char *buf)</b> <br> Given a
+blocknum, dread() will read that block into the specified buffer
+'buf'. More specifically, dread will read BLOCKSIZE (512) bytes of data from the
+address logical block number blocknum.  fd is the file descriptor
+corresponding to the currently mounted disk image (you will only need
+to manage one disk image at a time).  Thus, reads from the disk image
+only happen at the granularity of a block, simulating a real disk.
+Also, dread() is synchronous and will wait until the entire block is
+read and copied into buf before returning.
+
+<p>
+
+<b>int dwrite(int fd, int blocknum, const char *buf)</b> <br>
+
+Given a block number, dwrite will write a block from buf to the disk
+image at location blocknum.  dwrite() is guaranteed to be
+atomic and synchronous, so there is no need to worry about cases where
+blocks themselves are partially written.  When implementing, be sure
+to keep in mind that at any time the file system might crash so be
+sure that at all times you are in an recoverable state.  However you
+are guaranteed that crashes can only occur before or after a dwrite()
+call and not during.
+
+<p>
+
+Both functions will return the number of bytes written (BLOCKSIZE) on success and -1 on failure.  Your
+code does not need to handle failure; it may simply exit with an error
+message (e.g., "your disk image crashed").
+
+
+<h3>Formatting the Filesystem</h3>
+
+<p>
+
+Before mounting a file system for the first time, you need to
+initialize the raw disk (in our case disk file). You will write
+another program that writes the super block information onto the disk
+file before using this file as a raw disk (essentially you are
+"formatting" the disk partition to be used as a file system). This file is <b>cs121mkfs.c</b> in your tarball. What you
+write into the super block depends on how you design your file system,
+generally you would like to write some information about file system
+such as where the location of root directory or other meta data.
+
+<h3>Filesystem API</h3>
+
+<p>
+
+The following is the API you are required to implement using the
+interface described above.  When designing your file system, keep in
+mind that "crashes" may occur on any I/O operation and, like the
+papers read in class, your filesystem must always be in a stable and
+consistent state.  We will simulate crashes by modifying 
+dwrite() to occasionally stop the execution of your program using exit(1) either
+before or after they complete.  We will then ask your code to re-mount
+the disk image in the state it was left in at the time of the "crash."
+<p>
+The cse121fs.c file defines the following interface:
+
+<p>
+<!-- <b>int mymount(const char *filename)</b> -->
+<!-- FUSE_VERSION 26 -->
+<b>void* xmp_mount(struct fuse_conn_info *conn)</b>
+<br>
+This function expects the filename of he disk file that you are using
+as a disk; you may hard code the filename (defined in cse121fs.h as
+DISKFILE). This function should mount your application-level
+filesystem stored in the file; once a mount occurs, that file will be
+used as the disk for all further file system commands you will
+implement (until an xmp_unmount occurs).  Basically, you need to open
+the disk file and store the file discriptor in a global variable that
+you will pass to dread and dwrite later.  Remember that this is an
+application-level file system.  From the point of view of a user of
+the application, it will appear like a structured file system.
+However, in reality the disk image is merely one contiguous file on
+the real file system.
+
+<p>
+
+This is also when you will need to check the integrity of your file 
+system. For example, if a crash occurred during a file create after an
+inode was allocated but before a directory entry is updated, such an error 
+should be found and fixed in xmp_mount.
+
+<p>
+
+<!-- The return value will passed in the private_data field of
+fuse_context to all file operations and as a parameter to the
+xmp_unmount() method.
+
+<p>
+-->
+
+<!-- <b>int myunmount()</b> -->
+<!-- FUSE_VERSION 26 -->
+<b>void xmp_unmount (void *private_data)</b>
+<br>
+
+Unmount is responsible for unmounting the file system. In addition to
+closing the disk image file descriptor, unmount will need to write out
+any necessary meta data that might be required the next time the file
+system is mounted. For instance, it might note that the filesystem was
+cleanly unmounted, speeding up the integrity check the next time the
+file system is mounted. Simply closing your DISKFILE may be sufficient
+depending on your design.
+
+<p>
+
+<b>int xmp_getattr(const char *path, struct stat *stbuf)</b>
+<br>
+
+Given an absolute path to a file/directory (i.e., "/foo/bar"---all
+paths will start with the root directory of the CSE121FS file system,
+"/"), you need to return the
+file attributes that is similar stat system call.  For this project,
+you don't need to fill in any attributes except file size, file size
+in blocks, and block size of the file system. cse121fs.c has more
+infomration on this. Depending on your implementation of the file
+system, the specifics of the getattr might vary, but the basic steps
+your file system takes to get file attributes will be the following:
+<ul>
+<li> Resolve the directory path -- this will probably involve reading 
+each directory in the path to get the location of the file entry (or 
+location of data block with the file's inode) of the specified file.
+
+<li> Fill the file size, file size in blocks, and block size information (note the block size is constant across all files).
+</ul>
+
+You should return 0 on success or -1 on error. If the path doesn't
+exist, you should return -ENOENT (-2).
+
+<p>
+
+<b>int xmp_create(const char *path, mode_t mode, dev_t rdev) </b>
+<br>
+Given an absolute path to a file (for example "/a/b/myFile"),
+xmp_create will create a new file named "myFile" in the "/a/b"
+directory.  Ignore the mode parameter as we are not implementing the
+permissions. Also ignore the rdev parameter.  The steps your
+implementation may take to create a new file will likely include the
+following:
+
+<ul>
+<li>Resolve the directory path
+<li>Allocate and initialize a new directory entry  
+<li>Update the directory entry for 'path' by adding an entry for the newly 
+created file. 
+</ul>
+
+You should return 0 on success or -1 on error (e.g., the path doesn't
+exist, or file already exists).
+
+<p>
+
+<b>int xmp_read(const char *path, char *buf, size_t size, off_t offset, 
+struct fuse_file_info *fi)</b>
+<br>
+
+The function xmp_read provides the ability to read data from an
+absolute path 'path,' which should specify an existing file.  It will
+attempt to read 'size' bytes at offset 'offset' from the specified
+file on your filesystem into the memory address 'buf'.  The return
+value is the amount of bytes actually read; if the file is smaller
+than size, xmp_read will simply return the most amount of bytes it could
+read.  On error, xmp_read will return -1.  The actual implementation of
+xmp_read is dependent on how files are allocated. For time being ignore
+the fuse_file_info parameter.  If you would like to use it, please see the
+open function in fuse.h file for more details.
+
+<p>
+<b>int xmp_write(const char *path, const char *buf, size_t size,
+off_t offset, struct fuse_file_info *fi)</b>
+<br>
+
+The function xmp_write will attempt to write 'size' bytes from memory
+address 'buf' into a file specified by an absolute 'path' (i.e.,
+"/foo/bar"---all paths will start with the root directory, "/") at
+offset 'offset'.  If the offset is greater than the file length, the file should
+be extended (with zeros) to be 'offset' long before appending buf to the end.
+On error (e.g., the path does not exist)
+xmp_write will return -1, otherwise
+xmp_write should return the number of bytes written.  Note size is not
+necessarily an integral number of blocks.  Similar to xmp_read, the
+actual implementation of xmp_write will depend on how you decide to
+allocate file space. For time being ignore the fuse_file_info
+parameter.  If you would like to use please see the open function in
+fuse.h file for more detials.
+
+<p>
+
+<b>int xmp_delete(const char *path) </b>
+<br>
+This function deletes the last component of the path (e.g., "/a/b/c" you 
+need to remove the file 'c' from the directory "/a/b"). 
+Depending on your implementation of the file
+system, the specifics of the delete might vary, but the basic steps
+your file system takes to delete a file will be the following:
+
+
+<ul>
+<li> Locate the directory entry for the file by resolving the path - this will probably involve reading each directory block in the path to get the location of the first data block (or location of data block with the file's inode) of the specified file.
+<li> Update the directory entry for the deleted file
+<li> Free any data blocks used by the file
+</ul>
+Again, these steps are very general and the actual logistics of how to locate data blocks of a file, how to free data blocks and how to update directory entries are dependent on your implementation of directories and file allocation.
+On error (e.g., the path does not exist) xmp_delete will return -1, 
+otherwise xmp_delete should return 0.
+
+<p>
+
+<b>int xmp_mkdir(const char *path, mode_t mode)</b> Given an absolute
+path to a directory '.../dirname' (which may or may not end in '/'),
+xmp_mkdir will create a new directory named dirname in that
+directory. Ignore the mode parameter as we are not implementing the
+permissions. The steps your implementation will do to make a new
+directory will be the following(similar to the xmp_create):
+<ul> <li> Resolve the directory path
+<li> Allocate and initialize a new directory block <li> Update the
+directory block for 'path' by adding an entry for the newly created
+directory. <li>You also need to create appropriate entries for "." and 
+".." in the new directory</ul> 
+
+<p>
+
+You should return 0 on success or -1 on error (e.g., the path doesn't
+exist, or dirname already does).
+
+<p>
+
+<b>int xmp_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
+off_t offset, struct fuse_file_info *fi) </b>
+<br>
+Given an absolute path to a directory, xmp_readdir will return all the 
+files and directories in that directory. The steps you will take will 
+be the following:
+<ul>
+<li> Resolve the directory entry from its absolute path to get the 
+address of the directory block that corresponds to "path"
+<li> For each valid entry in the directory block, copy the file name 
+the array (buf) using the function filler. The filler function
+is already implemeted in FUSE and its sample usage is shown in 
+fusexmp.c file and you should pass the zero to the offest 
+paramter of filler function. Further details please see the fuse.h file.
+</ul>
+
+<p>
+
+You should return 0 on success or -1 on error (e.g., the directory does not exist).
+<p>
+
+<b>int xmp_rename(const char *from, const char *to)</b>
+<br>
+The function rename will rename a file or directory named by the string 'oldpath' and rename it to the file name specified by 'newpath'. Note: This includes moving to another directory.
+
+<p>
+
+As usual, return 0 on success, -1 on failure.
+<p>
+
+<h3>Some Example Approaches</h3> In this project you are free in
+designing the details of the implementation of your file system.
+However, it is highly recommended that you model your file system
+after an existing implementation, as this way you can be sure your
+design is safe and you will also have a means of reference during
+implementation.  The following are two methods of file allocation that
+are recommended.  The first is the File Allocation Table (FAT), and
+the second is the Unix File System inode. You should be able to find
+more information about these file systems in a standard OS textbook.
+Send me email (kaisenl at cs) if you need help locating one.
+<p>
+FAT is a relatively straightforward data structure used to maintain
+information about file allocation and was used by early versions of
+MS-DOS and OS/2.  It involves having a fixed portion of disk (usually
+the beginning of disk) used as a table to maintain information about
+all the blocks in the system.  The length of the table is the number
+of all the blocks in the file system.  The directory entry for a given
+file points to the first block of the file.  The corresponding entry
+in the FAT points to the next entry in the file and so on until a
+special end of file entry is reached.  For example, assume a file has
+blocks allocated 3, 6 and 9.  The directory entry would point to block
+3.  The 3rd entry in the FAT would contain 6 and the 6th entry would
+contain 9.  The 9th entry would contain a special end of file
+character.
+<p>
+Another possible approach to maintaining file allocation information
+is to use the Unix inode format.  You should be familiar with this
+structure from CSE120.  Basically, the directory entry contains an
+inode number, and every inode is at a fixed location on disk.  An
+inode then contains information about all the data blocks via direct
+and indirect pointers.  In your filesystem, both inode number and
+block number can be represented as a 32-bit integer.
+<p>
+Another detail that must be considered in implementing your file
+system is the directory structure.  The simplest method of
+implementing a directory structure would be a simple linked list.
+Each directory block will contain a number of directory entries - each
+entry will consist of a file name and inode number pair.  The last
+entry in the directory block will contain a pointer to the address of
+the next directory block for that directory.  For example, in our
+implementation we have a fixed block size of 512, a fixed filename
+size of 28 bytes, and 4 bytes can be used to store the inode number.
+Therefore, there can be 16 directory entries for each block.  The
+first 15 will contain <filename, inode#> pairs, and the last will
+contain a pointer to the next directory block.
+
+<h3>Common Questions</h3>
+
+<p>
+<b>What should the return values for error conditions be?</b><br>
+
+In general -1 is OK, except for one special case. In xmp_getattr, if
+the path doesn't exist, you need to return -ENOENT (-2). For the
+complete list of error codes, look for the file errno-base.h
+
+<p>
+<b>I run my file system, but I get a segmentation fault.</b><br>
+
+You most likely have a wild pointer dereference caused by memory
+corruption. While this may be caused from any bad code, one thing to
+look for is how you're using dread. If you are dreading into a struct
+that isn't 512 bytes, you will probably corrupt something. It's
+recommended you read into a buffer of 512 bytes, and then either copy
+or cast to the struct you want.
+
+<p>
+<b>My code works with the -d debug option, but not when run as a
+daemon.</b><br>
+
+Try using an absolute path for your DISKFILE, rather than a relative one.
+
+<p>
+<b>Do we need to implement removing directories? What about file
+system attributes like permissions and owners?</b><br>
+
+No and no. The only attributes you need to implement are file sizes
+and whether or not a file is actually a directory.
+
+<p>
+<b>How do I test my file system?</b><br>
+
+Mount it and then just use your favorite shell commands (ls, rm,
+touch, cat, echo, stat, dd, ...).
+
+<p>
+<b>When I 'touch' a file, it complains about a function not being
+implemented. What is this?</b><br>
+
+This is probably because you didn't implement the other file
+attributes. You may safely ignore this. Be sure to check that a file
+is in fact created though.
+
+<!--
+<h3>Grading</h3>
+
+<p>
+In order to verify the correctness of your threads implementation we will run a series of tests against your source code.  The tests will use your thread API to perform a set of various operations.  These tests will include but are not limited to:
+
+<p>
+<li>Thread package initialization (t_start)
+<li>Creation of new threads (t_fork)
+<li>Synchronization and communication between threads using conditions.
+<li>Proper thread stack space allocation
+<li>Deadlock detection
+
+<p>
+We will run these tests by compiling the source code you turn in with a main() function that we implement.
+//-->
+<h3>Turn In</h3>
+
+<p>
+You will turn in your projects using the turnin command.  In order to do this you must first tar your project files and then submit the tar file.
+
+<p>
+Example:<br>
+% tar cvf project1.tar [files]<br>
+% turnin -c cs121w -p project1 project1.tar
+
+</font>
+
+
+<p>
+</td><td bgcolor="#ffffff" valign="top" width="20"><img border="0" width="20" height="1" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<br>
+<p>
+</font><img border="0" width="532" height="12" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="552">
+<tr>
+<td bgcolor="#efefef" valign="top" width="552"><img border="0" width="552" height="12" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+</td><td bgcolor="#efefef" valign="top" width="12"><img border="0" width="12" height="1" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="760">
+<tr>
+<td bgcolor="#efefef" valign="top" width="760"><img border="0" width="760" height="12" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="760">
+<tr>
+<td bgcolor="#003366" valign="top" align="center" width="760"><font class="addy" color="#ffffff" size="-2" face="verdana, arial, geneva, san-serif">9500 Gilman Drive, La Jolla, CA 92093-0114<br>
+</font></td>
+</tr>
+<tr>
+<td bgcolor="#efefef" valign="top" width="760"><img border="0" width="760" height="12" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+<tr>
+<td bgcolor="#efefef" align="center" width="760"><font class="footernav" color="#003366" size="-2" face="verdana, arial, geneva, san-serif"><b><a href="../../../aboutcse/deptoverview.html">About CSE</a></b> | 
+          <b><a href="../../../csepeople/csepeoplehome.html">CSE People</a></b> | 
+          <b><a href="../../../facresearch/facultyresearch.html">Faculty &amp; Research</a></b> | 
+          <b><a href="../../../gradedu/gradeduhome.html">Graduate Education</a></b> | 
+          <b><a href="../../../undergrad/undergradeduhome.html">Undergraduate Education</a></b>
+<br>
+<b><a href="../../../deptadmin/index.php">Department Administration</a></b> | 
+          <b><a href="../../../aboutcse/contactinfo.html">Contact CSE</a></b> | 
+          <b><a href="../../../home/help/index.html">Help</a></b> | 
+          <b><a href="../../../home/search.html">Search</a></b> | 
+          <b><a href="../../../progress/progressroot.html">Site map</a></b> |
+          <b><a href="../../../index.php">Home</a></b>
+<br>
+<a href="mailto:snoeren@cs.ucsd.edu">snoeren@cs.ucsd.edu</a>
+<br>
+</font><a href="http://www.ucsd.edu/"><img border="0" width="379" height="25" src="../../../images/IMG_footer.gif" alt="Official web page of the University of California, San Diego" class="inlineimage"></a></td>
+</tr>
+<tr>
+<td bgcolor="#efefef" align="center" width="760"><font class="copyright" color="#003366" size="-2" face="verdana, arial, geneva, san-serif">
+          Copyright 
+          &copy;
+          2002 Regents of the University of California.  All rights reserved.
+          
+          
+        </font></td>
+</tr>
+<tr>
+<td bgcolor="#efefef" valign="top" width="760"><img border="0" width="760" height="15" src="../../../images/space.gif" alt="spacer gif"></td>
+</tr>
+</table>
+</body>
+</html>

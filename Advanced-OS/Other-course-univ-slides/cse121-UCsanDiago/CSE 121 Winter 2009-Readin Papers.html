@@ -1,0 +1,502 @@
+<html xmlns:str="http://exslt.org/strings" lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CSE 121 Winter 2009</title> 
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta content="en" http-equiv="content-language">
+<meta content="text/css" http-equiv="content-style-type">
+<meta content="no" http-equiv="imagetoolbar">
+<meta content="Computer Science, engineering, ucsd, faculty, students, Jacobs School, San Diego, University" name="keywords">
+<meta content="UCSD Department of Computer Science and Engineering" name="description">
+<meta content="UCSD Department of Computer Science and Engineering" name="organization">
+<meta content="4.3.4.0" name="pageno">
+<link media="screen" type="text/css" href="CSE%20121%20Winter%202009-Readin%20Papers_files/global_style.html" rel="stylesheet">
+<script type="text/javascript" language="JavaScript" src="CSE%20121%20Winter%202009-Readin%20Papers_files/global_functions.html"> </script><script language="JavaScript" type="text/javascript">
+<!--
+        var NS4, IE, DOMstandard, CSScapable;
+        NS4 = (document.layers) ? 1 : 0;
+        IE = (document.all) ? 1 : 0;
+        DOMstandard = (document.getElementById) ? 1 : 0;
+        CSScapable = (NS4 || IE || DOMstandard) ? 1 : 0;
+        if(CSScapable)
+        {
+          if(NS4)
+            document.write('<link type="text/css" href="../../../css/ns_style.css" rel="stylesheet">');
+            else
+  	      document.write('<link media="screen" type="text/css" href="../../../css/dom_style.css" rel="stylesheet">');
+            }
+//-->
+          </script><link media="screen" type="text/css" href="CSE%20121%20Winter%202009-Readin%20Papers_files/dom_style.html" rel="stylesheet">
+</head>
+<body topmargin="0" leftmargin="0" rightmargin="0" style="background: #ffffff url(../../../images/IMG_bgimg.gif) no-repeat" link="#006699" marginheight="0" marginwidth="0" vlink="#800000" alink="#FF0000">
+<a name="top"> </a><script type="text/javascript" language="JavaScript">
+<!--
+
+      logotopon = new Image(187,29);
+      logotopon.src = "../../../images/H_logo_top_over.gif";
+      logotopoff = new Image(187,29);
+      logotopoff.src = "../../../images/H_logo_top.gif";
+      logobottomon = new Image(187,18);
+      logobottomon.src = "../../../images/H_logo_bottom_over.gif";
+      logobottomoff = new Image(187,18);
+      logobottomoff.src = "../../../images/H_logo_bottom.gif";
+      headeron = new Image(573,47);
+      headeron.src = "../../../images/H_header_on.gif";
+      headeroff = new Image(573,47);
+      headeroff.src = "../../../images/H_header_off.gif";
+        
+//-->
+</script>
+<table width="760" cellpadding="0" cellspacing="0" bgcolor="#efefef" border="0">
+<tbody><tr>
+<td valign="top" width="187"><a onmouseout="Off('logotop')" onmouseover="On('logotop'); return true" href="http://www.ucsd.edu/"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/H_logo_top.html" name="logotop" alt="UCSD Main Website" height="29" width="187" border="0"></a><a onmouseout="Off('logobottom')" onmouseover="On('logobottom'); return true" href="http://www.jacobsschool.ucsd.edu/"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/H_logo_bottom.html" name="logobottom" alt="UCSD Jacobs School" height="18" width="187" border="0"></a></td><td valign="top" width="573"><a onmouseout="Off('header')" onmouseover="On('header'); return true" href="http://cseweb.ucsd.edu/index.php"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/H_header_off.html" name="header" alt="Department of Computer Science and Engineering" height="47" width="573" border="0"></a></td>
+</tr>
+</tbody></table>
+
+<table width="760" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td valign="top" width="760" bgcolor="#efefef"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="12" width="1" border="0"></td>
+</tr>
+</tbody></table>
+<table width="760" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td valign="top" width="12" bgcolor="#efefef"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="12" border="0"></td><td valign="top" width="172" bgcolor="#efefef">
+<table width="172" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr><td colspan="4" valign="top" width="172" bgcolor="#ffffff"><a href="http://cseweb.ucsd.edu/classes/wi09/cse121/index.html"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/121.gif" alt="CSE 121" height="38" width="172" border="0"></a></td></tr>
+<tr><td valign="top" width="1" bgcolor="#cccccc"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="1" border="0"></td><td valign="top" width="6" bgcolor="#ffffff"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="6" border="0"></td><td valign="top" width="159" bgcolor="#ffffff">
+<table width="159" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td colspan="3" width="159"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="10" width="1" border="0"></td>
+</tr>
+<tr>
+<td valign="top" width="9"></td><td valign="top" width="5"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="5" border="0"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="http://cseweb.ucsd.edu/classes/wi09/cse121/general.html"><b>Course Overview</b></a></font></td>
+</tr>
+
+<tr>
+<td valign="top" width="9"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="9" border="0"></td><td valign="top" width="5"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="5" border="0"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="http://cseweb.ucsd.edu/classes/wi09/cse121/general.html#structure"><b>Structure</b></a></font></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="9" border="0"></td><td valign="top" width="5"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="5" border="0"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="http://cseweb.ucsd.edu/classes/wi09/cse121/general.html#grading"><b>Grading</b></a></font></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="9" border="0"></td><td valign="top" width="5"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="5" border="0"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="http://cseweb.ucsd.edu/classes/wi09/cse121/general.html#collaboration"><b>Collaboration</b></a></font></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="9" border="0"></td><td valign="top" width="5"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="5" border="0"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="http://cseweb.ucsd.edu/classes/wi09/cse121/general.html#books"><b>Useful books</b></a></font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="5" width="159" border="0"></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="9" border="0"></td><td valign="top" width="5"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="5" border="0"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="http://cseweb.ucsd.edu/classes/wi09/cse121/schedule.html"><b>Schedule</b></a></font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="5" width="159" border="0"></td>
+</tr>
+<tr>
+<td valign="top" width="9"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="9" border="0"></td><td valign="top" width="5"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="5" border="0"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><b>Readings</b></font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="5" width="159" border="0"></td>
+</tr>
+<tr>
+<td valign="top" width="9"></td><td valign="top" width="5"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="5" border="0"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="http://cseweb.ucsd.edu/classes/wi09/cse121/projects.html"><b>Projects</b></a></font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="5" width="159" border="0"></td>
+</tr>
+<tr>
+<td valign="top" width="9"></td><td valign="top" width="5"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="5" border="0"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><a href="http://cseweb.ucsd.edu/classes/wi09/cse121/homeworks.html"><b>Homeworks</b></a></font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="5" width="159" border="0"></td>
+</tr>
+<tr>
+<td valign="top" width="9"></td><td valign="top" width="5"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="5" border="0"></td><td valign="top" width="145"><font class="subnav" size="-2" face="verdana, arial, geneva, san-serif"><b><a href="http://webboard.ucsd.edu/">WebBoard</a></b></font></td>
+</tr>
+<tr>
+<td colspan="3" width="159"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="5" width="159" border="0"></td>
+</tr>
+</tbody></table>
+</td><td valign="top" width="6" bgcolor="#ffffff"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="6" border="0"></td>
+</tr>
+</tbody></table>
+<table width="172" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td valign="top" width="172" bgcolor="#efefef"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="12" width="172" border="0"></td>
+</tr>
+</tbody></table>
+<table width="172" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td colspan="6" valign="top" width="172"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/DA_IMG_search.html" alt="Search" height="26" width="172" border="0"></td>
+</tr>
+<tr>
+<td valign="top" width="1" bgcolor="#cccccc"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="1" border="0"></td><td valign="top" width="1" bgcolor="#ffffff"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="1" border="0"></td><td valign="top" width="5" bgcolor="#eff5ef"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="5" border="0"></td><td valign="top" width="159" bgcolor="#eff5ef">
+<br>
+<form onsubmit="return check_search_form(this)" id="site_search" name="site_search" method="post" action="/cgi-bin/htsearch">
+<input value="htdig" name="config" type="hidden"><input value="" name="restrict" type="hidden"><input value="" name="exclude" type="hidden"><input maxlength="50" size="15" class="searchform" id="search" name="words" alt="search" type="text">&nbsp;&nbsp;<input name="searchnow" alt="search" src="CSE%20121%20Winter%202009-Readin%20Papers_files/IMG_gobutton.html" height="17" type="image" width="34" align="top" border="0">
+</form>
+<font class="body2" size="-2" face="verdana, arial, geneva, san-serif"><a href="http://cseweb.ucsd.edu/home/search.html"><b>Advanced search</b></a>&nbsp;&nbsp;</font><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/IMG_arrows.html" alt="arrows gif" class="inlineimage" height="5" width="8" border="0"><br>
+<br>
+<img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="159" border="0"></td><td valign="top" width="5" bgcolor="#eff5ef"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="5" border="0"></td><td valign="top" width="1" bgcolor="#ffffff"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="1" border="0"></td>
+</tr>
+<tr>
+<td colspan="6" valign="top" width="172" bgcolor="#ffffff"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="172" border="0"></td>
+</tr>
+</tbody></table>
+<table width="172" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td valign="top" width="172" bgcolor="#efefef"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="12" width="172" border="0"></td>
+</tr>
+</tbody></table>
+</td><td valign="top" width="12" bgcolor="#efefef"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="12" border="0"></td><td valign="top" width="552" bgcolor="#efefef">
+<table width="552" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td colspan="3" valign="top" width="552" bgcolor="#cc9966"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="15" width="552" border="0"></td>
+</tr>
+
+<tr>
+<td valign="top" width="20" bgcolor="#ffffff"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="5" width="20" border="0"></td><td valign="top" width="512" bgcolor="#ffffff"><font class="body1" size="-1" face="verdana,arial, geneva, sans-serif"></font><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="360" border="0"></td><td valign="top" width="20" bgcolor="#ffffff"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="20" border="0"></td>
+</tr>
+
+
+<tr>
+<td valign="top" width="20" bgcolor="#ffffff"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="5" width="20" border="0"></td><td valign="top" width="512" bgcolor="#ffffff">
+
+<font class="body1" size="-1" face="verdana,arial, geneva, sans-serif">
+<h3>Reading list</h3>
+
+<i>NB:</i> Each citation is linked to an electronic copy of the paper.
+Papers will <b>not</b> be distributed in hard copy.  You are
+responsible for downloading and printing out your own copy of each
+paper.  In an effort to comply with prevailing copyright restrictions,
+links to ACM and USENIX papers refer to the ACM or USENIX digital
+library, respectively.  Both digital libraries are subscription
+services.  However, UCSD has a campus-wide subscription in each case;
+you should be able to obtain the papers from any campus machine.
+Those of you who are ACM and/or USENIX members should also be able to
+login from off-campus machines with your own ACM/USENIX web
+account(s).
+
+<p>
+Alternatively, you may be eligible to use the <a href="http://www-no.ucsd.edu/documentation/squid/index.html">UCSD
+Web proxy</a> which enables UCSD customers to access restricted content
+from non-UCSD Internet service providers.
+</p><p>
+
+
+Please email the <a href="mailto:ktati@cs.ucsd.edu">TA</a> if you
+have difficulty accessing any of the papers.</p><hr>
+</font>
+
+<font class="body1" size="-1" face="verdana,arial, geneva, sans-serif">
+
+<p>
+<a name="[BDF+03]"></a>
+<b>[BDF+03]</b><br>
+Paul Barham, Boris Dragovic, Keir Fraser, Steven Hand, Tim Harris, Alex Ho, Rolf Neugebar, Ian Pratt and Andrew Warfield,<br>
+
+<a href="http://portal.acm.org/citation.cfm?id=945462">
+Xen and the Art of Virtualization</a>.<br>
+
+<i>Proceedings of the 19th ACM Symposium on Operating Systems
+Principles</i>, October 2003, Bolton Landing, New York.  Pages 164--177.
+
+</p><p>
+<a name="[BDR97]"></a>
+<b>[BDR97]</b><br>
+Edouard Bugnion, Scott Device, and Mendel Rosenblum,<br>
+
+<a href="http://doi.acm.org/10.1145/268998.266672">Disco: Running Commodity Operating Systems on Scalable Multiprocessors</a>.<br>
+
+<i>Proceedings of the 16th ACM Symposium on Operating Systems
+Principles</i>, October 1997, Saint Malo, France.  Pages 143-156.
+
+</p><p>
+<a name="[BJ81]"></a>
+<b>[BJ81]</b><br>
+Özalp Babaoglu and William Joy,<br>
+
+<a href="http://portal.acm.org/citation.cfm?id=806595&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=11666235&amp;CFTOKEN=65816117">Converting a Swap-Based System to do Paging in an Architecture Lacking Page-Referenced Bits</a>.<br>
+
+<i>Proceedings of the 8th ACM Symposium on Operating Systems
+Principles</i>, October 1981, Pacific Grove, California.  Pages
+78-86.
+
+
+</p><p>
+<a name="[CBZ91]"></a>
+<b>[CBZ91]</b><br>
+John B. Carter, John K. Bennett, and Willy Zwaenepoel,<br>
+
+<a href="http://doi.acm.org/10.1145/121132.121159">Implementation and Performance of Munin</a>.<br>
+
+<i>Proceedings of the 13th ACM Symposium on Operating Systems Design
+and Implementation</i>, October 1991, Pacific Grove, California.
+Pages 152-164.
+
+</p><p>
+<a name="[CFKL96]"></a>
+<b>[CFKL96]</b><br>
+Pei Cao, Edward W. Felten, Anna R. Karlin, and Kai Li,<br>
+
+<a href="http://doi.acm.org/10.1145/235543.235544">Implementation and
+Performance of Integrated Application-Controlled File Caching,
+Prefetching, and Disk Scheduling</a>.<br>
+
+<i>ACM Transactions on Computer Systems</i>, Volume 14, Number 4,
+November 1996.  Pages 311-343.
+
+
+</p><p>
+<a name="[CNC+96]"></a>
+<b>[CNC+96]</b><br>
+Peter M. Chen, Wee Teck Ng, Subhachandra Chandra, Christopher Aycock, Gurushankar Rajamani, and David Lowell,<br>
+
+<a href="http://doi.acm.org/10.1145/237090.237154">The Rio File Cache: Surviving Operating Systems Crashes</a>.<br>
+
+<i>Proceedings of the ACM International Conference on Architectural
+Support for Programming Languages and Operating Systems (ASPLOS
+'96)</i>, August 1996, Cambridge, Massachusetts. Pages 74-83.
+
+
+</p><p>
+<a name="[EK95]"></a>
+<b>[EK95]</b><br>
+
+Dawson R. Engler and M. Frans Kaashoek,<br>
+
+
+<a href="http://pdos.csail.mit.edu/%7Eengler/hotos-jeremiad.ps">
+<!-- <a
+href="http://ieeexplore.ieee.org/search/wrapper.jsp?arnumber=513459">
+-->
+Exterminate All Operating System Abstractions</a>.<br>
+
+<i>Proceedings of the Fifth Workshop on Hot Topics in Operating Systems (HotOS-V),</i> May 1995, Orcas Island, Washington.
+Pages 78-83.
+
+</p><p>
+<a name="[FMP+95]"></a>
+<b>[FMP+95]</b><br>
+
+Michael J. Feeley, William E. Morgan, Frederic H. Pighin, Anna
+R. Karlin, Henry M. Levy, and Chandramohan Thekkath,<br>
+
+<a href="http://doi.acm.org/10.1145/224056.224072">Implementing Global Memory Management in a Workstation Cluster</a>.<br>
+
+<i>Proceedings of the 15th ACM Symposium on Operating Systems Design
+and Implementation</i>, October 1995, Copper Mountain, Colorado.
+Pages 201-212.
+
+
+</p><p>
+<b>[KJLF84]</b><a name="[KJLF84]"></a><br>
+
+Marshall K. McKusick, William N. Joy, Samuel J. Leffler, and Robert
+S. Fabry,<br>
+
+<a href="http://doi.acm.org/10.1145/989.990">A Fast File System for UNIX</a>.<br>
+
+<i>ACM Transactions on Computer Systems</i>, Volume 2, Number 3,
+August 1984.  Pages 181-197.
+
+
+</p><p>
+<a name="[L95]"></a>
+<b>[L95]</b><br>
+Jochen Liedtke,<br>
+
+<a href="http://doi.acm.org/10.1145/224056.224075">On u-Kernel Construction</a>.<br>
+
+<i>Proceedings of the 15th ACM Symposium on Operating Systems Design
+and Implementation</i>, October 1995, Copper Mountain, Colorado.
+Pages 237-250.
+
+</p><p>
+<a name="[LH89]"></a>
+<b>[LH89]</b><br>
+Kai Li and Paul Hudak,<br>
+
+<a href="http://doi.acm.org/10.1145/75104.75105">Memory Coherence in
+Shared Virtual Memory Systems</a>.<br>
+
+<i>ACM Transactions on Computer Systems</i>, Volume 7, Number 4,
+November 1989.  Pages 321-359.
+
+
+</p><p>
+<a name="[PDZ00]"></a>
+<b>[PDZ00]</b><br>
+Vivek S. Pai, Peter Druschel, and Willy Zwaenepoel,<br>
+
+<a href="http://doi.acm.org/10.1145/332799.332895">IO-Lite: A Unified I/O Buffering and Caching System</a>.<br>
+
+<i>ACM Transactions on Computer Systems</i>, Volume 18, Number 1,
+February 2000.  Pages 37-66.
+
+</p><p>
+<a name="[RDH+80]"></a>
+<b>[RDH+80]</b><br>
+
+David D. Redell, Yogen K Dalal, Thomas R. Horsley, Hugh C. Lauer,
+William C. Lynch, Paul R. McJones, Hal G. Murray, and Stephen
+C. Purcell,<br>
+
+<a href="http://doi.acm.org/10.1145/358818.358822">Pilot: An
+Operating System for a Personal Computer</a>.<br>
+
+<i>Communications of the ACM</i>, Volume 23, Number 2, February 1980.
+Pages 81-92.
+
+
+</p><p>
+<a name="[RO92]"></a>
+<b>[RO92]</b><br>
+Mendel Rosenblum and John K. Ousterhout,<br>
+
+<a href="http://doi.acm.org/10.1145/146941.146943">The Design and Implementation of a Log-Structured File System</a>.<br>
+
+<i>ACM Transactions on Computer Systems</i>, Volume 10, Number 1,
+February 1992.  Pages 26-52.
+
+</p><p>
+<a name="[SBL03]"></a>
+<b>[SBL03]</b><br>
+Michael M. Smith, Brian N. Bershad, and Henry M. Levy,<br>
+
+<a href="http://doi.acm.org/10.1145/945445.945466">Improving the Reliability of Commodity Operating Systems</a>.<br>
+
+<i>Proceedings of the 19th ACM Symposium on Operating Systems Design
+and Implementation</i>, October 2003, Bolton Landing, New York.
+Pages 207-222.
+
+
+</p><p>
+<a name="[SGG03]"></a>
+<b>[SGG03]</b><br>
+Abraham Silberschatz, Peter Baer Galvin, and Greg Gagne,<br>
+
+<a href="http://www3.interscience.wiley.com:8100/legacy/college/silberschatz/0471250600/pdf/mach.pdf">Appendix B:The Mach System</a>.<br>
+
+<i>Operating Systems Concepts, Windows XP Update Edition, Sixth Edition</i>, John Wiley &amp; Sons, 2003.
+
+</p><p>
+<a name="[SGK+00]"></a>
+<b>[SGK+00]</b><br>
+Margo I. Seltzer, Gregory R. Ganger, M. Kirk McKusick, Keith A. Smith, Craig A. N. Soules, and Christopher A. Stein,<br>
+
+<a href="http://www.usenix.org/publications/library/proceedings/usenix2000/general/seltzer.html">Journaling
+Versus Soft Updates: Asynchronous Meta-Data Protection in File
+Systems</a>.<br>
+
+<i>Proceedings of the USENIX Annual Technical Conference (USENIX
+'00)</i>, June 2000, San Diego, California. Pages 18-23.
+
+</p><p>
+<a name="[VAK+98]"></a>
+<b>[VAK+98]</b><br>
+
+Geoffrey M. Voelker, Eric J. Anderson, Tracy Kimbrel, Michael
+J. Feeley, Jeffrey S. Chase, Anna R. Karlin, and Henry M. Levy,<br>
+
+<a href="http://doi.acm.org/10.1145/277851.277869">
+Implementing Cooperative Prefetching and Caching in a Globally-Managed Memory System</a>.<br>
+
+<i>Proceedings of the ACM Joint International Conference on
+Measurement and Modeling of Computer Systems (SIGMETRICS '98)</i>,
+June 1998, Madison, Wisconsin. Pages 33-43.
+
+</p><p>
+<a name="[WW94]"></a>
+<b>[WW94]</b><br>
+
+Carl A. Waldspurger and William E. Weihl,<br>
+
+<a href="http://www.usenix.org/publications/library/proceedings/osdi/full_papers/waldspurger.pdf">
+Lottery Scheduling: Flexible Proportional-Share Resource Management</a>.<br>
+
+<i>Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI '94)</i>,
+November 1994, Monterey, California. Pages 1-11.
+
+</p><p>
+<a name="[W02]"></a>
+<b>[W02]</b><br>
+
+Carl Waldspurger,<br>
+
+<a href="http://www.usenix.org/events/osdi02/tech/waldspurger.html">
+Memory Resource Management in VMware ESX Server</a>.<br>
+
+<i>Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI '02)</i>,
+December 2002, Boston, Massachusetts. Pages 181-194.
+
+
+<br>
+</p></font><p><font class="body1" size="-1" face="verdana,arial, geneva, sans-serif">
+
+</font>
+
+
+<img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="360" border="0"></p></td><td valign="top" width="20" bgcolor="#ffffff"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="20" border="0"></td>
+</tr>
+<tr>
+<td valign="top" width="20" bgcolor="#ffffff"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="20" border="0"></td><td colspan="2" valign="top" width="532" bgcolor="#ffffff"><font class="body2" size="-2" face="verdana,arial, geneva, sans-serif"><a href="#top"><b>back to top ^</b></a>
+<br>
+</font><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="12" width="532" border="0"></td>
+</tr>
+</tbody></table>
+<table width="552" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td valign="top" width="552" bgcolor="#efefef"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="12" width="552" border="0"></td>
+</tr>
+</tbody></table>
+</td><td valign="top" width="12" bgcolor="#efefef"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="1" width="12" border="0"></td>
+</tr>
+</tbody></table>
+<table width="760" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td valign="top" width="760" bgcolor="#efefef"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="12" width="760" border="0"></td>
+</tr>
+</tbody></table>
+<table width="760" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td valign="top" width="760" align="center" bgcolor="#003366"><font class="addy" size="-2" color="#ffffff" face="verdana, arial, geneva, san-serif">9500 Gilman Drive, La Jolla, CA 92093-0114<br>
+</font></td>
+</tr>
+<tr>
+<td valign="top" width="760" bgcolor="#efefef"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="12" width="760" border="0"></td>
+</tr>
+<tr>
+<td width="760" align="center" bgcolor="#efefef"><font class="footernav" size="-2" color="#003366" face="verdana, arial, geneva, san-serif"><b><a href="http://cseweb.ucsd.edu/aboutcse/deptoverview.html">About CSE</a></b> | 
+          <b><a href="http://cseweb.ucsd.edu/csepeople/csepeoplehome.html">CSE People</a></b> | 
+          <b><a href="http://cseweb.ucsd.edu/facresearch/facultyresearch.html">Faculty &amp; Research</a></b> | 
+          <b><a href="http://cseweb.ucsd.edu/gradedu/gradeduhome.html">Graduate Education</a></b> | 
+          <b><a href="http://cseweb.ucsd.edu/undergrad/undergradeduhome.html">Undergraduate Education</a></b>
+<br>
+<b><a href="http://cseweb.ucsd.edu/deptadmin/index.php">Department Administration</a></b> | 
+          <b><a href="http://cseweb.ucsd.edu/aboutcse/contactinfo.html">Contact CSE</a></b> | 
+          <b><a href="http://cseweb.ucsd.edu/home/help/index.html">Help</a></b> | 
+          <b><a href="http://cseweb.ucsd.edu/home/search.html">Search</a></b> | 
+          <b><a href="http://cseweb.ucsd.edu/progress/progressroot.html">Site map</a></b> |
+          <b><a href="http://cseweb.ucsd.edu/index.php">Home</a></b>
+<br>
+<a href="mailto:snoeren@cs.ucsd.edu">snoeren@cs.ucsd.edu</a>
+<br>
+</font><a href="http://www.ucsd.edu/"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/IMG_footer.html" alt="Official web page of the University of California, San Diego" class="inlineimage" height="25" width="379" border="0"></a></td>
+</tr>
+<tr>
+<td width="760" align="center" bgcolor="#efefef"><font class="copyright" size="-2" color="#003366" face="verdana, arial, geneva, san-serif">
+          Copyright 
+          ©
+          2002 Regents of the University of California.  All rights reserved.
+          
+          
+        </font></td>
+</tr>
+<tr>
+<td valign="top" width="760" bgcolor="#efefef"><img src="CSE%20121%20Winter%202009-Readin%20Papers_files/space.html" alt="spacer gif" height="15" width="760" border="0"></td>
+</tr>
+</tbody></table>
+
+
+</body></html>
