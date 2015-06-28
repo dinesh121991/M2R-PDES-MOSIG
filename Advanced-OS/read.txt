@@ -1,0 +1,7 @@
+https://www.freebsd.org/doc/en_US.ISO8859-1/articles/vm-design/page-coloring-optimizations.html
+
+https://www.freebsd.org/doc/en_US.ISO8859-1/articles/vm-design/page-table-optimizations.html
+
+http://www.anandtech.com/show/2480/10
+
+https://en.wikipedia.org/wiki/IOMMU
